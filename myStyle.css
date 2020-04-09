@@ -139,7 +139,7 @@ iframe:hover {
     top: 2000px;
     left: 0;
     right: 0;
-    background-image: url("/webPageMR/VC2grayscale.jpg");
+    background-image: url("VC2grayscale.jpg");
     background-size: cover;
     weight: 100%;
     height: 1080px;
