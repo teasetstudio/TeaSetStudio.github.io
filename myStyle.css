@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color:rgb(192, 192, 192);
+}
+.general{
+    background: url("179750.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+}
+/*dummy anchor*/
+#top{
+    position: absolute;
+    top: 0;
+}
+#anchor-portfolio{
+    position: absolute;
+    top: 965px;
+
+}
+
+/*navigation*/
+a {
+    color: mediumseagreen;
+    text-decoration: none;
+    transition: all .15s linear;
+}
+a:hover{
+    color: #5ed15e;
+}
+
+/*Head*/
+.header {
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    color: #f3ffee;
+}
+.container {   
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-header {
+    word-spacing: 12px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f3ffee;
+}
+.logo-header:hover{text-shadow: 4px 4px rgb(19, 31, 10);}
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-link{
+    margin: 0 15px;
+    position: relative;
+    color: #f3ffee;
+}
+.nav-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color: #5ed15e;
+
+    position: absolute;
+    top: 150%;
+    left: 0;
+    z-index: 1;
+
+    transition: all .5s linear;
+}
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+/* Study Div*/
+.home {
+    margin: 150px 0 0 300px; 
+    max-width: 450px;
+    min-width: 350px;
+
+}
+.center1 {
+    background-color: rgba(46, 46, 46, 0.671);
+    border-radius: 15px;
+
+    padding: 2px 10px;
+    margin-bottom: 7px;
+    transition: .7s;
+    }
+.titleBack {
+    padding: 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #b9c7b8;
+    text-align: center;
+
+    border-radius: 8px;
+    background-color: #303a2fda
+}
+.center1:hover {
+    transform: scale(1.05);
+    background-color: #303a2f;
+}
+
+/*portfolio*/
+.video {
+    margin: 400px 0 200px 18%;
+    display: flex;
+}
+iframe:hover {
+    transform: scale(1.05);
+}
+.videoList {
+    padding: 15px 15px 15px 15px;
+}
+
+/*contacts*/
+.contacts{
+    position: relative;
+    top: 2000px;
+    left: 0;
+    right: 0;
+    background-image: url("/webPageMR/VC2grayscale.jpg");
+    background-size: cover;
+    weight: 100%;
+    height: 1080px;
+
+}
+#contact-anchor{
+
+}
+.cont{
+}
