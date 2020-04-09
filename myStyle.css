@@ -5,17 +5,6 @@ body {
     line-height: 1.5;
     color:rgb(192, 192, 192);
 }
-.general{
-    background: url("179750.jpg") no-repeat;
-    background-size: cover;
-    background-position: 0px 0px 0px 0px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-
-}
 /*dummy anchor*/
 #top{
     position: absolute;
@@ -23,7 +12,7 @@ body {
 }
 #anchor-portfolio{
     position: absolute;
-    top: 965px;
+    top: 880px;
 
 }
 
@@ -91,6 +80,17 @@ a:hover{
     opacity: 1;
 }
 
+/*general*/
+.general{
+    background: url("179750.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 /* Study Div*/
 .home {
     margin: 150px 0 0 300px; 
@@ -135,6 +135,7 @@ iframe:hover {
 
 /*contacts*/
 .contacts{
+    color: rgb(235, 235, 235);
     position: relative;
     top: 2000px;
     left: 0;
@@ -142,11 +143,20 @@ iframe:hover {
     background-image: url("VC2grayscale.jpg");
     background-size: cover;
     weight: 100%;
-    height: 1080px;
-
+    height: 1200px;
 }
-#contact-anchor{
-
+h2{
+   font-size: 60px;
+   text-align: center;
+   margin: 0;
+   padding: 180px 0 360px;
+}
+.contacts img{
+    padding-right: 25px;
 }
 .cont{
+    font-size: 40px;
+    text-align: center;
+    height: 35px;
+
 }
