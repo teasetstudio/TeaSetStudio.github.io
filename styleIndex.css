@@ -10,3 +10,13 @@ body{
 *:after{
     box-sizing: border-box;
 }
+/*container*/
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*header*/
+.header{
+    
+}
