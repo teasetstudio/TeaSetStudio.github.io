@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #6c7279;
-    background-color: #24311e;
+    background-color: rgb(36, 49, 30);
 }
 *,
 *:before,
@@ -70,7 +70,7 @@ body{
     background-size: cover;
 }
 .home{
-    width: 430px;
+    width: 405px;
     height: 100vh;
     color: rgb(208, 255, 208);
 
@@ -79,14 +79,14 @@ h1.home-in{
     font-family: 'Caveat', cursive;
     margin: 45% 0 0;
     padding: 0 10px;
-    word-spacing: 110px;
+    word-spacing: 120px;
     text-indent: 70px;
     font-size: 55px;
 
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 p.home-in{
-    word-spacing: 7px;
+    word-spacing: 6px;
     margin-top: 13px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
