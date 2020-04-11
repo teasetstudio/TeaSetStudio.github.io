@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #6c7279;
-    background-color: #383838;
+    background-color: #24311e;
 }
 *,
 *:before,
@@ -18,7 +18,10 @@ body{
 }
 /*header*/
 .header{
-    
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
 }
 .header-inner{
     display: flex;
@@ -52,4 +55,13 @@ body{
 .nav-link:hover{
     color: rgb(79, 231, 79);
     opacity: 1;
+}
+/*intro*/
+.intro{
+    height: calc(1300px * 1.25);
+    width: 100%;
+    background: url("/img/teapot-bg.jpg") no-repeat;
+    background-size: cover;
+    
+
 }
