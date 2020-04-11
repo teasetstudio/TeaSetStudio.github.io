@@ -15,19 +15,22 @@ body{
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    height: inherit;
 }
 /*header*/
 .header{
+    z-index: 1000;
+    height: 100px;
     width: 100%;
     position: absolute;
     top: 0;
-    z-index: 1000;
 }
 .header-inner{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
+    border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 .header-logo{
     font-size: 30px;
@@ -58,10 +61,35 @@ body{
 }
 /*intro*/
 .intro{
+    padding-top: 100px;
     height: calc(1300px * 1.25);
     width: 100%;
-    background: url("/img/teapot-bg.jpg") no-repeat;
+    background: #24311e url("/img/teapot-bg.jpg") no-repeat;
+    /*#24311e будет цвет если не прогрузиться картинка*/
+
     background-size: cover;
-    
+}
+.home{
+    width: 430px;
+    height: 100vh;
+    color: rgb(208, 255, 208);
+
+}
+h1.home-in{
+    font-family: 'Caveat', cursive;
+    margin: 45% 0 0;
+    padding: 0 10px;
+    word-spacing: 110px;
+    text-indent: 70px;
+    font-size: 55px;
+
+    border-bottom: 1px solid rgba(79, 231, 79, 0.253);
+}
+p.home-in{
+    margin-top: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
 
 }
