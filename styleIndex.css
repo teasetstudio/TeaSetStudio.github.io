@@ -86,6 +86,7 @@ h1.home-in{
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 p.home-in{
+    word-spacing: 7px;
     margin-top: 13px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
