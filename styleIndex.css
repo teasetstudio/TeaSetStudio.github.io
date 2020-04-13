@@ -105,6 +105,7 @@ h2{
     text-transform: uppercase;
 }
 .video-container{
+    border-radius: 10px;
     background-color: #333831a6;
     z-index: 1000;
     display: flex;
@@ -138,6 +139,7 @@ p.video{
 }
 .arrow:hover{
     background-color: #333831d8;
+    border-radius: 10px;
     opacity: 0.7;
     cursor: pointer;
 }
