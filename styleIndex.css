@@ -133,9 +133,10 @@ p.video{
 }
 .arrow{
     opacity: 0.2;
-    transition: all 0.2s linear;
+    transition: all 0.4s linear;
 }
 .arrow:hover{
     background-color: #333831d8;
     opacity: 0.7;
+    cursor: pointer;
 }
