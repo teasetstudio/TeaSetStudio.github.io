@@ -1,8 +1,8 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #6c7279;
+    font-size: 13px;
+    color: #d0ffd0;
     background-color: #333831;
 }
 *,
@@ -15,7 +15,6 @@ body{
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    height: inherit;
 }
 /*header*/
 .header{
@@ -24,6 +23,7 @@ body{
     width: 100%;
     position: absolute;
     top: 0;
+    position: fixed;
 }
 .header-inner{
     display: flex;
@@ -41,7 +41,6 @@ body{
 /*navigation*/
 .nav{
     display: flex;
-    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -62,26 +61,25 @@ body{
 /*intro*/
 .intro{
     padding-top: 100px;
-    height: calc(1300px * 1.25);
     width: 100%;
     background: #333831 url("/img/teapot-bg.jpg") no-repeat;
     /*#333831 будет цвет если не прогрузиться картинка*/
-
     background-size: cover;
 }
+/*HOME
+===========*/
 .home{
-    width: 405px;
+    width: 430px;
     height: 100vh;
-    color: rgb(208, 255, 208);
+    min-height: 900px;
 }
 h1.home-in{
+    padding: 45% 10px 0;
     font-family: 'Caveat', cursive;
-    margin: 45% 0 0;
-    padding: 0 10px;
-    word-spacing: 120px;
+    margin: 0;
+    word-spacing: 100px;
     text-indent: 70px;
     font-size: 55px;
-
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 p.home-in{
@@ -91,5 +89,53 @@ p.home-in{
     text-align: center;
     text-transform: uppercase;
     font-size: 13px;
-
+}
+/*WORKS
+===========*/
+.works{
+    height: 100vh;
+    min-height: 900px;
+}
+h2{
+    margin: 0;
+    padding: 150px 0 100px;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.video-container{
+    background-color: #333831a6;
+    z-index: 1000;
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+div.video{
+    width: 672px;
+    height: 530px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+p.video{
+    text-align: center;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+.arrow-left{
+    height: 530px;
+    width: 120px;
+    background: url('img/arrow-left.png') no-repeat center;
+}
+.arrow-right{
+    height: 530px;
+    width: 120px;
+    background: url('img/arrow-right.png') no-repeat center;
+}
+.arrow{
+    opacity: 0.2;
+    transition: all 0.2s linear;
+}
+.arrow:hover{
+    background-color: #333831d8;
+    opacity: 0.7;
 }
