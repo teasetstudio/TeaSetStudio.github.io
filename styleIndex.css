@@ -1,9 +1,9 @@
 body{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     color: #d0ffd0;
     background-color: #333831;
+    font-family: 'Montserrat', sans-serif;
 }
 *,
 *:before,
@@ -93,12 +93,13 @@ p.home-in{
 /*WORKS
 ===========*/
 .works{
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
     min-height: 900px;
 }
 h2{
     margin: 0;
-    padding: 150px 0 100px;
+    padding: 200px 0 100px;
     font-size: 23px;
     text-align: center;
     text-transform: uppercase;
