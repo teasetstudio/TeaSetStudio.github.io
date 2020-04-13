@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #6c7279;
-    background-color: rgb(36, 49, 30);
+    background-color: #333831;
 }
 *,
 *:before,
@@ -28,7 +28,7 @@ body{
 .header-inner{
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 30px 0px;
     align-items: center;
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
@@ -64,8 +64,8 @@ body{
     padding-top: 100px;
     height: calc(1300px * 1.25);
     width: 100%;
-    background: #24311e url("/img/teapot-bg.jpg") no-repeat;
-    /*#24311e будет цвет если не прогрузиться картинка*/
+    background: #333831 url("/img/teapot-bg.jpg") no-repeat;
+    /*#333831 будет цвет если не прогрузиться картинка*/
 
     background-size: cover;
 }
@@ -73,7 +73,6 @@ body{
     width: 405px;
     height: 100vh;
     color: rgb(208, 255, 208);
-
 }
 h1.home-in{
     font-family: 'Caveat', cursive;
