@@ -105,7 +105,7 @@ h2{
     text-transform: uppercase;
 }
 .video-container{
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: #333831a6;
     z-index: 1000;
     display: flex;
@@ -123,23 +123,7 @@ p.video{
     margin: 30px 0 0 0;
     font-size: 16px;
 }
-.arrow-left{
-    height: 530px;
-    width: 120px;
-    background: url('img/arrow-left.png') no-repeat center;
-}
-.arrow-right{
-    height: 530px;
-    width: 120px;
-    background: url('img/arrow-right.png') no-repeat center;
-}
-.arrow{
-    opacity: 0.2;
-    transition: all 0.4s linear;
-}
-.arrow:hover{
-    background-color: #333831d8;
-    border-radius: 10px;
-    opacity: 0.7;
-    cursor: pointer;
+.uavos{
+    text-decoration: none;
+    color: khaki;
 }
