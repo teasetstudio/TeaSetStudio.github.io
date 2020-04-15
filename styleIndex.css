@@ -70,7 +70,7 @@ body{
 ===========*/
 .home{
     width: 430px;
-    height: 100vh;
+    height: 1010px;
 }
 h1.home-in{
     padding: 17vh 10px 10px;
@@ -92,8 +92,7 @@ p.home-in{
 ===========*/
 .works{
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    min-height: 900px;
+    height: 1010px;;
 }
 h2{
     margin: 0;
@@ -170,7 +169,7 @@ p.item{
 
 /* contacts */
 #contacts{
-    height: 1080px;
+    height: 1010px;
     background-image: url(/img/city-bg.jpg);
     background-size: cover;
     background-position: center;
