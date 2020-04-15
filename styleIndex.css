@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-size: 13px;
+    font-size: small;
     color: #d0ffd0;
     background-color: #333831;
     font-family: 'Montserrat', sans-serif;
@@ -28,12 +28,12 @@ body{
 .header-inner{
     display: flex;
     justify-content: space-between;
-    padding: 30px 0px;
+    padding: 20px 0px;
     align-items: center;
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 .header-logo{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #fff;
     font-weight: 900;
     word-spacing: 20px;
@@ -73,12 +73,12 @@ body{
     height: 100vh;
 }
 h1.home-in{
-    padding: 45% 10px 0;
+    padding: 17vh 10px 10px;
     font-family: 'Caveat', cursive;
     margin: 0;
     word-spacing: 100px;
     text-indent: 70px;
-    font-size: 55px;
+    font-size: 3.44rem;
     border-bottom: 1px solid rgba(79, 231, 79, 0.253);
 }
 p.home-in{
@@ -87,7 +87,6 @@ p.home-in{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    font-size: 13px;
 }
 /*WORKS
 ===========*/
@@ -98,24 +97,23 @@ p.home-in{
 }
 h2{
     margin: 0;
-    padding: 200px 0 100px;
-    font-size: 23px;
+    padding: 165px 0 85px;
+    font-size: 1.44rem;
     text-align: center;
     text-transform: uppercase;
 }
 .video-container{
     margin: 0 auto;
-    padding: 20px;
 }
 div.video{
-    width: 782px;
+    width: 900px;
     margin: 0 auto 0;
 }
 p.video{
     text-align: center;
     margin: 30px auto 0;
     padding-bottom: 50px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .uavos{
     text-decoration: none;
