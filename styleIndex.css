@@ -111,6 +111,7 @@ div.video{
 .video iframe{
     width: 900px;
     height: 508px;
+    border: 1px solid #333d2f;
 }
 p.video{
     text-align: center;
