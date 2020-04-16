@@ -108,6 +108,10 @@ div.video{
     width: 900px;
     margin: 0 auto 0;
 }
+.video iframe{
+    width: 900px;
+    height: 508px;
+}
 p.video{
     text-align: center;
     margin: 30px auto 0;
@@ -157,12 +161,12 @@ h3{
 
 }
 div.item{
-    width: 12vw;
+    width: 100px;
 }
 p.item{
     margin: 0;
     padding: 0;
-    margin-top: 15px;
+    margin: 15px 0;
 }
 
 /* rgba(79, 231, 79, 0.253) */
@@ -170,7 +174,7 @@ p.item{
 /* contacts */
 #contacts{
     height: 1010px;
-    background-image: url(/img/city-bg.jpg);
+    background-image: url('/img/city-bg.jpg');
     background-size: cover;
     background-position: center;
 }
