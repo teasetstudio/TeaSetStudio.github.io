@@ -68,11 +68,12 @@ body{
 /*HOME
 ===========*/
 .home{
+    margin-left: 20px;
     width: 430px;
     height: 1010px;
 }
 h1.home-in{
-    padding: 190px 10px 10px;
+    padding: 190px 20px 10px;
     font-family: 'Caveat', cursive;
     margin: 0;
     word-spacing: 100px;
@@ -177,17 +178,18 @@ p.item{
     background-image: url('/img/city-bg.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
-.phone{
+.contacts-item{
     font-size: 1.4rem;
     text-align: center;
     margin: 100px 0;
 }
-.email{
-    margin-bottom: 430px;
-}
 .city{
-    margin: 0 auto;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     max-width: 700px;
