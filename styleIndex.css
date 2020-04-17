@@ -40,7 +40,7 @@ body{
 /*navigation*/
 .burger{
     display: none;
-    }
+}
 .nav{
     display: flex;
     font-weight: 700;
@@ -67,7 +67,6 @@ body{
     background: url("/img/teapot-bg.jpg") no-repeat;
     background-size: cover;
     background-position: top left;
-
 }
 /*HOME
 ===========*/
@@ -143,12 +142,27 @@ h2.about{
 }
 p.about{
     margin: 0 auto;
+    font-weight: 400;
     font-size: 1.2rem;
     text-align: center;
     padding: 50px 50px 50px;
-    border: 1px solid black;
-    border-radius: 10px;
-
+    position: relative;
+}
+p.about:before,
+p.about:after{
+    content: "";
+    width: 850px;
+    height: 1px;
+    background: linear-gradient(to right, transparent,#576b57b6, transparent);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+p.about:before{
+    top: 10px;
+}
+p.about:after{
+    bottom: 10px;
 }
 h3{
     margin: 0;
@@ -158,20 +172,19 @@ h3{
 }
 .about-icon{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 50px;
     text-align: center;
-
 }
 div.item{
-    width: 100px;
+    width: 11.1111%;
 }
 p.item{
     margin: 0;
     padding: 0;
     margin: 15px 0;
 }
-
 /* contacts */
 #contacts{
     height: 1010px;
@@ -233,6 +246,7 @@ footer{
     }
     .burger:active{
         border: 0;
+        color: transparent;
     }
     .burger-item{
         width: 50px;
@@ -262,3 +276,29 @@ footer{
         display: none;
     }
 }
+
+@media (max-device-width: 425px){
+     /* about */
+    #fusion{
+        display: none;
+    }
+    div.item{
+        margin-bottom: 50px;
+        width: 25%;
+    }
+    p.item{
+        font-size: 20px;
+        padding: 0 40px;
+    }
+    /* CONTACTS */
+    #contacts{
+        height: 700px;
+    }
+    .contacts-item{
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 60px 0;
+    }
+    .contacts-item:first-of-type{
+        margin-top: 50px;
+    }
