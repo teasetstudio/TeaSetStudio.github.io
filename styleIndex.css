@@ -231,6 +231,9 @@ footer{
     .burger:hover{
         background-color: #3a5e3a;
     }
+    .burger:active{
+        border: 0;
+    }
     .burger-item{
         width: 50px;
         height: 3px;
