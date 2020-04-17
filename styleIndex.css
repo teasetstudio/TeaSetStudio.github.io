@@ -108,10 +108,8 @@ div.video{
     width: 900px;
     margin: 0 auto 0;
 }
-.video iframe{
-    width: 900px;
-    height: 508px;
-    border: 1px solid #333d2f;
+.video iframe{ 
+    border: 0;
 }
 p.video{
     text-align: center;
