@@ -40,7 +40,7 @@ body{
 /*navigation*/
 .burger{
     display: none;
-}
+    }
 .nav{
     display: flex;
     font-weight: 700;
@@ -221,12 +221,13 @@ footer{
         padding-top: 240px;
     }
     .burger{
+        margin-right: 30px;
         padding: 2px;
         display: block;
         border: 0;
         width: 50px;
         height: 3px;
-        background-color: #d0ffd0;
+        background-color: #fff;
         position: relative;
         cursor: pointer;
     }
@@ -238,7 +239,7 @@ footer{
         position: absolute;
         left: 0;
         z-index: 2;
-        background-color: #d0ffd0;
+        background-color: #fff;
     }
     .burger:after{
         top: 12px;
@@ -251,4 +252,11 @@ footer{
     .nav{
         display: none;
     }
+}
+@media (max-device-width: 930px){
+
+    #home{
+        width: 500px;
+    }
+
 }
