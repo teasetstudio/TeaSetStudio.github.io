@@ -29,7 +29,7 @@ body{
     justify-content: space-between;
     padding: 20px 0px;
     align-items: center;
-    border-bottom: 1px solid rgba(79, 231, 79, 0.253);
+    border-bottom: 1px solid #4fe74f41;
 }
 .header-logo{
     font-size: 1.875rem;
@@ -221,30 +221,36 @@ footer{
         padding-top: 240px;
     }
     .burger{
-        margin-right: 30px;
-        padding: 2px;
         display: block;
-        border: 0;
+        background-color:transparent;
+        padding: 0;
+        cursor: pointer;
+        border: 1px solid #d0ffd0;
+        border-radius: 10px;
+    }
+    .burger:hover{
+        background-color: #3a5e3a;
+    }
+    .burger-item{
         width: 50px;
         height: 3px;
+        margin: 25px 10px;
         background-color: #fff;
         position: relative;
-        cursor: pointer;
     }
-    .burger:after,
-    .burger:before{
+    .burger-item:before,
+    .burger-item:after{
         content: "";
-        width: 100%;
-        height: 100%;
         position: absolute;
         left: 0;
-        z-index: 2;
         background-color: #fff;
+        width: 100%;
+        height: 100%;
     }
-    .burger:after{
+    .burger-item:before{
         top: 12px;
     }
-    .burger:before{
+    .burger-item:after{
         top: -12px;
     }
 
