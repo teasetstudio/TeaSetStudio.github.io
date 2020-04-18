@@ -35,7 +35,7 @@ body{
 .header-logo{
     font-size: 1.875rem;
     color: #fff;
-    font-weight: 900;
+    font-weight: 600;
     word-spacing: 20px;
 }
 /*navigation*/
@@ -44,7 +44,7 @@ body{
 }
 .nav{
     display: flex;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .nav-link{
@@ -103,7 +103,7 @@ h1.home-in{
 p.home-in{
     word-spacing: 6px;
     margin-top: 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
 }
