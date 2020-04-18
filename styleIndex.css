@@ -324,12 +324,7 @@ footer{
     /* menu */
     .languales{
         right: 130px;
-    }    
-}
-@media (max-device-width: 425px){
-    .languales{
         border-color: #d0ffd0;
-
         height: 44px;
         width: 44px;
     }
@@ -337,6 +332,11 @@ footer{
         color: #fff;
         font-size: 20px;
         padding: 8px;
+    }
+}
+@media (max-device-width: 425px){
+    p.home-in{
+        font-size: 1.2em;
     }
      /* about */
     #fusion{
