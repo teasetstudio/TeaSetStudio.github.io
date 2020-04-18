@@ -330,12 +330,11 @@ footer{
     .contacts-item:first-of-type{
         margin-top: 50px;
     }
+}
+@media (max-device-width: 425px){
     .languales{
         right: 130px;
     }
-
-}
-@media (max-device-width: 425px){
     p.home-in{
         font-size: 1.2em;
     }
