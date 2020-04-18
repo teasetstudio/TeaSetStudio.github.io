@@ -257,13 +257,8 @@ footer{
     html{
         font-size: 22px;
     }
-    #intro{
-        background: url("/img/teapot-bg.jpg") no-repeat;
-        background-size: cover;
-        background-position: top left;
-    }    
     .languales{
-        right: 130px;
+        right: 150px;
         border-color: #d0ffd0;
         height: 44px;
         width: 44px;
