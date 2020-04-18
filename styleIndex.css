@@ -251,55 +251,44 @@ footer{
 @media (max-device-width: 1359px){
     /* menu */
     .languales{
-        right: 500px;
-}
+        right: 500px;}
 @media (max-device-width: 930px){
     html{
-        font-size: 22px;
-    }
+        font-size: 22px;}
     .languales{
         right: 130px;
         border-color: #d0ffd0;
         height: 44px;
-        width: 44px;
-    }
+        width: 44px;}
     .languales a{
         color: #fff;
         font-size: 20px;
-        padding: 7px;
-    }
+        padding: 7px;}
     .header-inner{
-        border-bottom: 1px solid #4fe74f41 !important;}
-    
+        border-bottom: 1px solid #4fe74f41 !important;}    
     #home{
-        width: 550px;
-    }
+        width: 550px;}
     h1.home-in{
         padding-top: 240px;
-        border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;
-    }
+        border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;}
     .burger{
         display: block !important;
         background-color: none !important;
         padding: 0;
         cursor: pointer;
         border: 1px solid #d0ffd0;
-        border-radius: 10px;
-    }
+        border-radius: 10px;}
     .burger:hover{
-        background-color: #3a5e3a;
-    }
+        background-color: #3a5e3a;}
     .burger:active{
         border: 0;
-        color: transparent;
-    }
+        color: transparent;}
     .burger-item{
         width: 50px;
         height: 3px;
         margin: 25px 10px;
         background-color: #fff;
-        position: relative;
-    }
+        position: relative;}
     .burger-item:before,
     .burger-item:after{
         content: "";
@@ -307,47 +296,34 @@ footer{
         left: 0;
         background-color: #fff;
         width: 100%;
-        height: 100%;
-    }
+        height: 100%;}
     .burger-item:before{
-        top: 12px;
-    }
+        top: 12px;}
     .burger-item:after{
-        top: -12px;
-    }
-    /* #d0ffd0 */
+        top: -12px;}
     .nav{
-        display: none;
-    }
+        display: none;}
     #contacts{
-        height: 700px;
-    }
+        height: 700px;}
     h2.contacts{
-        padding: 70px 0 50px;
-    }
+        padding: 70px 0 50px;}
     .contacts-item{
         font-size: 1.6rem;
         text-align: center;
-        margin: 60px 0;
-    }
+        margin: 60px 0;}
     .contacts-item:first-of-type{
-        margin-top: 50px;
-    }
+        margin-top: 50px;}
 }
 @media (max-device-width: 425px){
     p.home-in{
-        font-size: 1.2em;
-    }
+        font-size: 1.2em;}
      /* about */
     #fusion{
-        display: none;
-    }
+        display: none;}
     div.item{
         margin-bottom: 50px;
-        width: 25%;
-    }
+        width: 25%;}
     p.item{
         font-size: 20px;
-        padding: 0 40px;
-    }
-}
+        padding: 0 40px;}
+}}
