@@ -252,7 +252,6 @@ footer{
     /* menu */
     .languales{
         right: 500px;
-        right: 130px;
         border-color: #d0ffd0;
         height: 44px;
         width: 44px;
@@ -331,6 +330,10 @@ footer{
     .contacts-item:first-of-type{
         margin-top: 50px;
     }
+    .languales{
+        right: 130px;
+    }
+
 }
 @media (max-device-width: 425px){
     p.home-in{
