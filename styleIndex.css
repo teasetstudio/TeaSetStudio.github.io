@@ -267,7 +267,7 @@ footer{
         padding-top: 240px;
     }
     .burger{
-        display: block;
+        display: block !important;
         background-color:transparent;
         padding: 0;
         cursor: pointer;
@@ -327,6 +327,17 @@ footer{
     }    
 }
 @media (max-device-width: 425px){
+    .languales{
+        border-color: #d0ffd0;
+
+        height: 44px;
+        width: 44px;
+    }
+    .languales a{
+        color: #fff;
+        font-size: 20px;
+        padding: 8px;
+    }
      /* about */
     #fusion{
         display: none;
