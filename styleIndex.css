@@ -249,8 +249,18 @@ footer{
 }
 /*MEDIA*/
 @media (max-device-width: 1359px){
+    /* menu */
     .languales{
         right: 500px;
+        right: 130px;
+        border-color: #d0ffd0;
+        height: 44px;
+        width: 44px;
+    }
+    .languales a{
+        color: #fff;
+        font-size: 20px;
+        padding: 8px;
     }
 }
 @media (max-device-width: 930px){
@@ -320,18 +330,6 @@ footer{
     }
     .contacts-item:first-of-type{
         margin-top: 50px;
-    }
-    /* menu */
-    .languales{
-        right: 130px;
-        border-color: #d0ffd0;
-        height: 44px;
-        width: 44px;
-    }
-    .languales a{
-        color: #fff;
-        font-size: 20px;
-        padding: 8px;
     }
 }
 @media (max-device-width: 425px){
