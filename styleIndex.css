@@ -258,8 +258,6 @@ footer{
         font-size: 22px;
     }
     #intro{
-        padding-top: 100px;
-        width: 100%;
         background: url("/img/teapot-bg.jpg") no-repeat;
         background-size: cover;
         background-position: top left;
