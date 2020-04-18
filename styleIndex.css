@@ -29,7 +29,7 @@ body{
     justify-content: space-between;
     padding: 20px 0px;
     align-items: center;
-    border-bottom: 1px solid #4fe74f41;
+    border-bottom: 1px solid #4fe74f41 !important;
     position: relative;
 }
 .header-logo{
@@ -98,7 +98,7 @@ h1.home-in{
     word-spacing: 100px;
     text-indent: 70px;
     font-size: 3.44rem;
-    border-bottom: 1px solid rgba(79, 231, 79, 0.253);
+    border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;
 }
 p.home-in{
     word-spacing: 6px;
@@ -257,6 +257,17 @@ footer{
     html{
         font-size: 22px;
     }
+    .languales{
+        right: 130px;
+        border-color: #d0ffd0;
+        height: 44px;
+        width: 44px;
+    }
+    .languales a{
+        color: #fff;
+        font-size: 20px;
+        padding: 7px;
+    }
     #home{
         width: 550px;
     }
@@ -265,7 +276,7 @@ footer{
     }
     .burger{
         display: block !important;
-        background-color:transparent;
+        background-color: #3a5e3a;
         padding: 0;
         cursor: pointer;
         border: 1px solid #d0ffd0;
@@ -317,17 +328,6 @@ footer{
     }
     .contacts-item:first-of-type{
         margin-top: 50px;
-    }
-    .languales{
-        right: 130px;
-        border-color: #d0ffd0;
-        height: 44px;
-        width: 44px;
-    }
-    .languales a{
-        color: #fff;
-        font-size: 20px;
-        padding: 7px;
     }
 }
 @media (max-device-width: 425px){
