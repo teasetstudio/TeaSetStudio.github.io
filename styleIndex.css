@@ -30,6 +30,7 @@ body{
     padding: 20px 0px;
     align-items: center;
     border-bottom: 1px solid #4fe74f41;
+    position: relative;
 }
 .header-logo{
     font-size: 1.875rem;
@@ -60,6 +61,21 @@ body{
     color: rgb(79, 231, 79);
     opacity: 1;
 }
+.languales{
+    position: absolute;
+    right: -70px;
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    border: 1px solid #4fe74f41;
+    border-radius: 5px;
+    background: none;
+}
+.languales a{
+    color: #4fe74f41;
+    text-decoration: none;
+    padding: 9px;
+}
 /*intro*/
 #intro{
     padding-top: 100px;
@@ -72,7 +88,7 @@ body{
 ===========*/
 #home{
     margin-left: 20px;
-    width: 430px;
+    width: 450px;
     height: 1010px;
 }
 h1.home-in{
@@ -231,8 +247,12 @@ footer{
     padding: 30px 0;
     text-align: center;
 }
-
 /*MEDIA*/
+@media (max-device-width: 1359px){
+    .languales{
+        right: 500px;
+    }
+}
 @media (max-device-width: 930px){
     html{
         font-size: 22px;
@@ -241,7 +261,7 @@ footer{
         background-position: 0 ;
     }
     #home{
-        width: 500px;
+        width: 550px;
     }
     h1.home-in{
         padding-top: 240px;
@@ -283,7 +303,6 @@ footer{
     .burger-item:after{
         top: -12px;
     }
-
     /* #d0ffd0 */
     .nav{
         display: none;
@@ -302,9 +321,11 @@ footer{
     .contacts-item:first-of-type{
         margin-top: 50px;
     }
-
+    /* menu */
+    .languales{
+        right: 130px;
+    }    
 }
-
 @media (max-device-width: 425px){
      /* about */
     #fusion{
@@ -318,5 +339,4 @@ footer{
         font-size: 20px;
         padding: 0 40px;
     }
-    /* CONTACTS */
 }
