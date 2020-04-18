@@ -74,7 +74,7 @@ body{
 .languales a{
     color: #4fe74f41;
     text-decoration: none;
-    padding: 9px;
+    padding: 6px;
 }
 /*intro*/
 #intro{
@@ -257,6 +257,13 @@ footer{
     html{
         font-size: 22px;
     }
+    #intro{
+        padding-top: 100px;
+        width: 100%;
+        background: url("/img/teapot-bg.jpg") no-repeat;
+        background-size: cover;
+        background-position: top left;
+    
     .languales{
         right: 130px;
         border-color: #d0ffd0;
@@ -273,10 +280,11 @@ footer{
     }
     h1.home-in{
         padding-top: 240px;
+        border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;
     }
     .burger{
         display: block !important;
-        background-color: #3a5e3a;
+        background-color: none;
         padding: 0;
         cursor: pointer;
         border: 1px solid #d0ffd0;
