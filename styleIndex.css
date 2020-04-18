@@ -40,7 +40,7 @@ body{
 }
 /*navigation*/
 .burger{
-    display: none;
+    display: none !important;
 }
 .nav{
     display: flex;
