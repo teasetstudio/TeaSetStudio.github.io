@@ -273,13 +273,13 @@ footer{
         width: 550px;}
     h1.home-in{
         padding-top: 240px;
-        border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;}
+        border-bottom: 1px solid #4fe74f41}
     .burger{
-        display: block !important;
-        background-color: transparent !important;
+        display: block;
+        background-color: transparent;
         padding: 0;
         cursor: pointer;
-        border: 1px solid #8fc78f;
+        border: 1px solid #4fe74f41;
         border-radius: 10px;}
     .burger:hover{
         background-color: #3a5e3a;}
