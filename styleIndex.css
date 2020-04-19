@@ -284,7 +284,7 @@ footer{
         border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;}
     .burger{
         display: block !important;
-        background-color: none !important;
+        background-color: transparent !important;
         padding: 0;
         cursor: pointer;
         border: 1px solid #8fc78f;
