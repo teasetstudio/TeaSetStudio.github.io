@@ -257,11 +257,15 @@ footer{
         background: none;}
     .languales a{
         color: #4fe74f41;}
+    .header-inner{
+        z-index: 5;
+        border-bottom: 1px solid #4fe74f41 !important;} 
 @media (max-device-width: 930px){
     html{
         font-size: 22px;}
     .languales{
         right: 130px;
+        border: 1px solid #4fe74f41;
         background: none;
         height: 44px;
         width: 44px;}
@@ -269,17 +273,20 @@ footer{
         color: #fff;
         font-size: 20px;
         padding: 7px;}
+    .header-inner{
+        z-index: 5;
+        border-bottom: 1px solid #4fe74f41 !important;}    
     #home{
         width: 550px;}
     h1.home-in{
         padding-top: 240px;
-        border-bottom: 1px solid #4fe74f41}
+        border-bottom: 1px solid rgba(79, 231, 79, 0.253) !important;}
     .burger{
         display: block !important;
-        background-color: transparent;
+        background-color: transparent !important;
         padding: 0;
         cursor: pointer;
-        border: 1px solid #4fe74f41;
+        border: 1px solid #8fc78f;
         border-radius: 10px;}
     .burger:hover{
         background-color: #3a5e3a;}
