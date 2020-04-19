@@ -253,9 +253,14 @@ footer{
     /* menu */
     .languales{
         right: 500px;
-        border-color: #d0ffd0;}
+        border: 1px solid #4fe74f41;
+        background: none;
+        height: 44px;
+        width: 44px;}
     .languales a{
-        color: #fff;}    
+        color: #4fe74f41;
+        font-size: 20px;
+        padding: 7px;}
     .header-inner{
         z-index: 5;
         border-bottom: 1px solid #4fe74f41 !important;} 
@@ -265,12 +270,12 @@ footer{
         font-size: 22px;}
     .languales{
         right: 130px;
-        border: 1px solid #4fe74f41;
+        border: 1px solid #8fc78f;
         background: none;
         height: 44px;
         width: 44px;}
     .languales a{
-        color: #4fe74f41;
+        color: #fff;
         font-size: 20px;
         padding: 7px;}
     .header-inner{
@@ -286,7 +291,7 @@ footer{
         background-color: none !important;
         padding: 0;
         cursor: pointer;
-        border: 1px solid #d0ffd0;
+        border: 1px solid #8fc78f;
         border-radius: 10px;}
     .burger:hover{
         background-color: #3a5e3a;}
