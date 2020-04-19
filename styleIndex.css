@@ -265,11 +265,12 @@ footer{
         font-size: 22px;}
     .languales{
         right: 130px;
-        border-color: #d0ffd0;
+        border: 1px solid #4fe74f41;
+        background: none;
         height: 44px;
         width: 44px;}
     .languales a{
-        color: #fff;
+        color: #4fe74f41;
         font-size: 20px;
         padding: 7px;}
     .header-inner{
