@@ -31,6 +31,7 @@ body{
     align-items: center;
     border-bottom: 1px solid #4fe74f41 !important;
     position: relative;
+    z-index: 5;
 }
 .header-logo{
     font-size: 1.875rem;
@@ -251,7 +252,14 @@ footer{
 @media (max-device-width: 1359px){
     /* menu */
     .languales{
-        right: 500px;}
+        right: 500px;
+        border-color: #d0ffd0;}
+    .languales a{
+        color: #fff;}    
+    .header-inner{
+        z-index: 5;
+        border-bottom: 1px solid #4fe74f41 !important;} 
+    
 @media (max-device-width: 930px){
     html{
         font-size: 22px;}
@@ -265,6 +273,7 @@ footer{
         font-size: 20px;
         padding: 7px;}
     .header-inner{
+        z-index: 5;
         border-bottom: 1px solid #4fe74f41 !important;}    
     #home{
         width: 550px;}
