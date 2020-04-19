@@ -72,6 +72,10 @@ body{
     border-radius: 5px;
     background: none;
 }
+.languales p{
+    margin: 0;
+    padding: 0;
+}
 .languales a{
     color: #4fe74f41;
     text-decoration: none;
@@ -260,7 +264,6 @@ footer{
     .header-inner{
         z-index: 5;
         border-bottom: 1px solid #4fe74f41 !important;} 
-    
 @media (max-device-width: 930px){
     html{
         font-size: 22px;}
