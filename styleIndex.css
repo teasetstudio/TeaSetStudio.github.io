@@ -275,7 +275,7 @@ footer{
         padding-top: 240px;
         border-bottom: 1px solid #4fe74f41}
     .burger{
-        display: block;
+        display: block !important;
         background-color: transparent;
         padding: 0;
         cursor: pointer;
