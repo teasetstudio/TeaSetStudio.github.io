@@ -276,6 +276,7 @@ footer{
     a#languages{
         right: 510px;
     }
+
 }
 
 @media (max-device-width: 930px){
@@ -286,7 +287,7 @@ footer{
     /* HEADER 
     =========== */
     .header-inner{
-        border-width: 2px;
+        border-width: 20px;
     }
     a#languages{
         color: #fff;
@@ -364,7 +365,6 @@ footer{
 
     /* HEADER
     ========== */
-
     .header-logo{
         font-size: 2rem;
     }
