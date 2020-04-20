@@ -34,8 +34,7 @@ body{
     position: relative;
     padding: 20px 0px;
     align-items: center;
-    /* -moz-border-bottom: 1px solid #4fe74f41; */
-    border-bottom: 1px solid #4fe74f41;
+    border-bottom: 1px solid rgba(79, 231, 79, 0.255);
 }
 .header-logo{
     color: #fff;
@@ -69,7 +68,6 @@ a#languages{
     position: absolute;
     right: -70px;
     color: rgba(79, 231, 79, 0.255);
-    /* -webkit-text-decoration: none; */
     text-decoration: none;
     padding: 7px 9px 8px;
     border: 1px solid rgba(79, 231, 79, 0.255);
@@ -77,7 +75,7 @@ a#languages{
     transition: all .3s linear;
 }
 a#languages:hover{
-    background-color: #4fe74f1a;
+    background-color: rgba(79, 231, 79, 0.102);
 }
 .burger{
     display: none !important;
@@ -109,7 +107,7 @@ h1.home-in{
     word-spacing: 100px;
     text-indent: 70px;
     font-size: 3.44rem;
-    border-bottom: 1px solid #4fe74f41;
+    border-bottom: 1px solid rgba(79, 231, 79, 0.255);
 }
 p.home-in{
     word-spacing: 6px;
@@ -292,7 +290,8 @@ footer{
         padding: 0;
         cursor: pointer;
         border: 2px solid rgba(79, 231, 79, 0.255);
-        /* chrome on my TABLET DO NOT READ hexadecimal colors with alpha channel,
+        /* chrome, ,mozzila on my TABLET DO NOT READ hexadecimal colors with
+        alpha channel (work in Opera),
         DONT USE HEXADEMICAL SYSTEM WITH OPACITY */
         border-radius: 10px;
         margin-right: 30px;
