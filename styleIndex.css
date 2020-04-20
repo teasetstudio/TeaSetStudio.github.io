@@ -34,6 +34,7 @@ body{
     position: relative;
     padding: 20px 0px;
     align-items: center;
+    -moz-border-bottom: 1px solid #4fe74f41;
     border-bottom: 1px solid #4fe74f41;
 }
 .header-logo{
