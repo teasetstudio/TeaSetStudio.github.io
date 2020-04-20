@@ -74,6 +74,7 @@ a#languages{
     padding: 7px 9px 8px;
     border: 1px solid #4fe74f41;
     border-radius: 5px;
+    -webkit-transition: all .3s linear;
     transition: all .3s linear;
 }
 a#languages:hover{
@@ -283,6 +284,7 @@ footer{
         right: 145px;
         color: #ffffffc0;
         font-size: 22px;
+        border: 2px solid #4fe74f41;
     }
     .nav{
         display: none !important;
