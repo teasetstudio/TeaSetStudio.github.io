@@ -270,7 +270,7 @@ footer{
 /* MEDIA
 =========== */
 @media (max-device-width: 1359px){
-    a.languages{
+    a#languages{
         right: 510px;
     }
 }
