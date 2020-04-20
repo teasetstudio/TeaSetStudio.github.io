@@ -304,6 +304,9 @@ footer{
     .nav{
         display: none !important;
     }
+    .burger{
+        display: block !important;
+    }
     /* .burger{
         display: block !important;
         background-color: transparent;
