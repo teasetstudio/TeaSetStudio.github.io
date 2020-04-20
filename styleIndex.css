@@ -266,13 +266,7 @@ footer{
     text-align: center;
 }
 
-/* MEDIA
-=========== */
-@media (max-device-width: 1359px){
-    a.languages{
-        right: 510px;
-    }
-}
+
 
 @media (max-device-width: 930px){
     html{
