@@ -146,11 +146,11 @@ p.video{
     padding-bottom: 50px;
     font-size: 1rem;
 }
-.uavos{
+a.uavos{
     text-decoration: none;
     color: #699e69;
 }
-.uavos:hover{
+a.uavos:hover{
     color: #e0bf75;
 }
 
