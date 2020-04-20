@@ -233,7 +233,6 @@ p.about:after{
 #contacts{
     height: 1010px;
     background-image: url('/img/city-bg.jpg');
-    -moz-background-size: cover;
     background-size: cover;
     background-position: center;
     position: relative;
