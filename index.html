@@ -35,13 +35,22 @@
                         <a class="nav-link" data-smooth="#about-anchor" href="#about-anchor">about</a>
                         <a class="nav-link" data-smooth="#contacts" href="#contacts">contacts</a>
                     </nav>
-                    <!-- LANGUAGES-->
+                    <!-- LANGUAGES -->
                     <a id="languages" href="/indexRU.html">Ru</a>
-                    <div class="burger">
-                        <div class="burger-item"></div>
-                    </div>         <!-- BURGER-->
-                </div>             <!-- HEADER INNER-->
-            </div>                 <!-- CONTAINER-->
+                    <!-- BURGER -->
+                    <div id="burger">
+                        <a href="#menu" id="toggle"><span></span></a>
+                        <div id="menu">
+                          <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#works">Our Works</a></li>
+                            <li><a href="#about-anchor">About</a></li>
+                            <li><a href="#contacts">Contact</a></li>
+                          </ul>
+                        </div>
+                    </div>         <!-- BURGER -->
+                </div>             <!-- HEADER INNER -->
+            </div>                 <!-- CONTAINER -->
         </header>
 <!-- INTRO -->
         <main id="intro">
@@ -152,7 +161,7 @@
                     
                 </section>                  <!--works-->
             </div>                      <!-- container-->
-        </main>                    <!--INTRO-->
+        </main>                    <!--INTRO -->
 <!-- ABOUT -->
         <section id="about">
             <div id="about-anchor"></div>
@@ -252,10 +261,13 @@
             © TeaSet Studio. 2018-2020
         </footer>
              
-        <!-- Bootstrap 4 -->
+        <!-- BOOTSTRAP 4 -->
         <script src="/js/bootstrap.min.js"></script>
         
-        <!-- Smooth scroll -->
+        <!-- SMOOTH SCROLL -->
         <script src="/js/smoothScroll.js"></script>
+
+        <!-- BURGER MENU -->
+        <script src="/js/burgerMenu.js"></script>
     </body>
 </html>
