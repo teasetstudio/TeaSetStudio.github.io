@@ -268,13 +268,13 @@ footer{
 
 /* MEDIA
 =========== */
-@media (max-width: 1359px){
+@media (max-device-width: 1359px){
     a.languages{
         right: 510px;
     }
 }
 
-@media (max-width: 930px){
+@media (max-device-width: 930px){
     html{
         font-size: 22px;
     }
@@ -351,7 +351,7 @@ footer{
     }
 }
 
-@media (max-width: 425px){
+@media (max-device-width: 425px){
 
     /* HEADER
     ========== */
