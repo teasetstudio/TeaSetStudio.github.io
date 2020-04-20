@@ -61,7 +61,7 @@ body{
     margin-left: 0;
 }
 .nav-link:hover{
-    color: rgb(79, 231, 79);
+    color: #4fe74f;
     opacity: 1;
 }
 a.languages{
@@ -105,7 +105,7 @@ h1.home-in{
     word-spacing: 100px;
     text-indent: 70px;
     font-size: 3.44rem;
-    border-bottom: 1px solid rgba(79, 231, 79, 0.253);
+    border-bottom: 1px solid #4fe74f41;
 }
 p.home-in{
     word-spacing: 6px;
@@ -257,7 +257,7 @@ p.about:after{
     font-size: .9rem;
 }
 footer{
-    background-color: rgb(19, 22, 19);
+    background-color: #131613;
     padding: 30px 0;
     text-align: center;
 }
