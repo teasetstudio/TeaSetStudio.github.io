@@ -281,6 +281,7 @@ footer{
     a#languages{
         color: #fff;
         right: 145px;
+        font-size: 1rem;
         border-width: 2px;
     }
     .nav{
