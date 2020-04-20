@@ -72,7 +72,6 @@ a.languales{
     padding: 7px 9px 8px;
     border: 1px solid #4fe74f41;
     border-radius: 5px;
-    -webkit-transition: all .3s linear;
     transition: all .3s linear;
 }
 a.languales:hover{
