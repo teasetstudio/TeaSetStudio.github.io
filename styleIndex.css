@@ -277,6 +277,12 @@ footer{
     html{
         font-size: 22px;
     }
+        /* HEADER
+    ========== */
+    .header-inner{
+        border-width: 2px;
+    }
+
     a.languages{
         right: 145px;
         color: #ffffffc0;
@@ -290,7 +296,7 @@ footer{
         background-color: transparent;
         padding: 0;
         cursor: pointer;
-        border: 1px solid #4fe74f41;
+        border: 2px solid #4fe74f41;
         border-radius: 10px;
         margin-right: 30px;
         transition: all .3s linear;
@@ -302,6 +308,7 @@ footer{
         width: 50px;
         height: 3px;
         margin: 25px 10px;
+        -webkit-background-color: #ffffffc0;
         background-color: #ffffffc0;
         position: relative;
     }
@@ -353,7 +360,7 @@ footer{
     /* HEADER
     ========== */
     .header-inner{
-        border-bottom: 2px solid #4fe74f41;
+        border-width: 2px;
     }
     .header-logo{
         font-size: 2.5rem;
@@ -365,7 +372,7 @@ footer{
     /* HOME
     ========== */
     h1.home-in{
-        border-bottom: 2px solid #4fe74f41;
+        border-width: 2px;
     }
     
     p.home-in{
