@@ -34,7 +34,7 @@ body{
     position: relative;
     padding: 20px 0px;
     align-items: center;
-    -moz-border-bottom: 1px solid #4fe74f41;
+    /* -moz-border-bottom: 1px solid #4fe74f41; */
     border-bottom: 1px solid #4fe74f41;
 }
 .header-logo{
@@ -69,7 +69,7 @@ a#languages{
     position: absolute;
     right: -70px;
     color: rgba(79, 231, 79, 0.255);
-    -webkit-text-decoration: none;
+    /* -webkit-text-decoration: none; */
     text-decoration: none;
     padding: 7px 9px 8px;
     border: 1px solid rgba(79, 231, 79, 0.255);
@@ -80,7 +80,7 @@ a#languages:hover{
     background-color: #4fe74f1a;
 }
 .burger{
-    display: none ;
+    display: none !important;
 }
 
 /* INTRO
@@ -109,7 +109,6 @@ h1.home-in{
     word-spacing: 100px;
     text-indent: 70px;
     font-size: 3.44rem;
-    /* -moz-border-bottom: 3px solid #4fe74f41; */
     border-bottom: 1px solid #4fe74f41;
 }
 p.home-in{
@@ -154,7 +153,6 @@ p.video{
     color: #699e69;
 }
 .uavos:hover{
-    text-decoration: none;
     color: #e0bf75;
 }
 
@@ -281,10 +279,8 @@ footer{
     }
     a#languages{
         right: 145px;
-        color: #d1d1d1;
         font-size: 22px;
-        border: 2px solid rgba(79, 231, 79, 0.255);
-        opacity: 1;
+        border-width: 2px;
     }
     .nav{
         display: none !important;
