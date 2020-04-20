@@ -353,8 +353,8 @@ footer{
     /* HEADER
     ========== */
     .header-inner{
-        -moz-border-bottom: 1px solid #4fe74f41;
-        border-bottom: 1px solid #4fe74f41;
+        -moz-border-bottom: 2px solid #4fe74f41;
+        border-bottom: 2px solid #4fe74f41;
     }
 
     /* HOME
