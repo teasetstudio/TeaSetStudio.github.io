@@ -267,13 +267,13 @@ footer{
 
 /* MEDIA
 =========== */
-@media (max-device-width: 1359px){
+@media screen and (max-device-width: 1359px){
     a.languages{
         right: 510px;
     }
 }
 
-@media (max-device-width: 930px){
+@media screen and (max-device-width: 930px){
     html{
         font-size: 22px;
     }
@@ -287,7 +287,6 @@ footer{
         display: none !important;
     }
     .burger{
-        -webkit-display: block !important;
         display: block !important;
         background-color: transparent;
         padding: 0;
@@ -351,7 +350,7 @@ footer{
     }
 }
 
-@media (max-device-width: 425px){
+@media screen and (max-device-width: 425px){
 
     /* HEADER
     ========== */
