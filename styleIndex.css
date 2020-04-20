@@ -68,6 +68,9 @@ a#languages{
     position: absolute;
     right: -70px;
     color: rgba(79, 231, 79, 0.255);
+    /* chrome, ,mozzila on my TABLET DO NOT READ hexadecimal colors with
+    alpha channel (work in Opera),
+    DONT USE HEXADEMICAL SYSTEM WITH OPACITY */
     text-decoration: none;
     padding: 7px 9px 8px;
     border: 1px solid rgba(79, 231, 79, 0.255);
@@ -208,7 +211,7 @@ p.about:after,
     content: "";
     height: 1px;
     width: 850px;
-    background: linear-gradient(to right, transparent,#576b57b6, transparent);
+    background: linear-gradient(to right, transparent,rgba(87, 107, 87, 0.714), transparent);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -290,9 +293,6 @@ footer{
         padding: 0;
         cursor: pointer;
         border: 2px solid rgba(79, 231, 79, 0.255);
-        /* chrome, ,mozzila on my TABLET DO NOT READ hexadecimal colors with
-        alpha channel (work in Opera),
-        DONT USE HEXADEMICAL SYSTEM WITH OPACITY */
         border-radius: 10px;
         margin-right: 30px;
         transition: all .3s linear;
