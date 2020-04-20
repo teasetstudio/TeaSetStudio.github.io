@@ -65,7 +65,7 @@ body{
     color: #4fe74f;
     opacity: 1;
 }
-a.languages{
+a#languages{
     position: absolute;
     right: -70px;
     color: #4fe74f41;
@@ -76,7 +76,7 @@ a.languages{
     border-radius: 5px;
     transition: all .3s linear;
 }
-a.languages:hover{
+a#languages:hover{
     background-color: #4fe74f1a;
 }
 .burger{
@@ -279,9 +279,9 @@ footer{
     html{
         font-size: 22px;
     }
-    a.languages{
+    a#languages{
         right: 145px;
-        color: #ffffffc0 !important;
+        color: #ffffffc0;
         font-size: 22px;
     }
     .nav{
@@ -304,9 +304,7 @@ footer{
         width: 50px;
         height: 3px;
         margin: 25px 10px;
-        -webkit-background-color: #ffffffc0;
-        -moz-background-color: #ffffffc0;
-        background-color: #ffffffc0 !important;
+        background-color: #ffffffc0;
         position: relative;
     }
     .burger-item:before,
@@ -362,7 +360,7 @@ footer{
     .header-logo{
         font-size: 2rem;
     }
-    a.languages{
+    a#languages{
         font-size: 28px;
     }
 
