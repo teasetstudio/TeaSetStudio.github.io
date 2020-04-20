@@ -281,9 +281,9 @@ footer{
     }
     a#languages{
         right: 145px;
-        color: #ffffffc0;
+        color: #d1d1d1;
         font-size: 22px;
-        border: 2px solid rgb(79, 231, 79);
+        border: 2px solid rgba(79, 231, 79, 0.255);
         opacity: 1;
     }
     .nav{
@@ -306,7 +306,7 @@ footer{
         width: 50px;
         height: 3px;
         margin: 25px 10px;
-        background-color: #ffffffc0;
+        background-color: #d1d1d1;
         position: relative;
     }
     .burger-item:before,
@@ -314,7 +314,7 @@ footer{
         content: "";
         position: absolute;
         left: 0;
-        background-color: #ffffffc0;
+        background-color: #d1d1d1;
         width: 100%;
         height: 100%;
     }
