@@ -277,11 +277,6 @@ footer{
     html{
         font-size: 22px;
     }
-        /* HEADER
-    ========== */
-    .header-inner{
-        border-width: 2px;
-    }
 
     a.languages{
         right: 145px;
@@ -292,6 +287,7 @@ footer{
         display: none !important;
     }
     .burger{
+        -webkit-display: block !important;
         display: block !important;
         background-color: transparent;
         padding: 0;
