@@ -69,6 +69,7 @@ a.languages{
     position: absolute;
     right: -70px;
     color: #4fe74f41;
+    -webkit-text-decoration: none;
     text-decoration: none;
     padding: 7px 9px 8px;
     border: 1px solid #4fe74f41;
@@ -79,7 +80,7 @@ a.languages:hover{
     background-color: #4fe74f1a;
 }
 .burger{
-    display: none !important;
+    display: none ;
 }
 
 /* INTRO
