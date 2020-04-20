@@ -209,7 +209,7 @@ p.about:after,
 .gradient-border:before,
 .gradient-border:after{
     content: "";
-    height: 1px;
+    height: 2px;
     width: 850px;
     background: linear-gradient(to right, transparent,rgba(87, 107, 87, 0.714), transparent);
     position: absolute;
