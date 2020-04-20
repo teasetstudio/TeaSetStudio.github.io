@@ -87,6 +87,7 @@ a.languages:hover{
 =========== */
 #intro{
     padding-top: 100px;
+    
     width: 100%;
     background: url("/img/Teapot_low.jpg") no-repeat;
     -moz-background-size: cover;
@@ -364,6 +365,12 @@ footer{
     a.languages{
         font-size: 28px;
     }
+    /* INTRO
+=========== */
+#intro{
+   
+    
+    width: 100vw;}
 
     /* HOME
     ========== */
