@@ -110,7 +110,7 @@ h1.home-in{
     text-indent: 70px;
     font-size: 3.44rem;
     /* -moz-border-bottom: 3px solid #4fe74f41; */
-    border-bottom: 1px solid rgba(79, 231, 79, 0.255);
+    border-bottom: 1px solid #4fe74f41;
 }
 p.home-in{
     word-spacing: 6px;
