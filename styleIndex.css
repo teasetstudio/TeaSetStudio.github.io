@@ -69,8 +69,10 @@ a#languages{
     right: -70px;
     top: 50%;
     transform: translateY(-50%);
+    /* chrome on my tablet (mb there is old version) do not centered Y axis
+    without this "top" & "transition" */
     color: rgba(79, 231, 79, 0.255);
-    /* chrome, ,mozzila on my TABLET DO NOT READ hexadecimal colors with
+    /* chrome, ,mozilla on my TABLET DO NOT READ hexadecimal colors with
     alpha channel (work in Opera),
     DONT USE HEXADEMICAL SYSTEM WITH OPACITY */
     text-decoration: none;
