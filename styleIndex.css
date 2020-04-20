@@ -87,6 +87,7 @@ a.languages:hover{
     padding-top: 100px;
     width: 100%;
     background: url("/img/Teapot_low.jpg") no-repeat;
+    -moz-background-size: cover;
     background-size: cover;
     background-position: top left;
 }
@@ -232,6 +233,7 @@ p.about:after{
 #contacts{
     height: 1010px;
     background-image: url('/img/city-bg.jpg');
+    -moz-background-size: cover;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -365,32 +367,5 @@ footer{
     p.item{
         font-size: 20px;
         padding: 0 40px;
-    }
-
-
-    /* HOME
-    ========== */
-    #home{
-        width: 550px;
-    }
-    h1.home-in{
-        padding-top: 240px;
-    }
-
-    /*CONTACTS
-    ========== */
-    #contacts{
-        height: 700px;
-    }
-    h2.contacts{
-        padding: 70px 0 50px;
-    }
-    .contacts-item{
-        font-size: 1.6rem;
-        text-align: center;
-        margin: 60px 0;
-    }
-    .contacts-item:first-of-type{
-        margin-top: 50px;
     }
 }
