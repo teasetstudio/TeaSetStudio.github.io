@@ -355,6 +355,12 @@ footer{
     .header-inner{
         border-bottom: 2px solid #4fe74f41;
     }
+    .header-logo{
+        font-size: 2.5rem;
+    }
+    a.languages{
+        font-size: 28px;
+    }
 
     /* HOME
     ========== */
