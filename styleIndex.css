@@ -279,7 +279,6 @@ footer{
     html{
         font-size: 22px;
     }
-
     a.languages{
         right: 145px;
         color: #ffffffc0;
@@ -306,6 +305,7 @@ footer{
         height: 3px;
         margin: 25px 10px;
         -webkit-background-color: #ffffffc0;
+        -moz-background-color: #ffffffc0;
         background-color: #ffffffc0;
         position: relative;
     }
