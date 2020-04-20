@@ -282,6 +282,12 @@ footer{
     html{
         font-size: 22px;
     }
+
+    /* HEADER 
+    =========== */
+    .header-inner{
+        border-width: 2px;
+    }
     a#languages{
         color: #fff;
         right: 145px;
@@ -358,14 +364,13 @@ footer{
 
     /* HEADER
     ========== */
-    .header-inner{
-        border-width: 2px;
-    }
+
     .header-logo{
         font-size: 2rem;
     }
     a#languages{
         font-size: 1.2rem;
+        border-width: 2px;
     }
 
     /* HOME
