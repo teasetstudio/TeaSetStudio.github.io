@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/index.html">TeaSet Studio</a>
                     </div>
                     <nav class="nav">
-                        <a class="nav-link" data-smooth="#intro" href="index.html#intro">home</a>
+                        <a class="nav-link" data-smooth="#intro" href="#intro">home</a>
                         <a class="nav-link" data-smooth="#works" href="#works">our works</a>
                         <a class="nav-link" data-smooth="#about-anchor" href="#about-anchor">about</a>
                         <a class="nav-link" data-smooth="#contacts" href="#contacts">contacts</a>
@@ -38,9 +38,17 @@
                     <!-- LANGUAGES -->
                     <a id="languages" href="ru.html">Ru</a>
                     <!-- BURGER -->
-                    <div class="burger">
-                        <div class="burger-item"></div>
-                    </div>         <!-- BURGER-->
+                    <div id="burger">
+                        <a id="toggle" href="#menu"><span></span></a>                        
+                        <div id="menu">
+                            <ul>
+                              <li><a href="#intro">Home</a></li>
+                              <li><a href="#works">Works</a></li>
+                              <li><a href="#about-anchor">About</a></li>
+                              <li><a href="#contacts">Contacts</a></li>
+                            </ul>       
+                        </div>                        
+                    </div>         <!-- BURGER -->
                 </div>             <!-- HEADER INNER -->
             </div>                 <!-- CONTAINER -->
         </header>
@@ -258,5 +266,8 @@
         
         <!-- SMOOTH SCROLL -->
         <script src="/js/smoothScroll.js"></script>
+
+        <!-- BURGER MENU -->
+        <script src="/js/burgerMenu.js"></script>
 
 </html>
