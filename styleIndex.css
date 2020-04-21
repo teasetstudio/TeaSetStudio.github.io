@@ -42,6 +42,9 @@ body{
     align-items: center;
     border-bottom: 1px solid rgba(79, 231, 79, 0.255);
 }
+.header:hover .header-inner{
+    border: 0;
+}
 .header-logo{
     color: #fff;
     font-size: 1.875rem;
@@ -344,14 +347,10 @@ footer{
       opacity: 1;
       visibility: visible;
     }
-    
-    /* menu appearance*/
-
-   
-
+    /* menu appearance */
     #menu {      
       position: absolute;
-      top: 80px;
+      top: 100px;
       right: 0px;      
       color: #999;
       width: 600px;
@@ -364,8 +363,7 @@ footer{
       visibility: hidden;
       transition: opacity .4s;
       border-radius: 10px;
-    }
-    
+    }    
     #menu:after {
       position: absolute;
       top: -30px;
@@ -374,7 +372,7 @@ footer{
       display: block !important;
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
-      border-bottom: 30px solid rgba(52, 68, 52, 0.96);
+      border-bottom: 30.5px solid rgba(52, 68, 52, 0.96);
     }
  
     
