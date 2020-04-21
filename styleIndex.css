@@ -373,9 +373,7 @@ footer{
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
       border-bottom: 30.5px solid rgba(52, 68, 52, 0.96);
-    }
- 
-    
+    }   
     ul, li.burger a {
       font-size: 3.5rem;
       list-style: none;
@@ -407,9 +405,8 @@ footer{
         border: 0;
     }
     .header-inner{
-        border-width: 2px;
-    }
-    
+        border-bottom: 2px solid rgba(79, 231, 79, 0.255);
+    }    
     a#languages{
         color: #fff;
         right: 145px;
