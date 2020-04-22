@@ -76,10 +76,6 @@ body{
 a#languages{
     position: absolute;
     right: -60px;
-    top: 50%;
-    transform: translateY(-51%);
-    /* chrome on my tablet (mb there is old version) do not centered Y axis
-    without this "top" & "transition" */
     color: rgba(79, 231, 79, 0.255);
     /* chrome, ,mozilla on my TABLET DO NOT READ hexadecimal colors with
     alpha channel (work in Opera),
