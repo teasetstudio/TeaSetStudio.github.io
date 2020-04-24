@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vince Farm</title>
+        <link href="css/vince-style.css" rel="stylesheet">
+        <link href="img/reGear.png" rel="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        
+    </head>
+    <body>
+
+        <!-- SVG Sprite (isn't used yet) -->
+        <svg style="display: none;">
+            <symbol id="user-profile" viewBox="-42 0 512 512.002">
+                <path d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 
+23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-
+36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 
+0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 
+                12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"/>
+                <path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-
+11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-
+30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-
+13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 
+0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 
+4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 
+5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-
+26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-
+8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-
+28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 
+19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-
+3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 
+8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-
+7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-
+                10.316406-.351562-20.492187-1.035156-30.242187zm0 0"/>
+            </symbol>
+        </svg>
+
+        <!-- HEADER -->
+        <header>
+            <div class="container">
+                <div class="header-inner">
+                   
+                    <a class="nav-brand" href="index.html">
+                        <img height="50" width="50" src="img/reGear.png" alt="">
+                        <h1>
+                            Vince
+                            <span>IT</span>
+                        </h1>
+                    </a>
+
+                    <nav class="nav-main">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#">Get started</a>
+                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#">Teams</a>
+                        <a class="nav-link" href="#">Forum</a>
+                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#">Donate</a>
+                        <a class="nav-user" href="#"><img src="img/user.png"></a>
+                    </nav>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- INTRO -->
+        <section class="intro">
+            <h1>
+                <strong>VinceIt</strong> is a free renderfarm for Blender. Try it now!
+            </h1>
+        </section>
+        <!-- ADVANTEGES -->
+        <section class="advantages">
+            <div class="container">
+                <div class="table">
+
+                    <div class="tableRow">
+                        <div class=" tableCell"><img src="img/collaborative.png"></div>
+                        <div class=" tableCell"><img src="img/free.png"></div>
+                        <div class=" tableCell"><img src="img/user-friendly.png"></div>
+                        <div class=" tableCell"><img src="img/gpu.png"></div>
+                    </div>
+                    <div class="tableRow">
+                        <div class=" tableCell">
+                            <h2>Collaborative</h2>
+                            <p>Instantly become a worker to help other users render.</p>
+                            <p>550 machines are connected on average.</p>
+                        </div>
+                        <div class=" tableCell">
+                            <h2>Free</h2>
+                            <p>Free registration.</p>
+                            <p>Free project adding.</p>
+                            <p>Free rendering.</p>
+                        </div>
+                        <div class=" tableCell">
+                            <h2>User-friendly</h2>
+                            <p>Manage your project easily on a web based admin panel.</p>
+                            <p>Real time updates on your projects.</p>
+                            <p>No need to have Blender to help render.</p>
+                        </div>
+                        <div class=" tableCell">
+                            <h2>GPU supported</h2>
+                            <p>CPU and GPU are supported.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- MAIN INFO -->
+        <main>
+            <div class="container">
+                <!-- PLATES -->
+                <section class="plates">
+
+                    <a class="pl-button" href="#">
+                        <div class="pl-diagram">
+                            <img src="img/diagramm1.png">
+                        </div>
+                        <div class="pl-content">
+                            Frames remaining
+                            <h3>31,227</h3>
+                        </div>
+                    </a>
+                    <a class="pl-button" href="#">
+                        <div class="pl-diagram">
+                            <img src="img/diagramm2.png">
+                        </div>
+                        <div class="pl-content">
+                            Active projects
+                            <h3>43</h3>
+                        </div>
+                    </a>
+                    <a class="pl-button" href="#">
+                        <div class="pl-diagram">
+                            <img src="img/diagramm3.png">
+                        </div>
+                        <div class="pl-content">
+                            Conntted clients
+                            <h3>655</h3>
+                        </div>
+                    </a>
+                    <a class="pl-button" href="#">
+                        <div class="pl-diagram">
+                            <img src="img/diagramm4.png">
+                        </div>
+                        <div class="pl-content">
+                            Processing frames
+                            <h3>586</h3>
+                        </div>
+                    </a>
+
+                </section>  <!-- PLATES -->
+
+                <!-- CENTRAL TABLE -->
+                <section class="central-table">
+                    <div class="cell-ct side-cell">
+
+                        <h3> 
+                            <span class="fa fa-database"></span>  <!-- both classes for bootstrap icon, in separate element because font is another there (sarif) -->
+                            Sheepit power
+                        </h3>
+
+                        <p class="num-big">2,716</p>
+                        computed frames per hour
+                        
+                        <p>11h29m to complete all projects</p>
+                    </div>
+                    <div class="cell-ct diagram-cell">
+                        <h3>
+                            <span class="fa fa-signal"></span>  <!-- both classes for bootstrap icon, in separate element because font is another there (sarif) -->
+                            How many month of rendering do we complete every day?
+                        </h3>
+
+                        <canvas id="myChart" width="530" height="265"></canvas>
+                        <script>
+                            var ctx = document.getElementById('myChart').getContext('2d');
+
+                            /* Global Options */
+                            Chart.defaults.global.defaultFontFamily = 'Roboto Condensed';
+                            Chart.defaults.global.elements.point.borderColor = '#00000000';
+                            Chart.defaults.global.elements.point.backgroundColor = '#00000000';
+                            Chart.defaults.global.elements.line.tension = 0.1;
+                            Chart.defaults.global.legend.display = false;
+
+                            var myChart = new Chart(ctx, {
+                                type: 'line',
+                                data:{
+                                    labels: ['Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10',
+                                    'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28',
+                                    'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08','Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17' ,
+                                    'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Apr 03', 'Apr 04', 'Apr 05', 'Apr 06', 'Apr 07', 'Apr 08', 'Apr 09', 'Apr 10', 'Apr 11',
+                                    'Apr 12', 'Apr 13', 'Apr 14', 'Apr 15', 'Apr 16', 'Apr 17', 'Apr 18', 'Apr 19', 'Apr 21'],
+                                    datasets: [{
+                                        label: 'Render time (in month)',
+                                        data: [15, 14, 6, 7, 10, 9, 8, 8, 7, 10, 11, 7, 3, 3, 5, 6, 7, 5, 9, 8,
+                                        5, 2, 1, 4, 5, 8, 7, 8, 9, 7, 11, 4, 6, 7, 10, 9, 11, 12, 11, 12,
+                                        13, 12, 12, 10, 9, 6, 7, 5, 6, 8, 5, 5, 3, 4, 7, 8, 7, 8, 9, 7,
+                                        11, 4, 6, 7, 10, 6, 8, 8, 7, 10, 11, 7, 3, 3, 5, 6, 7, 5, 9, 13,
+                                        5, 3, 3, 4, 5, 8, 7, 8, 9, 13],
+                                        backgroundColor: [
+                                            'rgb(224, 109, 88, .5)'
+                                           
+                                        ],
+                                        borderColor: [
+                                            'rgb(224, 109, 88)'
+                                        ],
+                                        borderWidth:2,
+
+                                        hoverBorderWidth:3,
+                                        hoverBorderColor:'#555'
+                                        
+                                    }]
+                                },
+                                options: {
+                                    title:{
+                                        display:false
+                                    },
+                                    legend:{
+                                        display:false,
+                                        labels:{
+                                            fontColor:'red'
+                                        }
+
+                                    },
+                                    layout:{
+                                        padding:{
+                                            left:0,
+                                            right:0,
+                                            bottom:5,
+                                            top:20
+                                        }
+                                    },
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero: true,
+                                                suggestedMax: 20,
+                                                maxTicksLimit: 5,
+                                                fontFamily:'Roboto Condensed',
+                                                fontColor: 'rgb(154, 178, 204)'
+                                            }
+                                        }],
+                                        xAxes: [{
+                                            ticks: {
+                                                beginAtZero: true,
+                                                maxTicksLimit: 8,
+                                                fontFamily:'Roboto Condensed',
+                                                fontColor: 'rgb(154, 178, 204)',
+                                                maxRotation: 0 
+                                            },
+                                            gridLines:{
+                                                display:false,
+                                            }
+                                        }]
+                                    },
+                                    tooltips:{
+                                        displayColors:false
+                                    }
+                                },
+                                
+                            });
+                        </script>
+
+                       
+                    </div>
+                    <div class="cell-ct side-cell">
+                        <h3>
+                            <span class="fa fa-clock-o"></span>  <!-- both classes for bootstrap icon, in separate element because font is another there (sarif) -->
+                            History
+                        </h3>
+                        
+                        <p class="num-big">125,933,575</p>
+                        total frames rendered
+                        
+                        <p>239,879 computed projects</p>
+                    </div>
+                </section>
+
+                <div class="news-header">
+                    <h2>latest news</h2>
+                </div>
+
+            </div>   <!-- container -->
+        </main>
+
+        <section class="news">
+            <div class="container">
+                <div class="news-inner">                    
+                        <a href="https://www.blender.org/download/releases/2-82/" target="_blank" class="news-block">
+                            <article> <!-- "article" - just for seaching systems -->
+                                <img src="img/blender282_splash.jpg">
+                                <h2>Blender 2.82 available!</h2>
+                                <p>The Blender Foundation released the 2.82 version of Blender today and it's
+                                already available on SheepIt Render Farm. This version brings a lot of c...</p>
+                            </article>
+                        </a>
+
+                        <a href="https://www.blender.org/press/blender-by-the-numbers-2019/?utm_source=www-homepage" target="_blank" class="news-block">
+                            <article> <!-- "article" - just for seaching systems -->
+                                <img src="img/blender_numbers.jpg">
+                                <h2>Blender by the Numbers - 2019</h2>
+                                <p>A collection of facts and figures about the Blender projects, using data up to
+                                the end of 2019 ...</p>
+                            </article>
+                        </a>
+
+                        <a href="https://conference.blender.org/2020-la/" target="_blank" class="news-block">
+                            <article> <!-- "article" - just for seaching systems -->
+                                <img src="img/blender_conf_2019.jpg">
+                                <h2>Blender Conf rewards!</h2>
+                                <p>Even though we are not at the Blender Conference this year, we still
+                                want to celebrate it! During the Blender Conf, October 24th 9AM to October 26t...</p>
+                            </article>
+                        </a>
+
+                        <a href="https://teasetstudio.github.io/" target="_blank" class="news-block">
+                            <article> <!-- "article" - just for seaching systems -->
+                                <img src="img/patreon.jpg">
+                                <h2>You can support us on Patreon</h2>
+                                <p>A lot of people are asking how they can support us. The simplest way is to share
+                                your machine. If you want to also support us financially you can d...</p>
+                            </article>
+                        </a>
+                    
+                </div>  <!-- news inner -->
+            </div>      <!-- container -->
+        </section>
+
+        <footer>
+            <div class="container footer-inner">
+
+                    <div class="footer-cell">
+                        <h5>Latest projects</h5>
+                        <div class="item-project">
+                            <a href="#"><img src="img/RageInTheCage.png"></a>
+                            <div>
+                                SPIRIT 102
+                                <p>Sent 3m ago</p>
+                            </div>
+                        </div>
+
+                        <div class="item-project">
+                            <a href="#"><img src="img/RageInTheCage.png"></a>
+                            <div>
+                                SPIRIT 101
+                                <p>Sent 3m ago</p>
+                            </div>
+                        </div>
+
+                        <div class="item-project">
+                            <a href="#"><img src="img/MR_ABOO.png"></a>
+                            <div>
+                                black_hole_project y291
+                                <p>Sent 8m ago</p>
+                            </div>
+                        </div>
+
+                    </div>       <!-- footer-cell -->
+
+                     <div class="footer-cell">
+
+                        <div class="social-link">
+                            <h5>Follow us</h5>
+                            <div class="display-flex">
+                                <a class="social-item" href="#">
+                                    <div class="fa fa-facebook">
+                                    </div>
+                                </a>
+                                <a class="social-item" href="#">
+                                    <div class="fa fa-twitter">
+                                    </div>
+                                </a>
+                                <a class="discord" href="#">
+                                    <div class="fa">
+                                        <img src="img/discord.png" height="40px" width="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h5>Help us</h5>
+                        <p class="p-help-us">
+                        Vince It Render Farm need you to keep the service alive. Help us now!</p>
+
+                        <a class="donate" href="#">Donate</a>
+
+                    </div>       <!-- footer-cell -->
+
+                    <div class="footer-cell">
+                        <h5>Top renderers over a month</h5>
+
+                        <div class="item-project">
+                            <a href="#"><img src="img/luguina.png"></a>
+                            <div>
+                                luguina
+                                <p>Rendered 47,707 frames</p>
+                            </div>
+                        </div>
+
+                        <div class="item-project">
+                            <a href="#"><img src="img/christitze.png"></a>
+                            <div>
+                                christitze
+                                <p>Rendered 37,643 frames</p>
+                            </div>
+                        </div>
+
+                        <div class="item-project">
+                            <a href="#"><img src="img/howkj1.png"></a>
+                            <div>
+                                howkj1
+                                <p>Rendered 47,789 frames</p>
+                            </div>
+                        </div>
+
+                    </div>       <!-- footer-cell -->
+
+            </div>       <!-- conteiner footer-inner -->
+            <div class="privacy-policy">
+                2017-2020 Vince it Render Farm
+                <a href="#">Terms of use</a> |
+                <a href="#">Privacy policy</a>
+                Hosted by 
+                <a href="#">Ultra Server</a>
+            </div>
+       </footer>
+    </body>
+</html>
