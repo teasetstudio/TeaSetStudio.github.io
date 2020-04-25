@@ -413,6 +413,17 @@ footer{
         display: block;
         align-items: center;
     }
+    .menu-button{
+        display: block;
+        border: 4px double var(--main-color);
+        border-radius: 20px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 7px 13px;
+        float: right;
+    }
     .nav-link, .nav-user{
         width: 100%;
         text-align: center;
