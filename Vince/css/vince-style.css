@@ -1,3 +1,7 @@
+:root {
+    --main-color: #e06d58;
+    --cursor: not-allowed;
+  }
 body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif !important;
@@ -28,7 +32,6 @@ header{
 .nav-brand{
     display: flex;
     float: left;
-
     text-decoration: none;
 }
 .nav-brand h1{    
@@ -60,25 +63,27 @@ header{
     color: #fff;
     font-size: 15px;
     font-weight: 300;
+    cursor: var(--cursor);
 }
 .nav-user {
+    line-height: 0;
+    cursor: not-allowed;
+}
+.nav-user img{
     background-color: rgb(58, 58, 58);
     padding: 7px;
     height: 46px;
-    line-height: 0;
+    border-radius: 3px;
 }
-
-.nav-main a:hover{
-    background-color: rgb(224, 109, 88);
-    
+.nav-main a:hover, .nav-user img:hover, .nav-user:hover img{
+    background-color: var(--main-color);
 }
-
 /* INTRO
 =========== */
 .intro{
     text-align: center;
     padding: 36px 0;
-    background-color: #e06d58;
+    background-color: var(--main-color);
 }
 .intro h1{
     color: #fff;
@@ -87,47 +92,39 @@ header{
     margin: 10px 0;
     line-height: 26px;
 }
-
 /* ADVANTAGES
 =========== */
 .advantages{
     padding: 36px 0 61px;
     background-color: #3b3e43;
 }
-div.table{
-    display: table;
-    align-items: center;
+div.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
     color: #fff;
 }
-div.tableRow{
-    display: table-row;
-}
-div.tableCell{
-    width: 20%;
-    display: table-cell;
+div.item-grid{
     font-weight: 400;
 }
-.tableCell img{
+.item-grid img{
     margin: 15px auto;
 }
-.tableCell h2{
+.item-grid h2{
     font-size: 18px;
     margin: 10px 0;
 }
-.tableCell p{
+.item-grid p{
+    font-weight: 400;
     font-size: 14px;
     margin: 0;
     line-height: 20px;
 }
-
 /* MAIN INFO
-=========== */
+============= */
 main{
     padding: 36px 0 0;
-    
 }
-
 /* PLATES */
 .plates{
     display: flex;
@@ -136,6 +133,7 @@ main{
 }
 .pl-button{
     width: 23%;
+    cursor: var(--cursor);
     text-decoration: none;
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -156,9 +154,8 @@ main{
 }
 .pl-content{
     border: 1px solid #c55844;
-    background-color: #e06d58;
+    background-color: var(--main-color);
     padding: 16px;
-    
     color: #fff;
     font-size: 14px;
     line-height: 20px;
@@ -211,20 +208,20 @@ main{
 .news-header{
     position: relative;
     padding: 18px 0;
-    background-color: #e06d58;
-    width:23%;
+    background-color: var(--main-color);
+    width:260px;
     margin: 25px auto 0;
 }
 .news-header:after{   /* Down Arrow */
     position: absolute;
-      bottom: -12px;
-      right: 50%;
-      transform: translateX(50%);     
-      content: "";
-      display: block !important;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 12px solid #e06d58;
+    bottom: -12px;
+    right: 50%;
+    transform: translateX(50%);     
+    content: "";
+    display: block !important;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--main-color);   
 }
 .news-header h2{
     color: #fff;
@@ -234,8 +231,8 @@ main{
     margin: 0;
     font-weight: 600;
 }
-
-/* NEWS */
+/* NEWS 
+========== */
 .news{
     background: #eceff4;
     padding: 36px 0 70px;
@@ -271,11 +268,14 @@ main{
     color:#a1a1a1;
     padding: 15px;
 }
-
-/* FOOTER */
+/* FOOTER 
+========== */
 footer{
     background-color: rgb(43, 43, 43);
     color:#a1a1a1;
+}
+.no-allowed{
+    cursor: var(--cursor);
 }
 .footer-inner{
     display: flex;
@@ -325,7 +325,7 @@ footer{
     color: #999;
 }
 .privacy-policy a:hover{
-    color: #e06d58;
+    color: var(--main-color);
 }
 /* social link */
 .display-flex{
@@ -386,7 +386,6 @@ footer{
         width: 45%;
         margin: 10px;
     }
-
     /* CENTRAL TABLE
     =========== */
     .side-cell{
@@ -406,6 +405,29 @@ footer{
     }
 }
 @media screen and (max-width: 529px){
+    /* HEADER
+    =========== */    
+    .nav-main{
+        display: block;
+        align-items: center;
+    }
+    .nav-link, .nav-user{
+        width: 100%;
+        text-align: center;
+    }
+    /* ADVANTAGES
+    ============= */
+    div.grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: '. .' '. .' 'ic3 ic4' '. .';
+    }
+    .ic3{
+        grid-area: ic3;
+    }
+    .ic4{
+        grid-area: ic4;
+    }
     /* PLATES
     =========== */
     .plates{
@@ -417,11 +439,11 @@ footer{
     }
     /* NEWS
     =========== */
-    .news-inner{
-        justify-content: center;
+    .news-header{
+        width:220px;
     }
     .news-block{
-        width: 75%;
+        width: 90%;
         margin: 10px;
     }
     /* FOOTER
