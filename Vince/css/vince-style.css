@@ -33,7 +33,7 @@ header{
     float: left;
     text-decoration: none;
 }
-.nav-brand h1{    
+.nav-brand h2{    
     margin: 0 10px;
     /*text*/
     color: #fff;
@@ -43,7 +43,7 @@ header{
     word-spacing: -6px;
     text-transform: uppercase;
 }
-.nav-brand h1 span{
+.nav-brand h2 span{
     font-weight: 300;
 }
 .nav-main{
