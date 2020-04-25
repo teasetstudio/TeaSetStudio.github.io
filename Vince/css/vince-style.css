@@ -28,6 +28,9 @@ header{
     align-items: center;
     padding: 0 15px;
 }
+.menu-button{
+    display: none;
+}
 .nav-brand{
     display: flex;
     float: left;
@@ -35,7 +38,6 @@ header{
 }
 .nav-brand h2{    
     margin: 0 10px;
-    /*text*/
     color: #fff;
     font-size: 40px;
     font-weight: 700;
@@ -211,7 +213,8 @@ main{
     width:260px;
     margin: 25px auto 0;
 }
-.news-header:after{   /* Down Arrow */
+/* Down Arrow */
+.news-header:after{   
     position: absolute;
     bottom: -12px;
     right: 50%;
@@ -440,6 +443,9 @@ footer{
     =========== */
     .news-header{
         width:220px;
+    }
+    .news-inner{
+        justify-content: center;
     }
     .news-block{
         width: 90%;
