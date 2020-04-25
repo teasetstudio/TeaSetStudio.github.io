@@ -1,10 +1,9 @@
-:root {
-    --main-color: #e06d58;
-    --cursor: not-allowed;
-  }
 body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif !important;
+    /* variables */
+    --main-color: #e06d58;
+    --cursor: not-allowed;
 }
 .container{
     width: 100%;
