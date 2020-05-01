@@ -78,6 +78,7 @@ header a{
 .fbp{
   color: var(--white);
   width: 100%;
+  min-height: 100vh;
   background: #171717 url('../img/fbp.jpg') no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
