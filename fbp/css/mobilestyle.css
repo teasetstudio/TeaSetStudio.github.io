@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #171717 url('../img/fbp.jpg') no-repeat center bottom;
+    background-size: 100vh;
+    background-attachment: fixed;
+    font-family: 'Roboto', Arial, sans-serif;
+    --greenish:#4CAF50;
+    --white: #c7c7c7;
+}
+mark{
+    background: none;
+    color: rgb(145, 204, 121);
+    font-weight: 700;
+}
+.fbp{
+    color: var(--white);
+    text-align: center;
+}
+.front{
+    height: 100vh;
+    padding-top: 13vh;
+    position: relative;
+}
+.cube-header{
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.front p{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 2.5rem;
+  margin: 10vh auto 0;
+}
+.btn{
+    font-size: 1.2rem;
+    background: rgba(64, 141, 67, 0.74);
+    color: var(--white);
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 25px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s linear;
+}
+.front button:hover, input[type=submit]:hover{
+    background: var(--greenish);
+    box-shadow: -5px 5px 3px black;
+}
+/* 100vh - 200vh */
+.left{
+    width: 80%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px 8px;
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+.left h3{
+    grid-column: 1 / 3;
+    font-size: 1.3rem;
+}
+.left h4{
+    text-align: left;
+    font-size: 1.1rem;
+}
+.todo{
+    width: 100%;
+    height:100vh;
+    background: rgba(37, 42, 37, 0.9);
+    border-radius: 40px;
+    padding: 5vh 7vw 0;
+}
+.plate{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.pl-side{
+    display: flex;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.pl-side img{
+    height: 40px;
+}
+.pl-side p{
+    text-align: left;
+    margin-left: 4vw;
+}
+/* LINK ITEM */
+.links{
+    padding: 7vh 0;
+}
+.link-a{
+    display: inline-block;
+    margin-left: 30px;
+}
+.link-a:first-of-type{
+    margin-left: 0;
+}
+.links-side{
+    padding: 6px 6px 3px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+.links-side img{
+    height: 45px;
+}
+/* SOME INFO */
+.our-teacher{
+    width: 100%;
+    background: rgba(42, 37, 37, 0.9);
+    border-radius: 40px;
+    padding: 5vh 7vw;
+}
+.our-teacher > div{
+    margin-bottom: 20px;
+}
+.grid-header{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.gr-string{
+    display: flex;
+    align-items: center;
+}
+.gr-string img{
+    height:25px;
+}
+.gr-string p{
+    font-size: 1.05rem;
+    text-align: left;
+    margin: 10px 15px;
+}
+/* FLEXIBLE SCEDULE */
+.flexible-schedule{
+    width:100%;
+    margin: 10px 0;
+    background: rgba(42, 42, 42, 0.9);
+    border-radius: 40px;
+    padding: 5vh 7vw;
+}
+.mobile-hide{
+    position: absolute;
+    display: none;
+}

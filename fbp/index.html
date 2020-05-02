@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <title>FantasyByPro School</title>
         <link rel="icon" href="img/logo.png">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobilestyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
+      <header class="mobile-hide">
           <div class="header-inner">
             <div class="header-left">
               <a class="logo" href="#">
@@ -40,21 +41,20 @@
               <div class="cube" targer="right">
                 <!-- FRONT -->
                 <div class="side front">
-                <h2 class="cube-header">We will teach your child <mark>3D Graphic</mark></h2>
-                <p>
-                  Online from anywhere<br>
-                  From 8 to 16 years old<br>
-                  No experience required
-                </p>
-                <button class="btn" type="button" targer="right">
-                  Sign up for a free <br> lesson
-                </button>
+                  <h2 class="cube-header">We will teach your child <br><mark>3D Graphic</mark></h2>
+                  <p>
+                    Online from anywhere<br>
+                    From 8 to 16 years old<br>
+                    No experience required
+                  </p>
+                  <button class="btn" type="button" targer="right">
+                    Sign up for a free <br> lesson
+                  </button>
                 </div>
                 <!-- RIGHT (form) -->
-                <div class="side right">
+                <div class="side right mobile-hide">
                   <h2  class="cube-header">Sign up for a first free <br> lesson!</h2>
                   <form class="sign-up" action="/" method="post">
-
                   <input class="input-form" type="text" name="name" placeholder="Your name.." required/>
                   <input class="input-form" type="tel" name="phone" value="" placeholder="Phone.." required/>
                   <input class="input-form" type="email" name="email" placeholder="E-mail.."/>
@@ -62,7 +62,7 @@
                   </form>
                 </div>
                 <!-- BACK -->          
-                <div class="side back">
+                <div class="side back mobile-hide">
                   <h3 class="cube-header">                  
                     Комфортное развитие ребёнка
                   </h3>
@@ -87,7 +87,7 @@
             </div>       <!-- form container -->
   
             <div class="form-container">
-              <div class="cube2">
+              <div class="cube2 mobile-hide">
                 <!-- FRONT -->
                 <div class="side front">
                   <h2 class="cube-header">We will teach your child <mark>3D Graphic</mark></h2>
@@ -134,17 +134,17 @@
                 </div>
               </div>     <!-- CUBE -->
             </div>       <!-- form container -->
-        </section>          <!-- cubes-container -->
+        </section>          <!-- CUBES CONTAINER -->
         <!-- BOTTOM -->
         <section class="bottom">
           <div>
             <div class="todo">
               <div class="plate accept">
                 <div class="pl-side ac-front">
-                <img src="img/accept.png"/>
-                <p>Определим уровень вашего ребенка</p>
+                  <img src="img/accept.png"/>
+                  <p>Определим уровень вашего ребенка</p>
                 </div>
-                <div class="pl-side pl-back ac-back">
+                <div class="pl-side pl-back ac-back mobile-hide">
                   <h4>Пробное занятие <span>бесплатно!</span></h4>
                   <button>
                     Записаться!
@@ -157,10 +157,10 @@
                   <img src="img/study.png" alt=""/>
                   <p>Вы посмотрите, как проходят занятия</p>
                 </div>
-                <div class="pl-side pl-back st-back">
+                <div class="pl-side pl-back st-back mobile-hide">
                   <h5 style="color: lightgrey; text-decoration: underline; margin-bottom: 5px;">Теория цвета:</h5>
                   <p><span style="color: purple;">Фиолетовый</span> и 
-                    <span style="color: yellow;">Жёлтый</span> хорошо сочетаются</p>
+                     <span style="color: yellow;">Жёлтый</span> хорошо сочетаются</p>
                 </div>              
               </div>
   
@@ -169,7 +169,7 @@
                   <img src="img/interesting.png" alt=""/>
                   <p>Ребенок поймет, интересно ли ему</p>
                 </div>              
-                <div class="pl-side pl-back int-back">
+                <div class="pl-side pl-back int-back mobile-hide">
                   <h5 style="color: lightgrey; text-decoration: underline; margin-bottom: 5px;">Теория цвета:</h5>
                   <p><span style="color: red;">Красный</span> и 
                     <span style="color: green;">зеленый</span> хорошо сочетаются</p>
@@ -179,55 +179,55 @@
 
             <div class="links">
               <a class="link-a" href="https://www.youtube.com/channel/UC362WQGhcikPqT2cHzJFQVA" target="_blank">
-                <p class="tooltip">YouTube Channel</p>
+                <p class="tooltip mobile-hide">YouTube Channel</p>
 
                 <div class="links-item">
                   <div class="links-side links-front">
                     <img src="img/youtube.png" alt="">
                   </div>
-                  <div class="links-side links-left">
+                  <div class="links-side links-left mobile-hide">
                     <img src="img/youtube.png" alt="">
                   </div>
-                  <div class="links-side links-back">
+                  <div class="links-side links-back mobile-hide">
                     <img src="img/youtube.png" alt="">
                   </div>
-                  <div class="links-side links-right">
+                  <div class="links-side links-right mobile-hide">
                     <img src="img/youtube.png" alt="">
                   </div>
                 </div>
               </a>
               
               <a class="link-a" href="https://www.instagram.com" target="_blank">
-                <p class="tooltip">Instagram page</p>
+                <p class="tooltip mobile-hide">Instagram page</p>
                 <div class="links-item">
                   <div class="links-side links-front">
                     <img src="img/instagram.png" alt="">
                   </div>
-                  <div class="links-side links-left">
+                  <div class="links-side links-left mobile-hide">
                     <img src="img/instagram.png" alt="">
                   </div>
-                  <div class="links-side links-back">
+                  <div class="links-side links-back mobile-hide">
                     <img src="img/instagram.png" alt="">
                   </div>
-                  <div class="links-side links-right">
+                  <div class="links-side links-right mobile-hide">
                     <img src="img/instagram.png" alt="">
                   </div>
                 </div>
               </a>
 
               <a class="link-a" href="https://teasetstudio.github.io/" target="_blank">
-                <p class="tooltip">TeaSet animation Studio web-site</p>
+                <p class="tooltip mobile-hide">TeaSet animation Studio web-site</p>
                 <div class="links-item">
                   <div class="links-side links-front">
                     <img src="img/reHouse.png" alt="">
                   </div>
-                  <div class="links-side links-left">
+                  <div class="links-side links-left mobile-hide">
                     <img src="img/reHouse.png" alt="">
                   </div>
-                  <div class="links-side links-back">
+                  <div class="links-side links-back mobile-hide">
                     <img src="img/reHouse.png" alt="">
                   </div>
-                  <div class="links-side links-right">
+                  <div class="links-side links-right mobile-hide">
                     <img src="img/reHouse.png" alt="">
                   </div>
                 </div>
@@ -262,7 +262,7 @@
                   </div>             
               </div> <!-- grid left -->
               <!-- grid right -->
-              <div>
+              <div class="minus-block">
                   <div class="gr-string">
                     <img src="img/minus.png" alt="">
                     <p>Не читает лекции</p>
