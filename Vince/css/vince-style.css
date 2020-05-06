@@ -371,7 +371,7 @@ footer{
 }
 
 /* MEDIA queries
-================ */
+================== */
 @media screen and (max-width: 999px){
     /* HEADER
     =========== */
@@ -379,8 +379,10 @@ footer{
         display: table;
     }
     .nav-main{
+        height: unset;
         display: block;
         float: right;
+        margin-top: 0;
     }
     .nav-link, .nav-user{
         display: block;
@@ -393,7 +395,7 @@ footer{
         margin: 10px;
     }
     /* CENTRAL TABLE
-    =========== */
+    ================= */
     .central-table{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -446,7 +448,7 @@ footer{
         text-align: center;
     }
     /* ADVANTAGES
-    ============= */
+    ============== */
     div.grid{
         display: grid;
         grid-template-columns: 50% 50%;
