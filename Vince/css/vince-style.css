@@ -411,10 +411,11 @@ footer{
     /* HEADER
     =========== */
     .nav-main{
+        margin-top: -30px;
         align-items: center;
         overflow: hidden;
         height: 0;
-        transition: height .3s ease-in;
+        transition: all .3s ease-in;
     }
     .menu-button{
         outline: none;
