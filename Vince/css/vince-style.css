@@ -379,10 +379,8 @@ footer{
         display: table;
     }
     .nav-main{
-        height: unset;
         display: block;
         float: right;
-        margin-top: 0;
     }
     .nav-link, .nav-user{
         display: block;
