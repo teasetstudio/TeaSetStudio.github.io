@@ -1,9 +1,9 @@
+// MOBILE DROPDOWN MENU;
 const navMenu = document.querySelector('.nav-main');
-
 var dis = 0;
-var height = navMenu.scrollHeight;
 
-function buttonMenu (but){
+function buttonMenu (){
+  var height = navMenu.scrollHeight;
   if (dis == 0) {
     navMenu.style.height = height+"px";
     navMenu.style.marginTop = "5px";
