@@ -189,13 +189,16 @@ main{
 .side-cell{
     width: 25%;
 }
+.diagram-cell{
+    width: 50%;
+}
 #myChart{
     width: 530px;
     height: 265px;
 }
 .cell-ct h3{
     font-weight: 400;
-    margin: 0 0 0 4px;
+    margin: 0 0 4px;
     font-size: 14px;
 }
 .cell-ct > p{
@@ -391,11 +394,20 @@ footer{
     }
     /* CENTRAL TABLE
     =========== */
+    .central-table{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 30px;
+    }
     .side-cell{
         width: 100%;
     }
+    .cell-ct > p{
+        padding: 35px 0 0;
+    }
     .diagram-cell{
         width: 100%;
+        grid-area: 2 / 1 / span 1 / span 2;
     }
     #myChart{
         margin: 0 auto;
