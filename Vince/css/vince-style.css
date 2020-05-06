@@ -410,12 +410,14 @@ footer{
 @media screen and (max-width: 529px){
     /* HEADER
     =========== */
-
     .nav-main{
-        display: none;
         align-items: center;
+        overflow: hidden;
+        height: 0;
+        transition: height .3s ease-in;
     }
     .menu-button{
+        outline: none;
         display: block;
         border: 4px double var(--main-color);
         border-radius: 20px;

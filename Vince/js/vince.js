@@ -1,14 +1,13 @@
 const navMenu = document.querySelector('.nav-main');
 
-const menuBtn = document.querySelector ('#menuBtn');
-
 var dis = 0;
-menuBtn.addEventListener('click', ()=>{
-    if (dis == 0) {
-    navMenu.style.display = "block";
+var height = navMenu.scrollHeight;
+
+function buttonMenu (but){
+  if (dis == 0) {
+    navMenu.style.height = height+"px";
     dis = 1;
     } else {
-        navMenu.style.display = "none";
+        navMenu.style.height = 0;
         dis = 0;
-    }
-});
+}}
