@@ -38,7 +38,10 @@
         <!-- CUBES CONTAINER -->
         <section class="cubes-container">
             <div class="form-container">
-              <div class="cube" targer="right">
+              <button id="rot90" class="mobile-hide" type="button" onclick="rotate90 ()">
+                <img src="img/arrow.png">
+              </button>
+              <div class="cube">
                 <!-- FRONT -->
                 <div class="side front">
                   <h2 class="cube-header">We will teach your child <br><mark>3D Graphic</mark></h2>
@@ -47,18 +50,18 @@
                     From 8 to 16 years old<br>
                     No experience required
                   </p>
-                  <button class="btn" type="button" targer="right">
+                  <button class="btn" type="button" onclick="rotateToForm()">
                     Sign up for a free <br> lesson
                   </button>
                 </div>
                 <!-- RIGHT (form) -->
                 <div class="side right mobile-hide">
                   <h2  class="cube-header">Sign up for a first free <br> lesson!</h2>
-                  <form class="sign-up" action="/" method="post">
-                  <input class="input-form" type="text" name="name" placeholder="Your name.." required/>
-                  <input class="input-form" type="tel" name="phone" value="" placeholder="Phone.." required/>
-                  <input class="input-form" type="email" name="email" placeholder="E-mail.."/>
-                  <input type="submit" value="Sign up"/>
+                  <form class="sign-up" action="#">
+                    <input class="input-form" type="text" name="name" placeholder="Your name.." required/>
+                    <input class="input-form" type="tel" name="phone" value="" placeholder="Phone.." required/>
+                    <input class="input-form" type="email" name="email" placeholder="E-mail.."/>
+                    <input type="submit" value="Sign up"/>
                   </form>
                 </div>
                 <!-- BACK -->          
@@ -87,6 +90,12 @@
             </div>       <!-- form container -->
   
             <div class="form-container">
+              <!-- <div id="radio-anim2">
+                <span>Cube animation:</span>
+                <input type="radio" id="one" name="cubeAnimation" value="one" checked>
+                <input type="radio" id="two" name="cubeAnimation" value="two">
+                <input type="radio" id="off" name="cubeAnimation" value="off">
+              </div> -->
               <div class="cube2 mobile-hide">
                 <!-- FRONT -->
                 <div class="side front">
@@ -146,7 +155,7 @@
                 </div>
                 <div class="pl-side pl-back ac-back mobile-hide">
                   <h4>Пробное занятие <span>бесплатно!</span></h4>
-                  <button>
+                  <button onclick="rotateToForm()">
                     Записаться!
                   </button>
                 </div>
