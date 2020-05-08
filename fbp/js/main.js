@@ -1,6 +1,8 @@
 const toFormBtn = document.querySelector('.btn');
 const cube1 = document.querySelector('.cube');
+const cube2 = document.querySelector('.cube2');
 var angleRot = 18;
+var angleRot2 = 165;
 
 //ROTATE CUBE1 TO FORM ==============================================
 function rotateToForm (){
@@ -14,6 +16,15 @@ function rotateToForm (){
 function rotate90 (){
     angleRot -= 90;
     cube1.style.transform = "translateZ(-170px) rotateY("+ angleRot + "deg)";}
+
+// ROTATE CUBE2 90 DEGREES ===========================================
+function rotate2_90 (){
+    angleRot2 += 90;
+    cube2.style.transform = "translateZ(-170px) rotateY("+ angleRot2 + "deg)";}
+
+
+
+
 
 // CHOOSE ANIMATIONS FOR CUBE2 =======================================
 // var radioAnim2 = document.getElementsByName('cubeAnimation');

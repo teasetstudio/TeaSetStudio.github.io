@@ -78,13 +78,18 @@ header a{
 .fbp{
   color: var(--white);
   width: 100%;
-  background:  url('../img/fbp.jpg') no-repeat top center;
-  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  background:  url('../img/fbp.jpg') no-repeat center top;
+  background-size: auto 100vh;
   background-attachment: fixed;
 }
 /* 3D CUBE
 ============ */
 .cubes-container{
+  width: 100%;
+  max-width: 1750px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -94,9 +99,9 @@ header a{
   width: 340px;
   height: 450px;
   perspective: 700px;
-  margin: 180px 50px 30px;
+  margin: 15vh 50px 7vh;
 }
-#rot90 {
+#rot90, #rot2_90 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -109,14 +114,13 @@ header a{
   opacity: .6;
   transition: all .15s ease;
 }
-#rot90:hover{
-  filter: brightness(150%) drop-shadow(0 0 15px var(--greenish));
-  opacity: .8; 
+#rot2_90 {
+  left: -130px;
+  transform: translateY(-50%) scaleX(-1);
 }
-#radio-anim2{
-  position: absolute;
-  top: -70px;
-  left: 0;
+#rot90:hover, #rot2_90:hover{
+  filter: brightness(150%) drop-shadow(0 0 15px var(--greenish));
+  opacity: .8;
 }
 @keyframes opacStart{
   0%{opacity: 0;}
@@ -129,36 +133,25 @@ header a{
   transform-style: preserve-3d;
   transform: translateZ(-170px) rotateY(18deg);
   transition: all .5s ease;
-  animation-name: start;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation: start1 2s ease-in-out;
 }
 .cube2{
   width: inherit;
   height: inherit;
   transform-style: preserve-3d;
-  transform: translateZ(-170px) rotateY(165deg);
   transition: all .5s ease;
-  animation: halfCircleAnim 5s ease-in-out infinite alternate;
+  animation: start2 2s ease-in-out;
+  transform: translateZ(-170px) rotateY(165deg);
 }
-.cube2:hover{
-  animation-play-state: paused !important;
-}
-@keyframes start{
+@keyframes start1{
   0%{transform: scale(1.4) translateX(-500px) translateZ(-170px) rotateY(180deg);}
   75%{transform: scale(1) translateZ(-170px) rotateY(8deg)}
-  100%{transform: scale(1) translateZ(-170px) rotateY(17deg)}
+  100%{transform: scale(1) translateZ(-170px) rotateY(18deg)}
 }
-@keyframes halfCircleAnim{
-  0%{transform:translateZ(-170px) rotateY(70deg)}
-  100%{transform:translateZ(-170px) rotateY(160deg)}
-}
-@keyframes circleAnim{
-  0%{transform:translateZ(-170px) rotateY(0deg)}
-  100%{transform:translateZ(-170px) rotateY(360deg)}
-}
-@keyframes animOff{
-  50%{transform:translateZ(-170px) rotateY(0deg)}
+@keyframes start2{
+  0%{transform: scale(1.4) translateX(500px) translateZ(-170px) rotateY(3deg);}
+  75%{transform: scale(1) translateZ(-170px) rotateY(175deg)}
+  100%{transform: scale(1) translateZ(-170px) rotateY(165deg)}
 }
 .side{
   position: absolute;
@@ -277,7 +270,7 @@ input[type=submit]:hover {
   justify-content: space-between;
   max-width: 1730px;
   padding: 0 30px;
-  margin: 10px auto 0;
+  margin: 0 auto;
 }
 .plate{
   width: 170px;
@@ -286,7 +279,7 @@ input[type=submit]:hover {
   padding: 6px;
   display: inline-block;
   transform-style: preserve-3d;
-  transition: all 2s linear;
+  transition: all 1s ease-out;
   position: relative;
 }
 .pl-side{
@@ -418,7 +411,7 @@ input[type=submit]:hover {
   position: relative;
   width: 600px;
   height: 280px;
-  transition: all 1s linear;
+  transition: all 1s ease-out;
   transform-style: preserve-3d;
   perspective: 400px;
 }
