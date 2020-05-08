@@ -1,8 +1,8 @@
 const toFormBtn = document.querySelector('.btn');
 const cube1 = document.querySelector('.cube');
 const cube2 = document.querySelector('.cube2');
-var angleRot = 18;
-var angleRot2 = 165;
+let angleRot = 18;
+let angleRot2 = 165;
 
 //ROTATE CUBE1 TO FORM ==============================================
 function rotateToForm (){

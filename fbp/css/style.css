@@ -8,7 +8,11 @@ body{
   font-family: 'Roboto', Arial, sans-serif;
   --greenish:#4CAF50;
   --white: #c7c7c7;
+  --curPoint: url(../cursors/Alternate.cur), pointer;
+  --curText: url(../cursors/Text.cur), text;
+  cursor: url(../cursors/Normal.cur), default;
 }
+a, button{cursor: var(--curPoint);}
 mark{
   background: none;
   color: rgb(145, 204, 121);
@@ -109,7 +113,6 @@ header a{
   background: transparent;
   border: 0;
   outline: 0;
-  cursor: pointer;
   animation: opacStart 3s ease-in-out;
   opacity: .6;
   transition: all .15s ease;
@@ -202,11 +205,11 @@ header a{
   padding: 8px 20px;
   margin: 60px 40px 0;
   transition: all .2s linear;
+  outline: 0;
 }
 .front button:hover, input[type=submit]:hover {
   background: var(--greenish);
   box-shadow: -5px 5px 3px black;
-  cursor: pointer;
 }
 /* RIGHT TEXT (Sign up form) */
 .input-form{
@@ -217,6 +220,7 @@ header a{
   border: 1px solid var(--white);
   border-radius: 4px;
   transition: all .3s ease;
+  cursor: var(--curText);
 }
 input[type=submit] {
   width: 50%;
@@ -226,7 +230,6 @@ input[type=submit] {
   margin: 50px 0 0;
   border: none;
   border-radius: 2px;
-  cursor: pointer;
 }
 .input-form:focus {
   background-color: rgb(212, 235, 213);
@@ -235,6 +238,7 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: var(--greenish);
+  cursor: var(--curPoint);
 }
 /* BACK TEXT */
 .back h3{
@@ -305,7 +309,6 @@ input[type=submit]:hover {
   font-weight: 400;
 }
 .ac-back button{
-  cursor: pointer;
   color: black;
   font-size: 16px;
   font-weight: 500;
