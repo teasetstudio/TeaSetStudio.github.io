@@ -59,7 +59,7 @@
                 </div>
                 <!-- RIGHT (form) -->
                 <div class="side right mobile-hide">
-                  <h2  class="cube-header">Sign up for a first free <br> lesson!</h2>
+                  <h2  class="cube-header">Sign up for a first <mark>free</mark><br> lesson!</h2>
                   <form class="sign-up" action="#">
                     <input class="input-form" type="text" name="name" placeholder="Your name.." required/>
                     <input class="input-form" type="tel" name="phone" value="" placeholder="Phone.." required/>
@@ -82,12 +82,18 @@
                 <!-- LEFT -->
                 <div class="side left">
                   <h3>Преимущество занятий <mark>онлаин</mark></h3>
-                  <img src="img/individua.png" alt="" height="50px">
-                  <h4>Индивидуальная программа</h4>
-                  <img src="img/calendar.png" alt="" height="50px">
-                  <h4>Индивидуальный график</h4>
-                  <img src="img/efficiency.png" alt="" height="50px">
-                  <h4>Высокая эффективность занятий</h4>
+                  <div id="flex-disp">
+                    <img src="img/individua.png" alt="" height="50px">
+                    <h4>Индивидуальная программа</h4>
+                  </div>
+                  <div id="flex-disp">
+                    <img src="img/calendar.png" alt="" height="50px">
+                    <h4>Индивидуальный график</h4>
+                  </div>
+                  <div id="flex-disp">
+                    <img src="img/efficiency.png" alt="" height="50px">
+                    <h4>Высокая эффективность занятий</h4>
+                  </div>
                 </div>
               </div>     <!-- CUBE -->
             </div>       <!-- form container -->
@@ -99,16 +105,20 @@
               <div class="cube2 mobile-hide">
                 <!-- FRONT -->
                 <div class="side front">
-                  <h2 class="cube-header">Мы будем учиться в <mark>Blender 3D</mark>!</h2>
-                  <p>
-                    Blender 3D современная и мощная программа для моделирования, анимации, VFX (вода, огонь, взрывы, дым...),
-                    скульптинга и многого другого. А главное он бесплатный!
-                  </p>
-                  <button>Подробнее..</button>                  
+                  <h2 class="cube-header blender">Мы будем учиться в <mark>Blender 3D</mark>!</h2>
+                  <h3 class="blender">Blender 3D современная и мощная программа для</h3>
+                  <ul class="blender"><mark>
+                    <li>моделирования</li>
+                    <li>анимации</li>
+                    <li>VFX (вода, огонь, дым,<br> взрывы..)</li>
+                    <li>скульптинга</li></mark>
+                  </ul>
+                  <p class="blender">..и многого другого.<br>А главное он бесплатный!</p>
+                  <button class="blender">Подробнее..</button>
                 </div>
                 <!-- RIGHT (form) -->
                 <div class="side right">
-                  <h2  class="cube-header"><mark>АКЦИЯ</mark> | ПРИВЕДИТЕ ДРУГА И ПОЛУЧИТЕ ПО <mark>2 БЕСПЛАТНЫХ</mark> ЗАНЯТИЯ ВАМ И ДРУГУ</h2>
+                  <h2  class="cube-header"><mark>АКЦИЯ</mark> | приведите друга и получите <mark>2 БЕСПЛАТНЫХ</mark> занятия вам и другу</h2>
                   <form class="sign-up" action="/" method="post">  
                     <input class="input-form" type="text" name="name" placeholder="Ваше имя.." required/>
                     <input class="input-form" type="text" name="name" placeholder="Имя друга.." required/>
@@ -116,9 +126,9 @@
                     <input type="submit" value="Получить 2 бесплатных занятия"/>
                   </form>
                 </div>
-                <!-- BACK -->          
+                <!-- BACK -->
                 <div class="side back">
-                  <h3 class="cube-header">                  
+                  <h3 class="cube-header">
                     Комфортное развитие ребёнка
                   </h3>
                   <img src="img/children.png" alt="">
@@ -131,12 +141,18 @@
                 <!-- LEFT -->
                 <div class="side left">
                   <h3>Преимущество занятий <mark>онлаин</mark></h3>
-                  <img src="img/individua.png" alt="" height="50px">
-                  <h4>Индивидуальная программа</h4>
-                  <img src="img/calendar.png" alt="" height="50px">
-                  <h4>Индивидуальный график</h4>
-                  <img src="img/efficiency.png" alt="" height="50px">
-                  <h4>Высокая эффективность<br> занятий</h4>
+                  <div id="flex-disp">
+                    <img src="img/individua.png" alt="" height="50px">
+                    <h4>Индивидуальная программа</h4>
+                  </div>
+                  <div id="flex-disp">
+                    <img src="img/calendar.png" alt="" height="50px">
+                    <h4>Индивидуальный график</h4>
+                  </div>
+                  <div id="flex-disp">
+                    <img src="img/efficiency.png" alt="" height="50px">
+                    <h4>Высокая эффективность занятий</h4>
+                  </div>
                 </div>
               </div>     <!-- CUBE -->
             </div>       <!-- form container -->
@@ -322,8 +338,6 @@
 
 
       </main>
-
-      
 
       <script src="js/main.js"></script>
     </body>
