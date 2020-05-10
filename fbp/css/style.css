@@ -142,19 +142,21 @@ header a{
   width: inherit;
   height: inherit;
   transform-style: preserve-3d;
+  transform: translateZ(-170px) rotateY(-18deg);
   transition: all .5s ease;
-  animation: start2 2s ease-in-out;
-  transform: translateZ(-170px) rotateY(165deg);
+  animation: start2 2s ease-out;
 }
 @keyframes start1{
   0%{transform: scale(1.4) translateX(-500px) translateZ(-170px) rotateY(180deg);}
   75%{transform: scale(1) translateZ(-170px) rotateY(8deg)}
-  100%{transform: scale(1) translateZ(-170px) rotateY(18deg)}
 }
 @keyframes start2{
-  0%{transform: scale(1.4) translateX(500px) translateZ(-170px) rotateY(3deg);}
-  75%{transform: scale(1) translateZ(-170px) rotateY(175deg)}
-  100%{transform: scale(1) translateZ(-170px) rotateY(165deg)}
+  0%{transform: scale(1.4) translateX(500px) translateZ(-170px) rotateY(-180deg);
+    animation-timing-function: linear;}
+  37%{transform: scale(1.2) translateX(250px) translateZ(-170px) rotateY(-86deg);
+    animation: start2 1.5s ease-out;}
+  75%{transform: scale(1) translateZ(-170px) rotateY(-8deg);
+    animation: start2 1.5s ease-in-out;}
 }
 .side{
   position: absolute;
@@ -201,7 +203,7 @@ header a{
   background: rgb(64, 141, 66);
   color: var(--white);
   border: 0;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 8px 20px;
   margin: 70px 40px 0;
   transition: all .2s linear;
@@ -222,21 +224,22 @@ header a{
   transition: all .3s ease;
   cursor: var(--curText);
 }
-input[type=submit] {
+.form-submit1 {
   width: 50%;
-  background-color: var(--greenish);
+  background: rgb(64, 141, 66);
   color: var(--white);
   padding: 14px 20px;
   margin: 50px 0 0;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
+  transition: all .3s ease;
 }
 .input-form:focus {
   background-color: rgb(212, 235, 213);
   width: 80%;
   box-shadow: -5px 5px 3px black;
 }
-input[type=submit]:hover {
+.form-submit1:hover {
   background-color: var(--greenish);
   cursor: var(--curPoint);
 }
@@ -277,11 +280,20 @@ input[type=submit]:hover {
 /* 3D CUBE2
 ============= */
 /* FRONT (blender) */
+div.blender{
+  display: flex;
+  margin: 1px 10px 15px;
+  align-items: center;
+}
+div.blender img{
+  height: 45px;
+}
 h2.blender{
-  margin-top: 2px;
-  margin-bottom: 15px;
+  text-align: left;
   position: relative;
   font-size: 22px;
+  margin: 0 10px 0;
+  padding: 0;
 }
 h3.blender{
   text-indent: 8px;
@@ -304,15 +316,31 @@ p.blender{
 }
 button.blender {
   position: absolute;
-  bottom: 3px;
+  bottom: 6px;
   right: 10px;
   margin: 0;
   background: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 button.blender:hover{
   background: none;
   color: var(--greenish);
+}
+/* RIGHT (form akcia) */
+h2.akcia{
+  font-size: 24px;
+}
+h2.akcia span{
+  font-size: 20px;
+}
+button.akcia{
+  margin-top: 30px;
+  width: 65%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+button.akcia p{
+  font-size: 12px;
 }
 /* BOTTOM LEFT
 ============== */
@@ -509,4 +537,39 @@ button.blender:hover{
 }
 .fs-string img{
   height: 30px;
+}
+/* MORE
+======== */
+/* BLENDER 3D */
+#blender-more{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  
+  height: 100vh;
+  width: 100vw;
+  transform: scale(0);
+}
+.blender-more{
+  height: 50%;
+  width: 50%;
+  background: rgb(31, 31, 31);
+  margin: 100px auto;
+  transition: all .3s linear;
+  transform:  translateY(-500px);
+  border-radius: 7px;
+  color: var(--white);
+}
+.blender-more button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  background: none;
+  color: var(--white);
+  border: 0;
+  margin: 10px 15px;
 }

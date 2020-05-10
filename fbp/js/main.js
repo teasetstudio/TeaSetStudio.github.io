@@ -2,7 +2,7 @@ const toFormBtn = document.querySelector('.btn');
 const cube1 = document.querySelector('.cube');
 const cube2 = document.querySelector('.cube2');
 let angleRot = 18;
-let angleRot2 = 165;
+let angleRot2 = -18;
 
 //ROTATE CUBE1 TO FORM ==============================================
 function rotateToForm (){
@@ -22,35 +22,36 @@ function rotate2_90 (){
     angleRot2 += 90;
     cube2.style.transform = "translateZ(-170px) rotateY("+ angleRot2 + "deg)";}
 
+// BLENDER MORE BUTTON ===============================================
+const blendMore = document.getElementById('blender-more');
+const blendMoreDiv = document.querySelector('.blender-more');
+let mouseOnHide2 = 0;
 
-
-
-
-// CHOOSE ANIMATIONS FOR CUBE2 =======================================
-// var radioAnim2 = document.getElementsByName('cubeAnimation');
-// const cube2 = document.querySelector ('.cube2');
-
-// for (var i = 0; i<radioAnim2.length; i++){
-//    radioAnim2[i].onchange = changeAnim;}
-
-// function changeAnim(){
-//     if (this.value == 'one'){
-//         cube2.style.animationPlayState = "running";
-//         cube2.style.animationName = "halfCircleAnim";
-//         cube2.style.animationDuration = "5s";
-//         cube2.style.animationDirection = "alternate";
-//         cube2.style.animationTimingFunction = "ease-in-out";
-//         cube2.style.animationIterationCount = "infinite";
-//     }
-//     else if (this.value == 'two'){
-//         cube2.style.animationPlayState = "running";
-//         cube2.style.animationName = "circleAnim";
-//         cube2.style.animationDuration = "20s";
-//         cube2.style.animationDirection = "normal";
-//         cube2.style.animationTimingFunction = "linear";
-//         cube2.style.animationIterationCount = "infinite";
-//     } else {
-//         cube2.style.animationDuration = "20s";
-//         cube2.style.animationName = "aninOff";
-//         cube2.style.animationIterationCount = "1";
-// }}
+function blenderMore (show1, show2){
+    mouseOnHide2 = 0;
+    show1.style.transform = "scale(1)";
+    show2.style.transform = "translateY(0)";
+    setTimeout(function(){
+        mouseOnHide2 = 1;
+    }, 600);
+    
+}
+// close menu blener more
+blendMoreDiv.addEventListener('mouseover', function () {
+    mouseOnHide2 = 0;
+})
+blendMoreDiv.addEventListener('mouseout', function () {
+    mouseOnHide2 = 1;
+})
+// close by click outside div
+function blenderMoreHide (hide1, hide2){
+    if (mouseOnHide2 == 1) {
+      hide1.style.transform = "scale(0)";
+      hide2.style.transform = "translateY(-500px)"
+    }else {mouseOnHide2 = 0;}
+}
+// close by click at the button
+function hideIt (hide1, hide2){
+    hide1.style.transform = "scale(0)";
+    hide2.style.transform = "translateY(-500px)"
+}

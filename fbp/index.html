@@ -64,7 +64,7 @@
                     <input class="input-form" type="text" name="name" placeholder="Your name.." required/>
                     <input class="input-form" type="tel" name="phone" value="" placeholder="Phone.." required/>
                     <input class="input-form" type="email" name="email" placeholder="E-mail.."/>
-                    <input type="submit" value="Sign up"/>
+                    <input class="form-submit1" type="submit" value="Sign up"/>
                   </form>
                 </div>
                 <!-- BACK -->          
@@ -105,7 +105,10 @@
               <div class="cube2 mobile-hide">
                 <!-- FRONT -->
                 <div class="side front">
-                  <h2 class="cube-header blender">Мы будем учиться в <mark>Blender 3D</mark>!</h2>
+                  <div class="blender">
+                    <img src="img/Blender_logo.png">
+                    <h2 class="cube-header blender">Мы будем учиться в <mark>Blender 3D</mark>!</h2>
+                  </div>
                   <h3 class="blender">Blender 3D современная и мощная программа для</h3>
                   <ul class="blender"><mark>
                     <li>моделирования</li>
@@ -114,16 +117,16 @@
                     <li>скульптинга</li></mark>
                   </ul>
                   <p class="blender">..и многого другого.<br>А главное он бесплатный!</p>
-                  <button class="blender">Подробнее..</button>
+                  <button class="blender" onclick="blenderMore(document.getElementById('blender-more'), document.querySelector('.blender-more'))">подробнее..</button>
                 </div>
                 <!-- RIGHT (form) -->
                 <div class="side right">
-                  <h2  class="cube-header"><mark>АКЦИЯ</mark> | приведите друга и получите <mark>2 БЕСПЛАТНЫХ</mark> занятия вам и другу</h2>
+                  <h2  class="cube-header akcia"><mark>АКЦИЯ</mark> | <span>приведите друга и получите <mark>2 БЕСПЛАТНЫХ</mark> занятия вам и другу</span></h2>
                   <form class="sign-up" action="/" method="post">  
                     <input class="input-form" type="text" name="name" placeholder="Ваше имя.." required/>
                     <input class="input-form" type="text" name="name" placeholder="Имя друга.." required/>
                     <input class="input-form" type="tel" name="phone" value="" placeholder="Телефон.." required/>
-                    <input type="submit" value="Получить 2 бесплатных занятия"/>
+                    <button class="form-submit1 akcia" type="submit">Получить<p>2 бесплатных занятия</p></button>
                   </form>
                 </div>
                 <!-- BACK -->
@@ -338,6 +341,19 @@
 
 
       </main>
+
+      <section id="blender-more" onclick="blenderMoreHide(this, document.querySelector('.blender-more'))">
+        <div class="blender-more">
+          <div class="blender">
+            <img src="img/Blender_logo.png">
+            <h2 class="cube-header blender"><mark>Blender 3D</mark>!</h2>
+          </div>
+          много теста и разные подробности о блендере
+          <p> Перейти на сайт <a href="https://www.blender.org/" target="_blank">Blender 3D</a></p>
+          <button  onclick="hideIt(document.getElementById('blender-more'), document.querySelector('.blender-more'))">
+            Close</button>
+        </div>
+      </section>
 
       <script src="js/main.js"></script>
     </body>
