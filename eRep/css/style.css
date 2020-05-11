@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #fff;
+    --orange: #ff7200;
+    --black:#111;
+    --gray:#acacac;
+    color: var(--black);
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+mark{
+    background: none;
+    color: var(--orange);
+    font-size: 1.2em;
+    transition: color .2s linear;
+}
+mark:hover{
+    color: var(--gray);
+}
+/* header */
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    line-height: 70px;
+    background: url("../img/back-logo.png") no-repeat;
+    background-size: 200px auto;
+}
+.logo h2{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    color: var(--gray);
+}
+.right-header{
+    display: flex;
+    justify-content: space-between;
+}
+.work-time{
+    display: flex;
+    align-items: center;
+}
+.work-time i{
+    color: var(--orange);
+    transition: color .2s linear;
+    font-size: 1.8rem;
+}
+.work-time i:hover{
+    color: var(--gray);
+}
+.work-time div{
+    margin-left: 10px;
+    font-size: .8rem;
+}
+.work-time div{
+    margin-left: 10px;
+    font-size: .8rem;
+}
+p.work-time{
+    color: var(--orange);
+}
+.telephone h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 180px;
+}
+/*first*/
+.first{
+    border: #f4f4f4 1px solid;
+    height: calc(100vh - 80px);
+    min-height: 850px;
+    width: 100%;
+    background: url(../img/bg-1.jpg) no-repeat center -80px;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.first h2{
+    margin: 50px auto 23px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+.first p{
+    letter-spacing: 8px;
+    font-size: 1rem;
+}
+.features{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    align-items: center;
+    text-align: center;
+}
+.features-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.projects{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(255, 162, 86, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.projects p{
+    letter-spacing: 0;
+    margin-left: 15px;
+}
+
