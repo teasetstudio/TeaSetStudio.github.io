@@ -146,6 +146,7 @@ p.work-time{
     width: 100%;
     max-width: 800px;
     margin: 50px auto;
+    position: relative;
 }
 .types-inner{
     display: grid;
@@ -158,15 +159,15 @@ p.work-time{
                          'no3   item7 item8 item8 no4'
                          'item9 item9 item8 item8 no4'
                          'item9 item9 no5   no5   no4'
-
 }
 .grid-item{
     display: flex;
     justify-content: center;
     margin: 5px;
     border-radius: 10px;
-    transition: all .2s linear;
+    transition: all .2s ease;
     align-items: center;
+    z-index: 1;
 }
 .item-hover{
     filter: grayscale(80%);
@@ -227,7 +228,66 @@ p.work-time{
     border-radius: 5px;
     background-color: rgba(65, 65, 65, 0.7);
 }
-
+.pic1{
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    right: -300px;
+    transform: rotateZ(-5deg);
+    height: 130px;
+}
+.pic2{
+    position: absolute;
+    z-index: 1;
+    top: 510px;
+    right: -200px;
+    transform: rotateZ(5deg);
+    animation: valik 30s linear infinite;
+    transition: all .5s ease;
+    height: 75px;
+}
+.pic2:hover{
+    height: 81px;
+}
+@keyframes valik {
+    50%{transform: rotateZ(5deg) translateX(100px) translateY(-20px);}
+}
+.pic3{
+    position: absolute;
+    z-index: 0;
+    top: 200px;
+    left: -100px;
+    height: 95px;
+    transition: all .5s ease;
+    animation: opilka 30s linear infinite;
+}
+.pic3:hover{
+    transform: scale(1.1);
+}
+@keyframes opilka{
+    33%{transform: translateX(-30px) translateY(30px);}
+    66%{transform: translateX(50px) translateY(40px);}
+}
+.pic4{
+    position: absolute;
+    z-index: 0;
+    top: 200px;
+    right: -120px;
+    height: 55px;
+}
+.pic5{
+    position: absolute;
+    z-index: 0;
+    top: 138px;
+    right: -287px;
+    height: 100px;
+    transform-origin: bottom right;
+    animation: hummer 13s linear infinite;
+    transform: rotateZ(45deg);
+}
+@keyframes hummer {
+    50%{transform: rotateZ(0);}
+}
 
 
 @media screen and (max-width: 1180px){
