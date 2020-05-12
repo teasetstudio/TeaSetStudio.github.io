@@ -228,6 +228,7 @@ p.work-time{
     border-radius: 5px;
     background-color: rgba(65, 65, 65, 0.7);
 }
+/*job types picture*/
 .pic1{
     position: absolute;
     z-index: 0;
@@ -258,11 +259,11 @@ p.work-time{
     top: 200px;
     left: -100px;
     height: 95px;
-    transition: all .5s ease;
     animation: opilka 30s linear infinite;
+    transition: all .5s ease;
 }
 .pic3:hover{
-    transform: scale(1.1);
+    height: 100px;
 }
 @keyframes opilka{
     33%{transform: translateX(-30px) translateY(30px);}
@@ -284,6 +285,9 @@ p.work-time{
     transform-origin: bottom right;
     animation: hummer 13s linear infinite;
     transform: rotateZ(45deg);
+}
+.pic5:hover{
+    animation: hummer 1s linear infinite;
 }
 @keyframes hummer {
     50%{transform: rotateZ(0);}
