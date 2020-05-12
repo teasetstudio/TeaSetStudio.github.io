@@ -231,7 +231,7 @@ p.work-time{
 .pic1{
     position: absolute;
     z-index: 0;
-    top: 500px;
+    top: 600px;
     right: -300px;
     transform: rotateZ(-5deg);
     height: 130px;
@@ -239,7 +239,7 @@ p.work-time{
 .pic2{
     position: absolute;
     z-index: 1;
-    top: 510px;
+    top: 610px;
     right: -200px;
     transform: rotateZ(5deg);
     animation: valik 30s linear infinite;
@@ -271,14 +271,14 @@ p.work-time{
 .pic4{
     position: absolute;
     z-index: 0;
-    top: 200px;
+    top: 150px;
     right: -120px;
     height: 55px;
 }
 .pic5{
     position: absolute;
     z-index: 0;
-    top: 138px;
+    top: 88px;
     right: -287px;
     height: 100px;
     transform-origin: bottom right;
