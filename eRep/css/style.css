@@ -3,16 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: var(--black);
-}
 body{
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #fff;
     --orange: #ff7200;
     --black:#111;
     --gray:#acacac;
+    color: var(--black);
+}
+a{
+    text-decoration: none;
     color: var(--black);
 }
 .container{
@@ -93,7 +93,7 @@ p.work-time{
 }
 /*first*/
 .first{
-    border: #f4f4f4 1px solid;
+    border: #f4f4f4 3px solid;
     height: calc(100vh - 80px);
     min-height: 850px;
     width: 100%;
@@ -151,7 +151,7 @@ p.work-time{
 .types-inner{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 100px 100px 150px 50px 130px 100px 100px;
+    grid-template-rows: 100px 100px 150px 50px 150px 100px 100px;
     grid-template-areas: 'item1 item1 item2 item2 no1'
                          'no2   item3 item2 item2 no1'
                          'no2   item3 item4 item5 item5'
@@ -291,6 +291,84 @@ p.work-time{
 }
 @keyframes hummer {
     50%{transform: rotateZ(0);}
+}
+/*prices*/
+.prices{
+    width: 100%;
+    padding: 100px 0;
+}
+.prices-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    width: 30%;
+    background: rgb(240, 234, 232);
+    border-radius: 10px;
+    position: relative;
+}
+.price h3{
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: var(--orange);
+    padding: 23px 0;
+    font-size: 1.5rem;
+}
+.price p{
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+.price p span{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+.price ul{
+    padding: 20px 30px;
+    list-style: none;
+    font-size: 1rem;
+    list-style-position: outside;
+}
+.disable, .active{
+    color: var(--gray);
+    margin: 10px 0;
+}
+.disable i, .active i{
+    display: block;
+    float: left;
+    line-height: 1.5;
+}
+.disable i::before, .active i::before{
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    margin: 0 18px 0 2px;
+    content: "\f00d";
+    box-sizing: border-box;
+}
+.active {
+    color: var(--black);
+}
+.active i::before{
+    content: "\f00c";
+    margin:0 14px 0 0;
+}
+.onKey{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: .8rem;
+    padding: 10px;
+    border-radius: 8px;
+    top: -15px;
+    right: -25px;
+    background-color: #4063d8;
+    text-transform: uppercase;
+
 }
 
 

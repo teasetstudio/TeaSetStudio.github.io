@@ -1,9 +1,6 @@
 var theToggle = document.getElementById('toggle');
 
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
-
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -36,7 +33,6 @@ function toggleClass(elem, className) {
         elem.className += ' ' + className;
     }
 }
-
 theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;

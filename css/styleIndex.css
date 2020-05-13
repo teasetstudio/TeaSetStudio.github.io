@@ -369,7 +369,7 @@ footer{
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
       border-bottom: 30.5px solid rgba(52, 68, 52, 0.96);
-    }   
+    }
     ul, li.burger a {
       font-size: 3.5rem;
       list-style: none;
@@ -390,7 +390,6 @@ footer{
       color: #fff;
       border-radius: 10px;
     }
-        
     /* HEADER 
     =========== */
     .header:hover{
@@ -412,7 +411,6 @@ footer{
     .nav{
         display: none !important;
     }
-  
     /* HOME
     ========== */
     #home{
@@ -421,7 +419,6 @@ footer{
     h1.home-in{
         padding-top: 240px;
     }
-
     /*CONTACTS
     ========== */
     #contacts{
@@ -451,8 +448,6 @@ footer{
         font-size: 1.2rem;
         border-width: 2px;
     }
-
-
     /* HOME
     ========== */
     h1.home-in{
