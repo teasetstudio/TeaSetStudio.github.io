@@ -1,6 +1,6 @@
 var theToggle = document.getElementById('toggle');
 var theBody = document.querySelectorAll('section');
-
+alert
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -23,14 +23,17 @@ function removeClass(elem, className){
 }
 // toggleClass
 function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
     if (hasClass(elem, className)) {
         while (newClass.indexOf(" " + className + " ") >= 0 ) {
             newClass = newClass.replace( " " + className + " " , " " );
         }
         elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        alert (elem.className);
     } else {
         elem.className += ' ' + className;
+        alert (elem.className);
+
     }
 }
 theToggle.onclick = function() {
