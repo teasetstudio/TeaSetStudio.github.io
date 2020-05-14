@@ -22,35 +22,20 @@ function rotate2_90 (){
     angleRot2 += 90;
     cube2.style.transform = "translateZ(-170px) rotateY("+ angleRot2 + "deg)";}
 
-// BLENDER MORE BUTTON ===============================================
-const blendMore = document.getElementById('blender-more');
-const blendMoreDiv = document.querySelector('.blender-more');
+// WINDOWS MORE BUTTONS ===============================================
 let mouseOnHide2 = 0;
 
-function blenderMore (show1, show2){
+function windowMore (show1, show2){
     mouseOnHide2 = 0;
     show1.style.transform = "scale(1)";
     show2.style.transform = "translateY(0)";
     setTimeout(function(){
-        mouseOnHide2 = 1;
-    }, 600);
+       hideDelay = 1;
+    }, 300);
 }
-// close menu blener more
-blendMoreDiv.addEventListener('mouseover', function () {
-    mouseOnHide2 = 0;
-})
-blendMoreDiv.addEventListener('mouseout', function () {
-    mouseOnHide2 = 1;
-})
-// close by click outside div
-function blenderMoreHide (hide1, hide2){
-    if (!blendMoreDiv.onmouseover) {
-      hide1.style.transform = "scale(0)";
-      hide2.style.transform = "translateY(-500px)"
-    }else {mouseOnHide2 = 0;}
-}
-// close by click at the button
-function hideIt (hide1, hide2){
-    hide1.style.transform = "scale(0)";
-    hide2.style.transform = "translateY(-500px)"
-}
+function windowMoreHide(section, divText, btnClose){
+    if ((!divText.contains(event.target) || event.target == btnClose) && hideDelay == 1){
+        section.style.transform = "scale(0)";
+        divText.style.transform = "translateY(-500px)";
+        hideDelay = 0;
+}}

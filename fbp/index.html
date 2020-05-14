@@ -117,7 +117,7 @@
                     <li>скульптинга</li></mark>
                   </ul>
                   <p class="blender">..и многого другого.<br>А главное он бесплатный!</p>
-                  <button class="blender" onclick="blenderMore(document.getElementById('blender-more'), document.querySelector('.blender-more'))">подробнее..</button>
+                  <button class="blender" onclick="windowMore(document.getElementById('blender-more'), document.querySelector('.blender-more'))">подробнее..</button>
                 </div>
                 <!-- RIGHT (form) -->
                 <div class="side right">
@@ -342,16 +342,15 @@
 
       </main>
 
-      <section id="blender-more" onclick="blenderMoreHide(this, document.querySelector('.blender-more'))">
+      <section id="blender-more" onclick="windowMoreHide(this, document.querySelector('.blender-more'), document.querySelector('.blender-more button'))">
         <div class="blender-more">
           <div class="blender">
             <img src="img/Blender_logo.png">
             <h2 class="cube-header blender"><mark>Blender 3D</mark>!</h2>
           </div>
-          много теста и разные подробности о блендере
+          много текста и разные подробности о блендере
           <p> Перейти на сайт <a href="https://www.blender.org/" target="_blank">Blender 3D</a></p>
-          <button  onclick="hideIt(document.getElementById('blender-more'), document.querySelector('.blender-more'))">
-            Close</button>
+          <button>Close</button>
         </div>
       </section>
 

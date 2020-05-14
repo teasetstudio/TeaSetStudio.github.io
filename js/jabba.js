@@ -1,8 +1,8 @@
 const theToggle = document.getElementById('toggle');
 let toggleOnOff = 0;
 
-window.onclick = function (e){
-    if (e.target != theToggle || toggleOnOff == 1){
+window.onclick = function (){
+    if (event.target != theToggle || toggleOnOff == 1){
         theToggle.className = '';
         toggleOnOff = 0;
     }else {
