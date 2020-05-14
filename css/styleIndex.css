@@ -328,6 +328,7 @@ footer{
       transition: all 0.3s;
       backface-visibility: hidden;
       border-radius: 2px;
+      pointer-events: none;
     }
     /* on activation */
     #toggle.on span {

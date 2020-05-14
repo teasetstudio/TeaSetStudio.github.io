@@ -1,11 +1,12 @@
-const theToggle= document.getElementById('toggle');
+const theToggle = document.getElementById('toggle');
 let toggleOnOff = 0;
 
-theToggle.onclick = function(){ 
-    if (toggleOnOff == 0){
-        this.className += ' ' + 'on';
-        toggleOnOff = 1;
-    }else {
-        this.className = '';
+window.onclick = function (e){
+    alert(e.target);
+    if (e.target != theToggle || toggleOnOff == 1){
+        theToggle.className = '';
         toggleOnOff = 0;
-}}
+    }else {
+        theToggle.className = 'on';
+        toggleOnOff = 1;}
+}

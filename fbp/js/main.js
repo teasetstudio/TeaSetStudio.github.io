@@ -34,7 +34,6 @@ function blenderMore (show1, show2){
     setTimeout(function(){
         mouseOnHide2 = 1;
     }, 600);
-    
 }
 // close menu blener more
 blendMoreDiv.addEventListener('mouseover', function () {
@@ -45,7 +44,7 @@ blendMoreDiv.addEventListener('mouseout', function () {
 })
 // close by click outside div
 function blenderMoreHide (hide1, hide2){
-    if (mouseOnHide2 == 1) {
+    if (!blendMoreDiv.onmouseover) {
       hide1.style.transform = "scale(0)";
       hide2.style.transform = "translateY(-500px)"
     }else {mouseOnHide2 = 0;}

@@ -1,6 +1,5 @@
 var theToggle = document.getElementById('toggle');
 var theBody = document.querySelectorAll('section');
-alert
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
