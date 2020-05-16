@@ -172,6 +172,11 @@ a.uavos:hover{
 =========== */
 #about{
     background-image: linear-gradient(#333d2f,#313131);
+    position: relative;
+}
+#about-anchor{
+    position: absolute;
+    top: -100px;
 }
 h2.about{
     padding: 70px 0 50px;
