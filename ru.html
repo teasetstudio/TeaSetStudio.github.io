@@ -19,7 +19,6 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
     </head>
-    
     <body>
 
         <header class="header">
@@ -28,23 +27,23 @@
                     <div class="header-logo">
                         <a class="nav-link" href="ru.html">TeaSet Studio</a>
                     </div>
-                    <nav class="nav">
-                        <a class="nav-link" data-smooth="#intro" href="#intro">Главная</a>
-                        <a class="nav-link" data-smooth="#works" href="#works">портфолио</a>
-                        <a class="nav-link" data-smooth="#about-anchor" href="#about-anchor">о нас</a>                     
-                        <a class="nav-link" data-smooth="#contacts" href="#contacts">контакты</a>
-                    </nav>
+                    <nav class="nav" onclick="scrollToDiv (1200)">
+                        <a class="nav-link" href="#intro">Главная</a>
+                        <a class="nav-link" href="#works">портфолио</a>
+                        <a class="nav-link" href="#about">о нас</a>
+                        <a class="nav-link" href="#contacts">контакты</a>
+                    </nav>                    
                     <!-- LANGUAGES-->
-                    <a id="languages" href="/index.html">En</a>
+                    <a id="languages" href="index.html">En</a>
                     <!-- BURGER -->
                     <div id="burger">
                         <a id="toggle" href="#menu"><span></span></a>
                         <div id="menu" class="burger">
                             <ul class="burger">
-                              <li class="burger"><a href="#intro">Home</a></li>
-                              <li class="burger"><a href="#works">Works</a></li>
-                              <li class="burger"><a href="#about-anchor">About</a></li>
-                              <li class="burger"><a href="#contacts">Contacts</a></li>
+                              <li class="burger"><a href="#intro">Главная</a></li>
+                              <li class="burger"><a href="#works">портфолио</a></li>
+                              <li class="burger"><a href="#about">о нас</a></li>
+                              <li class="burger"><a href="#contacts">контакты</a></li>
                             </ul>       
                         </div>
                     </div>         <!-- BURGER -->
@@ -262,11 +261,7 @@
         <!-- Bootstrap 4 -->
         <script src="/js/bootstrap.min.js"></script>
 
-        <!-- Smooth scroll -->
-        <script src="/js/smoothScroll.js"></script>
-
         <!-- BURGER MENU -->
-        <!-- <script src="/js/burgerMenu.js"></script> -->
         <script src="/js/jabba.js"></script>
 
     </body>

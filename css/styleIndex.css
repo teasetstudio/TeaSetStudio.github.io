@@ -59,17 +59,18 @@ body{
     font-weight: 500;
     text-transform: uppercase;
 }
-.nav-link{
+a.nav-link{
     margin-left: 30px;
     color: #fff;
     text-decoration: none;
     transition: all .4s linear;
     opacity: .75;
+    cursor: pointer;
 }
-.nav-link:first-child{
+a.nav-link:first-child{
     margin-left: 0;
 }
-.nav-link:hover{
+a.nav-link:hover{
     color: #4fe74f;
     opacity: 1;
 }
@@ -171,11 +172,6 @@ a.uavos:hover{
 =========== */
 #about{
     background-image: linear-gradient(#333d2f,#313131);
-    position: relative;
-}
-#about-anchor{
-    position: absolute;
-    top: -100px;
 }
 h2.about{
     padding: 70px 0 50px;
