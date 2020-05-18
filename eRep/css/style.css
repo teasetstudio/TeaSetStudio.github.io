@@ -9,6 +9,7 @@ body{
     --orange: #ff7200;
     --black:#111;
     --gray:#acacac;
+    --orangish:#f0eae8;
     color: var(--black);
 }
 a{
@@ -303,7 +304,7 @@ p.work-time{
 }
 .price{
     width: 30%;
-    background: rgb(240, 234, 232);
+    background: var(--orangish);
     border-radius: 10px;
     position: relative;
 }
@@ -323,7 +324,7 @@ p.work-time{
     padding: 10px 0 30px;
 }
 .price p span{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--orange);
 }
@@ -368,7 +369,45 @@ p.work-time{
     right: -25px;
     background-color: #4063d8;
     text-transform: uppercase;
-
+}
+/*stages*/
+.stages{
+    margin: 80px auto;
+    text-align: center;
+}
+.stages h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--black);
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+.stages > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 150px;   
+}
+.stages-inner{
+    position: relative;
+}
+.stages-inner p{
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    color: var(--orangish);
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    z-index: 2;
+}
+.stages-inner img{
+    height: 160px;
+    opacity: .8;
+}
+.stages-inner h5{
+    margin: 20px auto;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 
