@@ -4,8 +4,10 @@
     padding: 0;
 }
 body{
-    background: #171717 url('../img/fbp.jpg') no-repeat center bottom;
+    background: #171717 url('../img/fbp.jpg') no-repeat center;
     background-size: 100vh;
+    background-position: bottom;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
     font-family: 'Roboto', Arial, sans-serif;
     --greenish:#4CAF50;
@@ -16,13 +18,31 @@ mark{
     color: rgb(145, 204, 121);
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+/*header*/
+.header-inner{
+    margin: 5px 13px;
+    border-bottom: 1px solid var(--white);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-logo{
+    margin-left: 5px;
+}
+/*fbp*/
 .fbp{
     color: var(--white);
     text-align: center;
 }
 .front{
     height: 100vh;
-    padding-top: 13vh;
+    padding-top: 2vh;
     position: relative;
 }
 .cube-header{
@@ -35,7 +55,7 @@ mark{
   font-weight: 300;
   color: var(--white);
   line-height: 2.5rem;
-  margin: 10vh auto 0;
+  margin: 6vh auto 0;
 }
 .btn{
     font-size: 1.2rem;
@@ -45,7 +65,7 @@ mark{
     border-radius: 8px;
     padding: 8px 25px;
     position: absolute;
-    bottom: 3%;
+    bottom: 13%;
     left: 50%;
     transform: translateX(-50%);
     transition: all .2s linear;
@@ -58,21 +78,24 @@ mark{
 .left{
     width: 80%;
     max-width: 400px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px 8px;
     position: absolute;
-    top: 150vh;
+    top: 155vh;
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
 }
 .left h3{
-    grid-column: 1 / 3;
     font-size: 1.3rem;
+    margin-bottom: 50px;
 }
-.left h4{
+.flex-disp img{
+    float: left;
+}
+.flex-disp h4{
+    padding-left: 65px;
+    margin-top: 20px;
     text-align: left;
+    height: 51px;
     font-size: 1.1rem;
 }
 .todo{
@@ -160,3 +183,39 @@ mark{
     position: absolute;
     display: none;
 }
+/*more*/
+/*form sign up*/
+
+/*blender more*/
+#blender-more{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+    transform: scale(0);
+  }
+  .blender-more{
+    height: 50%;
+    width: 50%;
+    background: rgb(31, 31, 31);
+    margin: 100px auto;
+    transition: all .3s linear;
+    transform:  translateY(-500px);
+    border-radius: 7px;
+    color: var(--white);
+  }
+  .blender-more button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background: none;
+    color: var(--white);
+    border: 0;
+    margin: 10px 15px;
+  }

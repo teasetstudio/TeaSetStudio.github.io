@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <title>FantasyByPro School</title>
         <link rel="icon" href="img/logo.png">
-        <link rel="stylesheet" media="screen and (min-width: 530px)" href="css/style.css">
-        <link rel="stylesheet" media="screen and (max-width: 529px)" href="css/mobilestyle.css">
+        <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobilestyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="canonical" href="index.html">
     </head>
     <body>
       <header>
-          <div class="header-inner">
+          <div class="header-inner mobile-hide">
             <div class="header-left">
               <a class="logo" href="#">
                 <img src="img/logo.png" alt="" height="50">
@@ -20,7 +21,7 @@
                 </div>
               </a>
 
-              <nav class="navigation mobile-hide">
+              <nav class="navigation">
                 <a href="#">Программа</a>
                 <a href="#">Стоимость</a>
                 <a href="#">Контакты</a>
@@ -50,7 +51,7 @@
                     From 8 to 16 years old<br>
                     No experience required
                   </p>
-                  <button class="btn" type="button" onclick="toForm()">
+                  <button class="btn" type="button" onclick="rotateToForm()">
                     Sign up for a free <br> lesson
                   </button>
                 </div>
@@ -66,7 +67,7 @@
                 </div>
                 <!-- BACK -->          
                 <div class="side back mobile-hide">
-                  <h3 class="cube-header">
+                  <h3 class="cube-header">                  
                     Комфортное развитие ребёнка
                   </h3>
                   <img src="img/children.png" alt="">
@@ -79,15 +80,15 @@
                 <!-- LEFT -->
                 <div class="side left">
                   <h3>Преимущество занятий <mark>онлаин</mark></h3>
-                  <div class="flex-disp">
+                  <div id="flex-disp">
                     <img src="img/individua.png" alt="" height="50px">
                     <h4>Индивидуальная программа</h4>
                   </div>
-                  <div class="flex-disp">
+                  <div id="flex-disp">
                     <img src="img/calendar.png" alt="" height="50px">
                     <h4>Индивидуальный график</h4>
                   </div>
-                  <div class="flex-disp">
+                  <div id="flex-disp">
                     <img src="img/efficiency.png" alt="" height="50px">
                     <h4>Высокая эффективность занятий</h4>
                   </div>
@@ -339,8 +340,8 @@
 
       </main>
 
-      <section id="blender-more"onclick="blenderMoreHide(this, document.querySelector('.blender-more'))">
-        <div class="blender-more ">
+      <section id="blender-more" onclick="blenderMoreHide(this, document.querySelector('.blender-more'))">
+        <div class="blender-more">
           <div class="blender">
             <img src="img/Blender_logo.png">
             <h2 class="cube-header blender"><mark>Blender 3D</mark>!</h2>

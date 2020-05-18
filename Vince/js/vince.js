@@ -1,7 +1,7 @@
 // MOBILE DROPDOWN MENU ANIMATION =================================
 const navMenu = document.querySelector('.nav-main');
-var dis = 0;
-var relod = 0;
+let dis = 0;
+let relod = 0;
 function buttonMenu (){
   var height = navMenu.scrollHeight;
   if (dis == 0) {
