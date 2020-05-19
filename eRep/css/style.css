@@ -35,7 +35,8 @@ mark:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15px;
+    width: 100%;
+    padding: 0 15px;
 }
 .logo{
     display: flex;
@@ -66,6 +67,7 @@ mark:hover{
 .work-time{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .work-time i{
     color: var(--orange);
@@ -146,7 +148,8 @@ p.work-time{
 .job-types{
     width: 100%;
     max-width: 800px;
-    margin: 50px auto;
+    padding: 50px 0;
+    margin: 0 auto;
     position: relative;
 }
 .types-inner{
@@ -233,16 +236,16 @@ p.work-time{
 .pic1{
     position: absolute;
     z-index: 0;
-    top: 600px;
-    right: -300px;
+    top: 700px;
+    right: -50px;
     transform: rotateZ(-5deg);
     height: 130px;
 }
 .pic2{
     position: absolute;
     z-index: 1;
-    top: 610px;
-    right: -200px;
+    top: 710px;
+    right: 50px;
     transform: rotateZ(5deg);
     animation: valik 30s linear infinite;
     transition: all .5s ease;
@@ -258,7 +261,7 @@ p.work-time{
     position: absolute;
     z-index: 0;
     top: 200px;
-    left: -100px;
+    left: -50px;
     height: 95px;
     animation: opilka 30s linear infinite;
     transition: all .5s ease;
@@ -296,11 +299,12 @@ p.work-time{
 /*prices*/
 .prices{
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 30px;
 }
 .prices-inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .price{
     width: 30%;
@@ -385,6 +389,7 @@ p.work-time{
 .stages > div{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 40px 150px;   
 }
 .stages-inner{
@@ -409,8 +414,136 @@ p.work-time{
     font-size: 1rem;
     font-weight: 400;
 }
-@media screen and (max-width: 1180px){
-    .telephone h2{
-        margin-left: 20px;
-    }
+/*bottom*/
+.footer{
+    background-color: rgb(54, 48, 43);
+    color: white;
+    padding: 80px 30px;
 }
+.footer h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer-inner{
+    margin: 60px 150px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-inner > div{
+    width: 48%;
+    text-align: center;
+}
+.footer-phone h2{
+    margin-left: 0;
+    margin-top: 30px;
+}
+.footer-icon{
+    color: var(--orange);
+    transition: color .2s linear;
+    margin: 30px 0 30px 0;
+    padding: 20px 0 0 0;
+}
+.footer-icon:hover{
+    color: var(--gray);
+}
+.guatantee h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.guatantee p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--gray);
+}
+/* MEDIA queries
+================== */
+@media screen and (max-width: 1500px){
+    .first h2{
+        margin: 20px auto 23px;
+    }
+    /*job types picture*/
+    .pic4{
+        top: 110px;
+        right: -20px;
+    }
+    .pic5{
+        top: 48px;
+        right: -187px;
+}}
+@media screen and (max-width: 1270px){
+    /*job types picture*/
+    .pic4{
+        right: 80px;
+    }
+    .pic5{
+        right: -87px;
+}}
+@media screen and (max-width: 1180px){
+    /* HEADER */
+    .header-inner{
+        display: table;
+    }
+    .right-header{
+        display: flex;
+        float: right;
+    }
+    /*job types picture*/
+    .pic1{
+        top: 720px;
+        right: 85px;
+    }
+    .pic2{
+        top: 730px;
+        right: 135px;
+    }
+    
+    .pic4{
+        top: 312px;
+        left: 22px;
+    }
+    .pic5{
+        top: 250px;
+        left: 27px;
+    }
+    .pic3{
+        top: 500px;
+        left: 20px;
+        animation-play-state: paused;
+    }
+    /*footer*/
+    .footer-inner{
+        margin: 60px 50px 40px;
+}}
+@media screen and (max-width: 1000px){
+    .price{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .stages > div{
+        padding: 0 30px; 
+    }
+    .stages-inner{
+        width: 50%;
+}}
+@media screen and (max-width: 750px){
+    .stages > div{
+        margin: 40px 80px;   
+    }
+    /*footer*/
+    .footer-inner>div{
+        width: 100%;
+}}
+@media screen and (max-width: 630px){
+    .telephone h2{
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        margin-left: 40px;
+    }
+    .stages > div{
+        margin: 40px 50px;   
+}}
