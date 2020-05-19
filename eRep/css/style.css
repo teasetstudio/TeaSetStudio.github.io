@@ -523,6 +523,23 @@ p.work-time{
         margin-top: 20px;
         width: 100%;
     }
+    .price1, .price2, .price3{
+        display: block;
+    }
+    .dropdownI{
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 900;
+        margin-left: 20px;
+        transition: .3s;
+    }
+    .dropdownI:after{
+        display: inline-block;
+        content: '\f078';
+        box-sizing: border-box;
+        transform: rotate(180deg);
+
+    }
     .stages > div{
         padding: 0 30px; 
     }
