@@ -1,0 +1,176 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --orangish:rgb(207, 179, 23);
+    --yellow:rgb(207, 207, 66);
+    --purple: rgb(81, 31, 94);
+    font-family: 'Roboto', sans-serif;
+    background-color: white !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+mark{
+    margin-left: 10px;
+    background: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--orangish);
+}
+.img-train{
+    position: absolute; 
+    top: 150px;
+    left: 50px;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+/*header*/
+header{
+    padding: 30px 0;
+}
+.header-inner{
+    background: linear-gradient(-90deg, var(--orangish), var(--yellow),var(--orangish));
+    border-radius: 15px;
+    padding: 8px;
+    border: 1px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-name{
+    margin-left: 15px;
+    border-right: 2px solid var(--purple);
+    padding-right: 30px;
+}
+.logo-name h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.88rem;
+    letter-spacing: 2px;
+}
+.logo-name p{
+    font-weight: 400;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+}
+.logo h2{
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+/*language*/
+.language{
+    position: relative;
+    border: none;
+}
+.lang-style{
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.lang-style img{
+    height: 30px !important;
+    transition: all .1s linear;
+}
+.lang-style p{
+    font-weight: 700;
+    align-self: center;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.cur-lang img {    
+    border-radius: 15px 0 0 15px;
+}
+.choose-lang{
+    position: absolute;
+    top: 40px;
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    transition: height .15s ease .1s;
+    z-index: 2;
+}
+.last-lang{
+    border-radius: 0 0 15px 15px;
+}
+.last-lang img{
+    border-radius: 0 0 0 15px;
+}
+.choose-lang .lang-style{
+    margin-top: 5px;
+    background: var(--orangish);
+}
+.language:hover .cur-lang img{
+    border-radius: 15px 0 0 0;
+}
+.language:hover .choose-lang{
+    height: 120px;
+}
+/*navigation*/
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.nav-link{
+    margin-right: 30px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav-link:last-of-type{
+    margin-right: 0;
+}
+.nav-link:after, .telephone:after{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: " ";
+    width: 50%;
+    height: 1px;
+    background: var(--purple);
+    opacity: 0;
+    transition: all .2s ease;
+
+}
+.nav-link:hover:after, .telephone:hover:after{
+    opacity: 1;
+    top: 25px;
+    width: 100%;
+}
+.telephone:hover:after{
+    width: 90%;
+    top: 30px;
+}
+.nav-link:hover{
+    color: var(--yellow);
+}
+/*telephone*/
+.pos-relative{
+    position: relative;
+}
+.telephone{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.telephone img{
+    height: 25px;
+    margin-right: 10px;
+}

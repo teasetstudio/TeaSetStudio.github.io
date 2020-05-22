@@ -50,15 +50,15 @@
                 <div class="container">
                     <div class="features-inner">
                         <div class="projects">
-                            <img src="img/feature1.png" height="80">
+                            <img src="img/feature1.png" alt="">
                             <p>100+ реализованных<br>проектов</p>
                         </div>
                         <div class="projects">
-                            <img src="img/feature2.png" height="80">
+                            <img src="img/feature2.png" alt="">
                             <p>Гарантия качества</p>
                         </div>
                         <div class="projects">
-                            <img src="img/feature3.png" height="80">
+                            <img src="img/feature3.png" alt="">
                             <p>Индивидуальный подход</p>
                         </div>
                     </div>
@@ -86,9 +86,9 @@
         <section class="prices">
             <div class="container">
                 <div class="prices-inner">
-                   <div class="price">
+                   <div class="price" isOn="yes" onclick="toRotate(this)">
                        <div class="onKey">под ключ</div>
-                       <h3>Косметический ремонт<i class="dropdownI"></i></h3>
+                       <h3>Косметический ремонт<i class="dropdownI i1"></i></h3>
                        <ul class="price1">
                            <li class="disable">
                                <i></i>
@@ -169,9 +169,9 @@
                        </ul>
                        <p>от <span><mark>110</mark></span> BYN/м<sup>2</sup></p>
                    </div>
-                   <div class="price">
+                   <div class="price" isOn="no" onclick="toRotate(this)">
                     <div class="onKey">под ключ</div>
-                    <h3>Капитальный ремонт</h3>
+                    <h3>Капитальный ремонт<i class="dropdownI i2"></i></h3>
                     <ul class="price2">
                         <li class="active">
                             <i></i>
@@ -252,9 +252,9 @@
                     </ul>
                     <p>от <span><mark>170</mark></span> BYN/м<sup>2</sup></p>
                    </div>
-                   <div class="price">
+                   <div class="price" isOn="no" onclick="toRotate(this)">
                        <div class="onKey">под ключ</div>
-                    <h3>Дизайнерский ремонт</h3>
+                    <h3 >Дизайнерский ремонт<i class="dropdownI i3"></i></h3>
                     <ul class="price3">
                         <li class="active">
                             <i></i>
@@ -342,22 +342,30 @@
             <h4>Ремонт за <mark>4</mark> этапа</h4>
             <div>
                 <div class="stages-inner">
-                    <p>01</p>
-                    <img src="img/calling.jpg" alt="">
+                    <div class="imgNum">
+                        <p>01</p>
+                        <img src="img/calling.jpg" alt="">
+                    </div>                    
                     <h5>Телефонный разговор</h5></div>
                 <div class="stages-inner">
-                    <p>02</p>
-                    <img src="img/marking.jpg" alt="">
+                    <div class="imgNum">
+                        <p>02</p>
+                        <img src="img/marking.jpg" alt="">
+                    </div>
                     <h5>Встреча на объекте<br>Оценка работ</h5></div>
                 <div class="stages-inner">
-                    <p>03</p>
-                    <img src="img/repair.jpg" alt="">
+                    <div class="imgNum">
+                        <p>03</p>
+                        <img src="img/repair.jpg" alt="">
+                    </div>
                     <h5>Начало работ</h5></div>
                 <div class="stages-inner">
-                    <p>04</p>
-                    <img src="img/getting.jpg" alt="">
+                    <div class="imgNum">
+                        <p>04</p>
+                        <img src="img/getting.jpg" alt="">
+                    </div>
                     <h5>Приём работы</h5></div>
-            </div>       
+                </div>       
         </section>
         <footer class="footer">
             <div class="container">
@@ -394,5 +402,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/mainCode.js"></script>
     </body>
 </html>
