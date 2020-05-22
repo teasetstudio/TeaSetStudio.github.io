@@ -432,7 +432,6 @@ p.work-time{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
 }
 .footer-inner > div{
     width: 48%;
