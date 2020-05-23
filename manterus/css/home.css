@@ -132,17 +132,16 @@ header{
     margin-right: 0;
 }
 .nav-link:after, .telephone:after{
+    content: " ";
     position: absolute;
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    content: " ";
     width: 50%;
     height: 1px;
     background: var(--purple);
     opacity: 0;
     transition: all .2s ease;
-
 }
 .nav-link:hover:after, .telephone:hover:after{
     opacity: 1;
@@ -157,20 +156,24 @@ header{
     color: var(--yellow);
 }
 /*telephone*/
-.pos-relative{
-    position: relative;
+.tel-contacts{
+    display: flex;
 }
 .telephone{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    position: relative;
+    height: 28px;
+}
+.telephone:last-of-type{
+    margin-left: 10px;
+    line-height: 28px;
 }
 .telephone img{
-    height: 25px;
-    margin-right: 10px;
+    height: 28px !important;
+    margin: 0 7px;
 }
-/*MAIN*/
 
+
+/*MAIN*/
 /*trans-head*/
 .img-train{
     position: absolute; 
@@ -217,7 +220,7 @@ header{
 .slider-item{
     -webkit-flex: 0 0 50%;
     flex: 0 0 50%;
-    height: 400px;
+    height: 350px;
     background-color: rgba(241, 241, 215, 0.85);
     display: flex;
     text-align: center;
