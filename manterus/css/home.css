@@ -8,7 +8,7 @@ body{
     --yellow:#b4b439;
     --purple: #321878;
     font-family: 'Roboto', sans-serif;
-    background-color: white !important;
+    background-color: rgb(247, 247, 247) !important;
 }
 a{
     text-decoration: none;
@@ -171,8 +171,6 @@ header{
     height: 28px !important;
     margin: 0 7px;
 }
-
-
 /*MAIN*/
 /*trans-head*/
 .img-train{
@@ -183,8 +181,8 @@ header{
 }
 .img-telega{
     position: absolute;
-    top: 350px;
-    right: -100px;
+    top: 480px;
+    right: -200px;
     height: 200px;
     z-index: -1;
 }
@@ -219,6 +217,7 @@ header{
 }
 .slider-item{
     -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     height: 400px;
     background-color: rgba(241, 241, 215, .85);
