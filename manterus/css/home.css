@@ -322,3 +322,6 @@ header{
     text-align: center;
     align-items: center;
 }
+.direction-inner img{
+    display: block;
+}
