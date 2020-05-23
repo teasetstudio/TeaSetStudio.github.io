@@ -7,8 +7,9 @@ body{
     --orangish:#c7ac17;
     --yellow:#b4b439;
     --purple: #321878;
+    --white: #f7f7f7;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(247, 247, 247) !important;
+    background-color: var(--white) !important;
 }
 a{
     text-decoration: none;
