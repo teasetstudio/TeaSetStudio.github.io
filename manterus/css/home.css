@@ -337,7 +337,7 @@ header{
 .main-directions{
     display: flex;
     max-width: 700px;
-    margin: 30px auto 50px;
+    margin: 30px auto 40px;
     justify-content: space-between;
 }
 .main-directions h5{
