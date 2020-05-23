@@ -318,18 +318,35 @@ header{
     color: var(--purple);
 }
 /*direction*/
+.directions{
+    margin: 60px 0;
+}
 .direction-inner{
     text-align: center;
-    align-items: center;
 }
 .direction-inner h3{
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
     word-spacing: 5px;
+    text-transform: uppercase;
     border-bottom: 1px solid var(--purple);
 
 }
-.direction-inner img{
+.main-directions{
+    display: flex;
+    max-width: 700px;
+    margin: 30px auto 50px;
+    justify-content: space-between;
 }
+.main-directions h5{
+    font-size: 1rem;
+    width: 33.3333%;
+    text-transform: uppercase;
+    border-left: 3px solid var(--purple);
+}
+.main-directions h5:first-of-type{
+    border: none;
+}
+
