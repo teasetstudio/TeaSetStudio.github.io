@@ -320,4 +320,5 @@ header{
 /*direction*/
 .directions{
     text-align: center;
+    align-items: center;
 }
