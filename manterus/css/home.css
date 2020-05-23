@@ -318,7 +318,7 @@ header{
     color: var(--purple);
 }
 /*direction*/
-.directions{
+.direction-inner{
     text-align: center;
     align-items: center;
 }
