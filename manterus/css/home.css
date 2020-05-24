@@ -9,7 +9,7 @@ body{
     --purple: #321878;
     --white: #f7f7f7;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--white) !important;
+    background-color: #f7f7f7 !important;
 }
 a{
     text-decoration: none;
