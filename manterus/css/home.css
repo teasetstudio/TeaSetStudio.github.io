@@ -468,8 +468,7 @@ header{
         position: absolute;
         top: 20px;
         right: 20px;
-        padding: 20px 5px;
-        
+        padding: 20px 5px; 
     }
     .close-btn p{
         transform: rotate(45deg);
@@ -486,6 +485,31 @@ header{
         transform: rotate(-90deg);
         background: var(--purple);
         cursor: pointer;
+    }
+    .contacts-burger{
+        position: absolute;
+        bottom: 7px;
+        width: 100%;
+    }
+    .messengers-mobile{
+        text-align: center;
+    }
+    .messengers-mobile a img{
+        height: 40px !important;
+    }
+    .burger-phone, .burger-email{
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+    .burger-phone mark{
+        color: var(--purple);
+    }
+    .burger-email{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
     }
     /*main trans*/
     .trans-head h2{
