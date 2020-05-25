@@ -395,10 +395,6 @@ header{
     .logo h2{
         font-size: .8rem;
     }
-    /*main*/
-    .img-train{
-        display: none;
-    }
     /*slider*/
     .slider-item{
         -webkit-flex: 0 0 100%;
@@ -407,7 +403,7 @@ header{
         height: 400px;
     }
     /*navigation*/
-     .nav{
+    .nav{
         display: none;
     }
     .burger-btn{
@@ -511,6 +507,9 @@ header{
         display: inline-block;
     }
     /*main trans*/
+    .img-train{
+        left: -150px;
+    }
     .trans-head h2{
         font-size: 1.6rem;
     }
@@ -579,8 +578,17 @@ header{
     .lang-style {
         margin: 0;
     }
-    /*main*/
-    /* trans*/
+    /*main - trans head*/
+    .img-train{
+        top: 150px;
+        left: -50px;
+        height: 200px;
+    }
+    .img-telega{
+        top: 500px;
+        right: 0px;
+        height: 130px;
+    }
     .trans-head h2{
         font-size: 1.2rem;
     }
