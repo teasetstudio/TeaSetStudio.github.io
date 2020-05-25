@@ -178,6 +178,12 @@ header{
     height: 28px !important;
     margin: 0 7px;
 }
+.hide-pc{
+    display: none;
+}
+.hide-mobile{
+    display: block;
+}
 /*MAIN*/
 /*trans-head*/
 .img-train{
@@ -377,6 +383,12 @@ header{
         right: 0;
         height: 200px;
     }
+    .hide-mobile{
+        display: none;
+    }
+    .hide-pc{
+        display: block;
+    }
 }
 @media (max-device-width: 700px){
     /*header*/
@@ -547,7 +559,7 @@ header{
     /*main*/
     /* trans*/
     .trans-head h2{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .trans-head h3{
         font-size: .85rem;
