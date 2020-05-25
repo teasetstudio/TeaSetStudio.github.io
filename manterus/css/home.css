@@ -588,6 +588,20 @@ header{
         font-size: .85rem;
     }
 }
-@media (max-device-width: 360){
-    
+@media (max-device-width: 360px){
+    /*header telephone*/
+    .mobile360px{
+        font-size: .8rem;
+        margin-left: 0px;
+    }
+    .mobile360px mark{
+        margin-left: 0px;
+    }
+    .telephone:last-of-type{
+        margin: 0;
+    }
+    /* slider */
+    .sl-item-inner img{
+        height: 130px;
+    }
 }
