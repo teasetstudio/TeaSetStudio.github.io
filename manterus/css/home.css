@@ -488,7 +488,7 @@ header{
     }
     .contacts-burger{
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         width: 100%;
         text-align: center;
     }
@@ -541,7 +541,7 @@ header{
         border-left: 2px solid var(--purple);
     }
     .direction-inner img {
-        margin-top: 15px;
+        margin-top: 7px;
         max-width: 100% !important;
     }
 }
@@ -588,4 +588,6 @@ header{
         font-size: .85rem;
     }
 }
-
+@media (max-device-width: 360){
+    
+}
