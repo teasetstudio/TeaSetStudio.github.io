@@ -111,7 +111,7 @@ function setUpListeners() {
 setUpListeners();
 cycle(sliderConfig.direction);
 
-
+//burger menu
 let burgerBtn = document.querySelector('.burger-btn'),
     burgerWindow = document.querySelector('.burger-menu'),
     burgerMenu = document.querySelector('.burger'),
@@ -128,4 +128,13 @@ closeBtn.onclick = function (){
   },500);  
 }
 
+//nav underline slide on mouseover
+let navField = document.querySelector('.nav');   
 
+navField.onmousemove = function(e) { 
+    var x = e.offsetX;
+    this.style.setProperty('--underlinePos', x +'px');
+}
+navField.onmouseout = function(){
+  navField.style.setProperty('--underlinePos', '50%');
+}

@@ -120,6 +120,9 @@ header{
     height: 120px;
 }
 /*navigation*/
+.nav{
+    --underlinePos: 50%;
+}
 .nav-menu{
     display: flex;
     justify-content: space-between;
@@ -135,7 +138,7 @@ header{
 .nav-link:last-of-type{
     margin-right: 0;
 }
-.nav-link:after, .telephone:after{
+.nav-active:after, .telephone:after{
     content: " ";
     position: absolute;
     top: 35px;
@@ -147,10 +150,13 @@ header{
     opacity: 0;
     transition: all .2s ease;
 }
-.nav-link:hover:after, .telephone:hover:after, .nav-active:after{
+.telephone:hover:after, .nav-active:after{
     opacity: 1;
     top: 25px;
     width: 100%;
+}
+.nav-active:after{
+    left: var(--underlinePos);
 }
 .telephone:hover:after{
     width: 90%;
