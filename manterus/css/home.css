@@ -488,7 +488,7 @@ header{
     }
     .contacts-burger{
         position: absolute;
-        bottom: 7px;
+        bottom: 20px;
         width: 100%;
     }
     .messengers-mobile{
