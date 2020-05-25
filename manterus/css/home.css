@@ -442,7 +442,7 @@ header{
     }
     .burger{
         transform: translateX(100%);
-        background: linear-gradient(90deg, var(--yellow),var(--orangish));
+        background: #5e5e6d;
         height: 100vh;
         padding: 20px 0;
         transition: transform .5s ease;
