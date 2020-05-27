@@ -448,7 +448,7 @@ header{
     }
     .burger{
         transform: translateX(100%);
-        background: #5e5e6d;
+        background: #e7e7e7;
         height: 100vh;
         padding: 20px 0;
         transition: transform .5s ease;
@@ -505,9 +505,7 @@ header{
         font-size: 1.5rem;
         margin: 20px auto;
     }
-    .burger-phone mark{
-        color: var(--purple);
-    }
+
     .burger-email{
         margin-top: 30px;
         display: flex;
