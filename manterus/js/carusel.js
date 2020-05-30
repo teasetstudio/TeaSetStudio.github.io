@@ -82,8 +82,8 @@ function cycle(direction) {
   interval = setInterval(function () {
     transformSlider(direction);
   }, sliderConfig.interval);
-
 }
+
 //choose left or right direction
 function controlClick (e) {
   if (e.target.classList.contains('slider__control')) {
@@ -93,6 +93,7 @@ function controlClick (e) {
     transformSlider(direction);
   }
 };
+
 // left, right click listener
 function setUpListeners() {
   allControls.forEach(function (item) {
@@ -118,14 +119,14 @@ let burgerBtn = document.querySelector('.burger-btn'),
     closeBtn = document.querySelector('.close-btn p');
 
 burgerBtn.onclick = function (){
-  burgerWindow.style.zIndex = '10';
-  burgerMenu.style.transform = 'translateX(0%)';
+    burgerWindow.style.zIndex = '10';
+    burgerMenu.style.transform = 'translateX(0%)';
 }
 closeBtn.onclick = function (){
-  burgerMenu.style.transform = 'translateX(100%)';
-  setTimeout(function(){
-    burgerWindow.style.zIndex = '-1';
-  },500);  
+    burgerMenu.style.transform = 'translateX(100%)';
+    setTimeout(function(){
+      burgerWindow.style.zIndex = '-1';
+    },500);  
 }
 
 //nav underline slide on mouseover
@@ -136,5 +137,5 @@ navField.onmousemove = function(e) {
     this.style.setProperty('--underlinePos', x +'px');
 }
 navField.onmouseout = function(){
-  navField.style.setProperty('--underlinePos', '50%');
+    navField.style.setProperty('--underlinePos', '50%');
 }
