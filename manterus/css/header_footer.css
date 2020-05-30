@@ -428,8 +428,4 @@ textarea{
     .telephone:last-of-type{
         margin: 0;
     }
-    /* slider */
-    .sl-item-inner img{
-        height: 130px;
-    }
 }
