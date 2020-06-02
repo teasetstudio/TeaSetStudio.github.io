@@ -121,7 +121,7 @@ header{
 }
 /*navigation*/
 .nav{
-    --underlinePos: 50%;
+    --underlinePos: ;
     position: relative;
 }
 .nav-menu{

@@ -10,7 +10,7 @@ window.onload = function () {
         const fmessage = form.elements['fmessage'].value;
         submitButton.disabled = true;
 
-        fetch('localhost:3000/test',{
+        fetch('http://localhost:3000/test',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
