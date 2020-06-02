@@ -15,12 +15,11 @@ app.get('/', (req,res) => {
 });
 
 app.post('/test', (req,res) => {
-    const { name, email} = req.body;
+    const {name, email, fmessage} = req.body;
     if (!name && !email) {
         res.send({ success: false, message: 'Данные введены некоректно' });
         return;
-    }
-    console.log('hellllo');
+    };
 
     let transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
@@ -28,18 +27,22 @@ app.post('/test', (req,res) => {
         secure: true, // true for 465, false for other ports
         auth: {
             user: "pankrakow", // generated ethereal user
-            pass: "123456781" // generated ethereal password
+            pass: "qwertyQ1" // generated ethereal password
+        },
+        tls: {
+            rejectUnauthorized: false
         }
     });
 
     transporter.sendMail({
-        from: 'pankrakow@yandex.ru', // sender address
+        from: '"No-reply message | Manterus" <pankrakow@yandex.ru>', // sender address
         to: "pankrakow@yandex.by", // list of receivers
-        subject: "Новый лид", // Subject line
+        subject: "Новый клиент", // Subject line
         html: `
             <ul>
                 <li><b>Name:</b> ${name}</li>
                 <li><b>Email:</b> ${email}</li>
+                <li><b>${name} message:</b><br> ${fmessage}</li>
             </ul>
         `,
     }).then(() => {

@@ -16,12 +16,16 @@ closeBtn.onclick = function (){
 }
 
 //nav underline slide on mouseover
-let navField = document.querySelector('.nav');   
+let navField = document.querySelector('.nav');
+let navActive = document.querySelector('.nav-active');
+let xActive = navActive.offsetLeft + navActive.offsetWidth/2;
 
-navField.onmousemove = function(e) { 
+navField.style.setProperty('--underlinePos', xActive+'px');
+
+navField.onmousemove = function(e){
     var x = e.offsetX;
     this.style.setProperty('--underlinePos', x +'px');
 }
 navField.onmouseout = function(){
-    navField.style.setProperty('--underlinePos', '50%');
+    this.style.setProperty('--underlinePos', xActive+'px');
 }

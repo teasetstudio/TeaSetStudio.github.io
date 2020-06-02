@@ -7,9 +7,10 @@ window.onload = function () {
         event.preventDefault();
         const name = form.elements['name'].value;
         const email = form.elements['email'].value;
+        const fmessage = form.elements['fmessage'].value;
         submitButton.disabled = true;
 
-        fetch('http://localhost:3000/test', {
+        fetch('localhost:3000/test',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -18,7 +19,7 @@ window.onload = function () {
             body: JSON.stringify({
                 name,
                 email,
-                
+                fmessage,
             }),
         })
                 .then(function(response) {
