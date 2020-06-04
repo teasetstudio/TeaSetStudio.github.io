@@ -197,6 +197,7 @@ header{
 }
 .footer-inner{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-item{
@@ -379,6 +380,15 @@ textarea{
         margin-top: 30px;
         display: flex;
         justify-content: center;
+    }
+    /*footer*/
+    address.footer-item{
+        width: 100%;
+        font-style: normal;
+        border-bottom: 1px solid var(--yellow);
+    }
+    .footer-item{
+        width: 100%;
     }
 }
 @media (max-device-width: 500px){
