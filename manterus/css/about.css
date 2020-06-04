@@ -1,0 +1,29 @@
+main{
+    margin-bottom: 50px;
+}
+.aboutManterus{
+    display: flex;
+}
+.textAbout{
+    padding: 50px 30px;
+
+}
+.textAbout h2{
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+.textAbout >p{
+    text-indent: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.aboutFeatures{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aboutFeatures-item {
+    text-align: center;
+    width: 25%;
+}
