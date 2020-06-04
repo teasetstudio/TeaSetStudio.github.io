@@ -384,11 +384,14 @@ textarea{
     /*footer*/
     address.footer-item{
         width: 100%;
-        font-style: normal;
+        border: none;
         border-bottom: 1px solid var(--yellow);
     }
     .footer-item{
         width: 100%;
+    }
+    form{
+        padding: 15px;
     }
 }
 @media (max-device-width: 500px){
