@@ -1,8 +1,7 @@
-main{
-    margin-bottom: 50px;
-}
+
 .aboutManterus{
     display: flex;
+    margin-bottom: 50px;
 }
 .textAbout{
     padding: 50px 30px;
@@ -26,4 +25,7 @@ main{
 .aboutFeatures-item {
     text-align: center;
     width: 25%;
+}
+li{
+    margin-top: 10px;
 }
