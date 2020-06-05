@@ -20,6 +20,7 @@
 }
 .service-item{
     width: 45%;
+    height: 280px;
     padding: 50px;
     border-radius: 10px;
     border: 2px solid var(--purple);
