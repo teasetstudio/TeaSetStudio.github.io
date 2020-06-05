@@ -185,9 +185,6 @@
     }
 }
 @media (max-device-width: 1200px){
-    body{
-        margin: 0 15px;
-    }
     .img-train{
         top: 120px;
         left: 0;

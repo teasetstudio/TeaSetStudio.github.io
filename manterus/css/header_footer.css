@@ -264,7 +264,9 @@ textarea{
     background-color: var(--orangish);
 }
 @media (max-device-width: 1200px){
-    
+    .container{
+        padding: 0 10px;
+    }
     .hide-mobile{
         display: none;
     }

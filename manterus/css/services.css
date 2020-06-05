@@ -1,0 +1,176 @@
+/*services*/
+.services{
+    margin: 50px auto 50px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+.services h2{
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 15px;
+    color: var(--purple);
+}
+.services-inner{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item{
+    width: 45%;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--purple);
+    background-color: rgba(241, 241, 215, .85);
+    cursor: pointer;
+}
+.service-item:hover{
+    filter: brightness(108%);
+}
+.service-item p{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.multimodal{
+    background-color:rgba(230, 227, 200, .85);
+}
+/*additional-services*/
+.additional-services{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 0;
+    margin: 30px auto;
+    position: relative;
+}
+.types-inner{
+    display: grid;
+    grid-template-columns: 18% 22% 25% 15% 20%;
+    grid-template-rows: 100px 100px 150px 60px 150px 100px 100px;
+    grid-template-areas: 'item1 item1 item2 item2 no1'
+                         'no2   item3 item2 item2 no1'
+                         'no2   item3 item4 item5 item5'
+                         'item6 item6 item6 item5 item5'
+                         'no3   item7 item8 item8 no4'
+                         'item9 item9 item8 item8 no4'
+                         'item9 item9 no5   no5   no4'
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+.item-hover{
+    filter: grayscale(80%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item-hover:hover{
+    transform: scale(1.5);
+    filter: grayscale(0%);
+    z-index: 10;
+}
+.item1{
+    grid-area: item1;
+    background:url(../img/brush2.jpg) no-repeat center;
+    background-size: 100% 100%;
+    color: var(--yellow);
+}
+.item2{grid-area: item2;
+    background: url(../img/apartment.jpg) no-repeat bottom;
+    background-size: cover;
+}
+.item3{grid-area: item3;
+    background: url(../img/balcony.jpg) no-repeat;
+    background-size: cover;
+}
+.item4{grid-area: item4;
+    background: url(../img/office.jpg) no-repeat;
+    background-size: cover;
+}
+.item5{grid-area: item5;
+    background: url(../img/house.jpg) no-repeat center;
+    background-size: cover;
+}
+.item6{grid-area: item6;
+    color: var(--yellow);
+    text-transform: uppercase;
+    background: #eee;
+    font-size: 1rem;
+    letter-spacing: 11px;
+    word-spacing: 5px;
+}
+.item7{grid-area: item7;
+    background: url(../img/wc.jpg) no-repeat center;
+    background-size: cover;
+}
+.item8{grid-area: item8;
+    background: url(../img/outsideHouse.jpg) no-repeat bottom;
+    background-size: cover;
+}
+.item9{grid-area: item9;
+    background: url(../img/kitchen.jpg) no-repeat center;
+    background-size: cover;
+}
+.grid-item h4{
+    padding: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: rgba(65, 65, 65, 0.7);
+}
+@media screen and (max-width:700px){
+    .services-inner{
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .service-item{
+        margin-top: 20px;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 575px){
+    /*services*/
+    .service-item{
+        width: 95%;
+    }
+    /*additional-services*/
+    .additional-services{
+        padding: 45px 0;
+    }
+    .types-inner{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 80px 80px 10px 100px 100px 50px 60px 100px 50px 50px 20px;
+        grid-template-areas: 'item1 item1 item2 item2'
+                             'item3 item3 item2 item2'
+                             'item3 item3 no2   no2'
+                             'item3 item3 item4 item4'
+                             'item5 item5 item5 item5'
+                             'item6 item6 item6 item6'
+                             'no3   item8 item8 item8'
+                             'no3   item8 item8 item8'
+                             'item7 item7 item9 item9'
+                             'item7 item7 item9 item9'
+                             'no4   no4   item9 item9'
+    }
+    .grid-item{
+        z-index: 3;
+    }
+    .item-hover{
+        filter: grayscale(20%);
+        opacity: .95;
+    }
+    .item6{
+        font-size: .8rem;
+        letter-spacing: 6px;
+        word-spacing: 0px;
+    }
+}
