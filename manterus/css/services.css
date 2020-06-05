@@ -85,19 +85,20 @@
     color: var(--yellow);
 }
 .item2{grid-area: item2;
-    background: url(../img/apartment.jpg) no-repeat bottom;
+    background: url(../img/warehouse.jpg) no-repeat bottom;
     background-size: cover;
+    color: white;
 }
 .item3{grid-area: item3;
-    background: url(../img/balcony.jpg) no-repeat;
+    background: url(../img/ensurance.jpg) no-repeat;
     background-size: cover;
 }
 .item4{grid-area: item4;
-    background: url(../img/office.jpg) no-repeat;
+    background: url(../img/consult.jpg) no-repeat;
     background-size: cover;
 }
 .item5{grid-area: item5;
-    background: url(../img/house.jpg) no-repeat center;
+    background: url(../img/customs.jpg) no-repeat center;
     background-size: cover;
 }
 .item6{grid-area: item6;
