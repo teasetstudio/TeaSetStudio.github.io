@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    --orangish:#c7ac17;
-    --yellow:#b4b439;
+    --orangish:#ccbc2b;
+    --yellow:#cccc2b;
     --purple: #321878;
     --white: #f7f7f7;
     font-family: 'Roboto', sans-serif;
@@ -20,7 +20,7 @@ mark{
     background: none;
     font-size: 1.2em;
     font-weight: 600;
-    color: var(--orangish);
+    color: var(--yellow);
 }
 .container{
     width: 100%;
@@ -32,7 +32,7 @@ header{
     padding: 30px 0;
 }
 .header-inner{
-    background: linear-gradient(-90deg, var(--orangish), var(--yellow),var(--orangish));
+    background: linear-gradient(-90deg, var(--yellow), var(--orangish),var(--yellow));
     border-radius: 15px;
     padding: 8px;
     border: 1px solid var(--purple);

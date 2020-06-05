@@ -80,9 +80,9 @@
 }
 .item1{
     grid-area: item1;
-    background:url(../img/brush2.jpg) no-repeat center;
-    background-size: 100% 100%;
     color: var(--yellow);
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 .item2{grid-area: item2;
     background: url(../img/warehouse.jpg) no-repeat bottom;
