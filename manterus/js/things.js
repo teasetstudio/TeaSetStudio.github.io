@@ -54,13 +54,16 @@ let curtains = {
         headerBtn:document.querySelector('.header-btn'),
         showBlog:function (blog){
             y = window.pageYOffset;
+            yBot = y + blog.offsetHeight;
             this.windowBlogs.style.visibility = 'visible';
             blog.style.top = y+'px';
             this.headerBtn.style.top = '0';
             // scroll limit
             window.onscroll = function (){
-                let scrollTop = window.pageYOffset;
+                let scrollTop = window.pageYOffset,
+                    scrollBot = scrollTop + window.innerHeight;
                 if (scrollTop<y) window.scrollTo(0,y);
+                if (scrollBot>yBot) window.scrollBy(0,-30);
             };
         },
         hideBlog: function (blog){
@@ -72,7 +75,8 @@ let curtains = {
         }
     },
     currentBlog,
-    y;
+    y,
+    yBot;
 
 // show and hide
 function showcase (servise){
