@@ -52,12 +52,14 @@ let curtains = {
         rwBlog:document.querySelector('.rw-blog'),
         mmBlog:document.querySelector('.mm-blog'),
         headerBtn:document.querySelector('.header-btn'),
+        heightBlog:document.querySelector('.posRelative'),
         showBlog:function (blog){
             y = window.pageYOffset;
             yBot = y + blog.offsetHeight;
             this.windowBlogs.style.visibility = 'visible';
             blog.style.top = y+'px';
             this.headerBtn.style.top = '0';
+            this.heightBlog.style.height = '350vh';
             // scroll limit
             window.onscroll = function (){
                 let scrollTop = window.pageYOffset,
@@ -70,6 +72,7 @@ let curtains = {
             blog.style.top = '100%';
             this.headerBtn.style.top = '-10%';
             this.windowBlogs.style.visibility = 'hidden';
+            this.heightBlog.style.height = '100vh';
             //scroll unlimit
             window.onscroll = function (){};
         }
