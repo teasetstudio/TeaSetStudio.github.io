@@ -53,21 +53,28 @@ let curtains = {
         mmBlog:document.querySelector('.mm-blog'),
         headerBtn:document.querySelector('.header-btn'),
         showBlog:function (blog){
-            currentBlog=blog;
-            let y = window.pageYOffset;
+            y = window.pageYOffset;
             this.windowBlogs.style.visibility = 'visible';
             blog.style.top = y+'px';
             this.headerBtn.style.top = '0';
+            // scroll limit
+            window.onscroll = function (){
+                let scrollTop = window.pageYOffset;
+                if (scrollTop<y) window.scrollTo(0,y);
+            };
         },
         hideBlog: function (blog){
             blog.style.top = '100%';
             this.headerBtn.style.top = '-10%';
             this.windowBlogs.style.visibility = 'hidden';
-
+            //scroll unlimit
+            window.onscroll = function (){};
         }
     },
-    currentBlog;
+    currentBlog,
+    y;
 
+// show and hide
 function showcase (servise){
     curtains.openCur();
 
@@ -79,6 +86,5 @@ function showcase (servise){
 
 function hidecase (){
     curtains.closeCur();
-
     blogs.hideBlog(currentBlog);
 }

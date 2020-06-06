@@ -166,14 +166,14 @@
 .header-btn{
     top: -10%;
     position: fixed;
-    width: 100%;
+    width: inherit;
     background-color: var(--white);
     z-index: 100;
     text-align: right;
     padding: 8px 0;
     transition: all .5s ease;
 }
-.close-btn{
+.close-blog-btn{
     margin-top: 10px;
     font-size: 2rem;
     font-weight: 300;
@@ -191,25 +191,106 @@
 /*blogs*/
 .posRelative{
     position: relative;
-    height: 100vh;
+    height: 400vh;
     overflow: hidden;
 }
 .rw-blog, .mm-blog{
     position: absolute;
     top: 100%;
-    transition: all .5s ease;
+    transition: all .8s ease;
+    padding: 30px 0;
+}
+.blog-gen h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.blog-gen .blog1 p{
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-right: 50px;
+    text-indent: 15px;
+}
+.blog1, .blog2{
+    display: flex;
+}
+.blog1 img{
+    display: inline;
+}
+.blog2{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+.blog-item{
+    text-align: center;
+    width: 20%;
+    margin: 0 15px;
+}
+.blog-item:nth-of-type(3){
+    width: 25%;
+}
+.blog-item img{
+    height: 60px !important;
+}
+.blog-item h4{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+@media screen and (max-width:1000px){
+    .blog1 img{
+        height: 200px !important;
+    }
 }
 @media screen and (max-width:700px){
     .services-inner{
         margin-top: 30px;
-        justify-content: center;
     }
     .service-item{
         margin-top: 20px;
-        width: 65%;
+    }
+    /*window blog*/
+    .blog-gen h4{
+        font-size: 1.7rem;
+    }
+    .blog-gen .blog1 p{
+        font-size: 1.1rem;
+        margin-right: 0;
+    }
+    .blog1{
+        width: 100%;
+    }
+    .blog1 img{
+        display: none;
+    }
+    .blog2{
+        margin: 50px auto;
+    }
+    .blog-item{
+        width: 45%;
+        margin: 25px 3px;
+    }
+    .blog-item:nth-of-type(3){
+        width: 45%;
+    }
+    .blog-item img{
+        height: 60px !important;
+    }
+    .blog-item h4{
+        text-transform: none;
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 575px){
+    /*window blog*/
+    .blog-item{
+        width: 100%;
+    }
+    .blog-item:nth-of-type(3){
+        width: 100%;
+    }
     /*services*/
     .service-item{
         width: 95%;
