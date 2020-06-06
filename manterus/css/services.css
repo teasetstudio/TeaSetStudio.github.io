@@ -191,7 +191,7 @@
 /*blogs*/
 .posRelative{
     position: relative;
-    height: 350vh;
+    height: 100vh;
     overflow: hidden;
 }
 .rw-blog, .mm-blog{
