@@ -130,6 +130,75 @@
     border-radius: 5px;
     background-color: rgba(65, 65, 65, 0.7);
 }
+/*curtain*/
+.curtains{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.curtain{
+    position: absolute;
+    height: inherit;
+    width: 50%;
+    background-color: #e7e7e7;
+    transition: all .2s ease;
+}
+.cur-left{
+    left: -50%;
+}
+.cur-right{
+    right: -50%;
+}
+/*windows BLOG*/
+.window-blogs{
+    position: absolute;
+    top: 10%;
+    visibility: hidden;
+    background: none;
+    z-index: 20;
+    transition: all .5s ease;
+    width: 100%;
+}
+/* blog header button*/
+.header-btn{
+    top: -10%;
+    position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 100;
+    text-align: right;
+    padding: 8px 0;
+    transition: all .5s ease;
+}
+.close-btn{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 8px;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.close-btn:hover{
+    filter: brightness(90%);
+}
+/*blogs*/
+.posRelative{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.rw-blog, .mm-blog{
+    position: absolute;
+    top: 100%;
+    transition: all .5s ease;
+}
 @media screen and (max-width:700px){
     .services-inner{
         margin-top: 30px;

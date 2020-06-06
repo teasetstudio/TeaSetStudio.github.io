@@ -91,16 +91,15 @@
         <main class="services container">
             <h2>Услуги</h2>
             <div class="services-inner">
-                <button class="service-item railway">
+                <button class="service-item railway" target="railway" onclick="showcase(this)">
                     <img src="img/railway-service.png" height="100" alt="">
                     <p>Экспедирование и перевозка грузов<br> по железной дороге</p>                    
                 </button>
-                <button class="service-item multimodal">
+                <button class="service-item multimodal" onclick="showcase(this)">
                     <img src="img/multimodal-service.png" height="100" alt="">
                     <p>Мультимодальные перевозки</p>                    
                 </button>
-            </div>
-            
+            </div>  
         </main>
         <section class="additional-services">
             <div class="types-inner">
@@ -122,6 +121,29 @@
                 <div class="grid-item item-hover item9"><h4>Сборка грузов<br> в Европе</h4></div>
             </div>
         </section>
+        <section class="curtains">
+            <div class="curtain cur-left"></div>
+            <div class="curtain cur-right"></div>
+        </section>
+        <section class="window-blogs">
+            <div class="header-btn">
+                <div class="container">
+                    <button class="close-btn" onclick="hidecase()">Close</button>
+                </div>
+            </div>
+            <div class="posRelative container">
+                <div class="rw-blog">
+                    <h4>Почему железная дорога?</h4>
+                    <p>Поставки грузов по железнодорожным путям являются безопасным, надежным, недорогим способом доставки. 
+                        Разветвленность и большая протяженность рельсовых путей способствует спросу на услуги железнодорожных
+                        перевозок. Этот вариант грузовых поставок прочно занял свое место в международной транспортной системе.</p>
+                </div>
+                <div class="mm-blog">
+                    <h4>vekmnbvj;lf</h4>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer-inner">
