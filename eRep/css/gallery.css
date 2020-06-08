@@ -171,6 +171,19 @@
 [id^="lightbox-"] a.close::after {
     content: "X";
 }
+@media (max-width:1400px){
+    [id^="lightbox-"] .content > a.close {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    [id^="lightbox-"] .content > .title {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+    [id^="lightbox-"] .content > .title::after {
+        opacity: 1;
+    }
+}
 @media (max-width: 800px){
     #gallery {
         display: flex;
@@ -186,4 +199,9 @@
     #gallery > div {
         width: 98%;
    }
+}
+@media screen and (max-aspect-ratio: 16/13){
+    #gallery {
+        grid-template: repeat(5, 9vh) / repeat(6, 1fr);
+    }
 }
