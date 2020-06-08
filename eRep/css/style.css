@@ -385,6 +385,7 @@ p.work-time{
     color: var(--black);
     letter-spacing: 10px;
     word-spacing: 10px;
+    font-weight: 500;
 }
 .stages > div{
     display: flex;
