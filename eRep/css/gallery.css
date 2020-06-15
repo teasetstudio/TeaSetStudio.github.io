@@ -1,7 +1,7 @@
-.gal{
+.galleryBody{
     margin: 100px 20px;
 }
-.gal h3{
+.galleryBody h3{
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -11,7 +11,7 @@
     word-spacing: 10px;
     margin-bottom: 30px;
 }
-.galBody{
+.galInner{
     margin: 5px;
     position: relative;
 }
@@ -34,20 +34,17 @@
 }
 #gallery > div:nth-child(4){
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 #gallery > div:nth-child(5){
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 2;
 }
 #gallery > div:nth-child(6){
     grid-column: span 1;
     grid-row: span 2;
 }
-#gallery > div:nth-child(5){
-    grid-column: span 1;
-    grid-row: span 3;
-}
+
 #gallery > div > a{
     opacity: 0;
     position: absolute;
@@ -191,7 +188,7 @@
         flex-wrap: wrap;
    }
     #gallery > div {
-        width: 48%;
+        width: 46%;
         margin: 1%;
    }
 }
