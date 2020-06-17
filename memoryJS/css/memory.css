@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 100px auto 0;
+    background-color: rgb(73, 73, 197);
+    --height: 150px;
+}
+#memo-body{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#memo-body > div {
+    width: 150px;
+    height: var(--height);
+    margin: 5px;
+    perspective: 500px;
+}
+.memo{
+    height: inherit;
+    width: inherit;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform .3s ease;
+}
+.memo-face, .memo-back{
+    width: inherit;
+    height: inherit;
+    border-radius: 15px;
+    border: 5px solid lightgray;
+    text-align: center;
+    line-height: var(--height);
+    background-color: rgb(190, 165, 119);
+    backface-visibility: hidden;
+}
+.memo-face img {
+    vertical-align: middle;
+    width: 100%;
+}
+.memo-back{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    background-color: rgb(92, 69, 36);
+}
+
