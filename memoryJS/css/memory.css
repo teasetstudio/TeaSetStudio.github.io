@@ -27,7 +27,7 @@ body{
     width: inherit;
     position: relative;
     transform-style: preserve-3d;
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
     transition: transform .3s ease;
 }
 .memo-face, .memo-back{
