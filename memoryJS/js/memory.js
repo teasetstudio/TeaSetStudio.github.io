@@ -1,5 +1,5 @@
 let memoInput = document.getElementById('memo-body'),
-    clickScore = document.querySelector('#organaizer span'),
+    clickScore = document.querySelector('#clicks span'),
     IMG_NUM_IN_FOLDER = 47,
     rows = 5,
     collums = 8,

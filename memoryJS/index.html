@@ -6,7 +6,15 @@
         <link rel="stylesheet" href="css/memory.css">
     </head>
     <body>
-        
+        <div id="players">
+            <div id="choice" class="container">
+                <h3>Сделайте выбор:</h3>
+                <div class="chice-btn">
+                    <button>1 Игрок</button>
+                    <button>2 Игрока</button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div id="records">
                 <h3>Рекорды:</h3>
@@ -21,8 +29,9 @@
                     <li>Госпожа Печаль: 172 кликов</li>
                 </ol>
             </div>
+            <div id="clicks">Количество кликов: <span>0</span></div>
         </div>
-        <div id="organaizer" class="container">Количество кликов: <span>0</span></div>
+       
         <div id="memo-body" class="container"></div>
         <script src="js/memory.js"></script> 
     </body>
