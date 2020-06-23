@@ -377,6 +377,7 @@ textarea{
         margin: 20px auto;
     }
     .burger-email{
+        font-size: 1.3rem;
         margin-top: 30px;
         display: flex;
         justify-content: center;

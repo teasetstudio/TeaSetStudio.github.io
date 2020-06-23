@@ -10,7 +10,7 @@ window.onload = function () {
         const fmessage = form.elements['fmessage'].value;
         submitButton.disabled = true;
 
-        fetch('http://localhost:3000/test',{
+        fetch('https://manterus.herokuapp.com/test',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -32,7 +32,6 @@ window.onload = function () {
                     submitButton.disabled = false;
                     console.log(myJson);
                 });
-    }
-
+    };
     form.addEventListener('submit', myFunction);
 };

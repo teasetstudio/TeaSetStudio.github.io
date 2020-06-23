@@ -1,5 +1,6 @@
 let memoInput = document.getElementById('memo-body'),
-    NUM_IMAGES_IN_FOLDER = 50,
+    clickScore = document.querySelector('#organaizer span'),
+    IMG_NUM_IN_FOLDER = 47,
     rows = 5,
     collums = 8,
     numItems = rows * collums, // must be even number!!!
@@ -20,12 +21,26 @@ let start={
                 this.addElement (array[i], "A0"+ i, att[i]);
         },
         createArray: function (){
+
             // image names array (data base) and image order array
             for (let i=1; i<numItems+1; i++){
-                cardsList.push (i + ".png");
-            };
-            //images sequence array (order of cards)
+                let rand = (Math.ceil (Math.random()*IMG_NUM_IN_FOLDER)) + ".png",
+                    noRepeat = 0;
 
+                while (noRepeat === 0){
+                    noRepeat = 1;
+                    for (let i=0; i<cardsList.length; i++){
+                        if (cardsList[i]===rand){
+                            rand = (Math.ceil (Math.random()*IMG_NUM_IN_FOLDER)) + ".png";
+                            noRepeat = 0;
+                            break;
+                        };
+                    };
+                };
+                cardsList.push (rand);
+            };
+
+            //images sequence array (order of cards)
             for (let i=0; i<(numItems/2); i++){
                 let randNum1 = Math.floor(Math.random()*numItems),
                     randNum2 = Math.floor(Math.random()*numItems);
@@ -56,6 +71,7 @@ let nextClickIndex = 1, //1 - first memo, 2 - second
     attOne,
     attTwo,
     score = 1,
+    clicks = 0,
     memoTwo;
 
 let gameActions = {
@@ -83,6 +99,8 @@ let gameActions = {
     openMemo: function (memo){
         memo.style.transform = "rotateY(0deg)";
         memo.setAttribute ("isopen", "da");
+        clicks++;
+        clickScore.innerHTML = clicks;
     },
     closeMemo: function (memo){
         memo.style.transform = "rotateY(180deg)";

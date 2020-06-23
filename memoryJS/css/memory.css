@@ -5,14 +5,54 @@
 }
 body{
     height: 100vh;
-    margin: 100px auto 0;
-    background-color: rgb(73, 73, 197);
+    background-color: #e7e7e7;
+    font-family: Arial, sans-serif;
     --height: 150px;
+    --black: rgb(29, 40, 41);
+    --white: rgb(233, 218, 215);
 }
-#memo-body{
+.container{
+    position: relative;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+}
+#organaizer{
+    font-size: 1.2rem;
+    color: var(--black);
+    margin:30px auto 45px;
+    padding: 0 20px;
+}
+#records{
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    color: rgb(233, 215, 215);
+    padding: 20px;
+    border: 2px solid var(--black);
+    overflow: hidden;
+    height: 65px;
+    transition: all .3s ease;
+    z-index: 1;
+    background-color: rgb(197, 83, 42);
+}
+#records h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#records:hover{
+    height: 280px;
+}
+#records li{
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+#records li:first-of-type{
+    margin-bottom: 13px;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+#memo-body{
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,10 +74,10 @@ body{
     width: inherit;
     height: inherit;
     border-radius: 15px;
-    border: 5px solid lightgray;
+    border: 5px solid rgb(78, 104, 109);
     text-align: center;
     line-height: var(--height);
-    background-color: rgb(190, 165, 119);
+    background-color: rgb(119, 179, 190);
     backface-visibility: hidden;
 }
 .memo-face img {
@@ -47,8 +87,18 @@ body{
 .memo-back{
     position: absolute;
     transform: rotateY(180deg);
+    border-color: rgb(109, 89, 78);
     top: 0;
     left: 0;
-    background-color: rgb(92, 69, 36);
+    background-color: rgb(187, 122, 84);
 }
+/*players*/
+#players{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#choice{
 
+}
