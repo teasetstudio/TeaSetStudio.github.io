@@ -93,7 +93,7 @@ let gameActions = {
         }
     },
     winGame: function (){
-        alert ("Congratulation! You won the game!");
+        alert ("Поздравляю! Ты выйграл!" + "\nВы справились за " + clicks + " кликов.");
         location.reload();
     },
     openMemo: function (memo){
