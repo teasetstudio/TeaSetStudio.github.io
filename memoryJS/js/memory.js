@@ -1,6 +1,6 @@
 let memoInput = document.getElementById('memo-body'),
     clickScore = document.querySelector('#clicks span'),
-    IMG_NUM_IN_FOLDER = 116,
+    IMG_NUM_IN_FOLDER = 120,
     rows = 5,
     collums = 8,
     numItems = rows * collums, // must be even number!!!
