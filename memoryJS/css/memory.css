@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
     background-color: #e7e7e7;
     font-family: Arial, sans-serif;
     --height: 150px;
@@ -17,8 +16,11 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
+.container2{
+    max-width: 1000px;
+}
 #clicks{
-    display: flex;
+    z-index: 7;
     font-size: 1rem;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -28,11 +30,72 @@ body{
 }
 #clicks span{
     margin-left: 5px;
+    z-index: 10;
 }
+#menu-btn{
+    position: absolute;
+    left: -100px;
+    top: -9px;
+    padding: 7px;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+    z-index: 3;
+}
+#menu-btn:hover{
+    background-color: var(--white);
+}
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 400px;
+    background-color: rgba(233, 218, 215, 0.8);
+    transform: translateX(-400px);
+    z-index: 30;
+    transition: transform .3s ease;
+    border-right: 5px solid var(--black);
+}
+#menu h4{
+    margin-top: 8vh;
+    text-align: center;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.menu-block{
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-item{
+    width: 40%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    transition: all .3s ease;
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+.block-item:hover{
+    background-color: var(--white);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*records*/
 #records{
     position: absolute;
     top: -12px;
-    right: 10px;
+    right: -100px;
     color: rgb(233, 215, 215);
     padding: 20px;
     padding-left: 25px;
@@ -40,7 +103,7 @@ body{
     overflow: hidden;
     height: 65px;
     transition: all .3s ease;
-    z-index: 1;
+    z-index: 30;
     background-color: rgb(197, 83, 42);
 }
 #records h3{
@@ -63,9 +126,17 @@ body{
     color: var(--black);
     font-size: 1.2rem;
 }
+#level-1{
+    display: block;
+}
+#level-2{
+    display: none;
+}
 #memo-body{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    z-index: 10;
 }
 #memo-body > div {
     width: 150px;
@@ -90,11 +161,19 @@ body{
     line-height: var(--height);
     background-color: rgb(119, 179, 190);
     backface-visibility: hidden;
+    transition: background 1s linear;
 }
 .memo-face img {
     vertical-align: middle;
     width: 100%;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 .memo-back{
     position: absolute;
     transform: rotateY(180deg);
@@ -103,19 +182,51 @@ body{
     left: 0;
     background-color: rgb(187, 122, 84);
 }
-/*players*/
-#players{
+/*two players*/
+#twoPlayers{
     display: none;
-    z-index: 2;
+    position: absolute;
+    top: -12px;
+    right: 310px;
+    z-index: -1;
+}
+#twoPlayers p{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    width: 140px;
+    text-align: center;
+    z-index: 3;
+    transition: all .5s ease;
+    background-color: rgb(136, 171, 187);
+}
+p#redPlayer{
+    margin-right: 100px;
+    background-color: rgb(207, 167, 143);
+    transform: scale(1.1);
+}
+#playerSlider{
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 100vw;
-    background-color: rgba(231, 231, 231, 0.836);
+    width: 500px;
+    background: rgb(255, 226, 208);
+    z-index: -1;
+    transition: all 2s ease;
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    transform: translateX(0px);
 }
-#choice{
-    padding: 50px;
-    text-align: center;
-    color: var(--white);
-    background-color: rgb(70, 70, 70);
+#playerSlider:hover{
+    background: rgb(202, 244, 255);
+}
+@media screen and (max-width: 1500px){
+    body{
+        --height: 130px;
+    }
+    #memo-body > div {
+        width: 130px;
+    }
 }

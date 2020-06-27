@@ -11,30 +11,52 @@
         <meta property="og:image" content="img/81.png">
     </head>
     <body>
-        <div id="players">
-            <div id="choice" class="container">
-                <h3>Сделайте выбор:</h3>
-                <div class="chice-btn">
-                    <button>1 Игрок</button>
-                    <button>2 Игрока</button>
-                </div>
-            </div>
-        </div>
-        <div class="container">
+        <header class="container container2">
             <div id="records">
                 <h3>Рекорды:</h3>
-                <ol>
+                <ol id="level-1">
                     <li>Радость: 74 кликов</li>
                     <li>RZ-25: 78 кликов</li>
                     <li>Галочка: 80 кликов</li>
-                    <li>Ваня: 82 кликов</li>
+                    <li>Агнешка: 86 кликов</li>
                     <li>Tivan: 94 кликов</li>
                     <li>Иванушка: 96 кликов</li>
+                    <li>ЭЮЯ: 130 кликов</li>
                     <li>Сударыня Грусть: 156 кликов</li>
                     <li>Госпожа Печаль: 172 кликов</li>
                 </ol>
+                <ol id="level-2">
+                    <li>Ваня: 136 кликов</li>
+                    <li>Ваня: 138 кликов</li>
+                    <li>Ваня: 142 клика</li>
+                    <li>Агнешка: 158 клика</li>
+                    <li>Ваня: 208 кликов</li>
+                    <li>Ваня: 404 кликов</li>
+                    <li>Ваня: 436 кликов</li>
+                    <li>Ваня: 502 кликов</li>
+                    <li>Ваня: 530 кликов</li>
+
+                </ol>
             </div>
+            <button id="menu-btn" onclick="openMenu()">Menu</button>
             <div id="clicks">Кликов: <span>0</span></div>
+            <div id="twoPlayers">
+                <p id="redPlayer">Красный: <span>0</span></p>
+                <p id="bluePlayer">Синий: <span>0</span></p>
+                <div id="playerSlider"></div>
+            </div>
+        </header>
+        <div id="menu">
+            <h4>Игроков:</h4>
+            <div class="menu-block">
+                <button class="block-item" onclick="playerOne()">1 Игрок</button>
+                <button class="block-item" onclick="playerTwo()">2 Игрока</button>
+            </div>
+            <h4>Сложность:</h4>
+            <div class="menu-block">
+                <button class="block-item" onclick="normStart()">Норма</button>
+                <button class="block-item" onclick="hardStart()">Сложнее</button>
+            </div>
         </div>
         <div id="memo-body" class="container"></div>
         <script src="js/memory.js"></script> 
