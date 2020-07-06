@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.options('*', cors());
@@ -36,7 +36,7 @@ app.post('/test', (req,res) => {
 
     transporter.sendMail({
         from: '"No-reply message | Manterus" <pankrakow@yandex.ru>', // sender address
-        to: "pankrakow@yandex.by", // list of receivers
+        to: "pankrakow@yandex.by, 220025@mail.ru, manterus.way@gmail.com", // list of receivers
         subject: "Новый клиент", // Subject line
         html: `
             <ul>
@@ -57,5 +57,5 @@ app.listen(port, (err) => {
     if (err) {
         return console.log('something bad happened', err)
     }
-    console.log(`server is listening on ${port}`)
+    console.log(`server is listening on port ${port}`);
 })

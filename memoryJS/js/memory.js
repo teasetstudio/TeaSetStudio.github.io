@@ -16,7 +16,10 @@ let memoInput = document.getElementById('memo-body'),
 let start={
         addElement:function(image, idName, att){
             let newDiv = document.createElement("div");
-            newDiv.innerHTML = "<div id=\"" + idName + "\" target=\"" + att + "\" isopen=\"no\" class=\"memo\"><div class=\"memo-face\"><img src=\"./img/"+ image + "\"></div>  <div class=\"memo-back\"></div>  </div>";
+            newDiv.innerHTML = `<div id=${idName} target=${att} isopen="no" class="memo">
+                                    <div class="memo-face"><img src="./img/${image}"></div>
+                                    <div class="memo-back"></div>
+                                </div>`;
             memoInput.appendChild(newDiv);
         },
         createTableItem: function(array, att){
@@ -200,15 +203,7 @@ function hardStart(){
         window.scrollBy (0, 5)
     }, 30)
 };
-// // prevent image select\drag
-// window.onload = function() {
-//     document.body.onselectstart = function() {
-//         return false;
-//     }
-//     document.body.dragstart = function() {
-//         return false;
-//     }
-// }
+
 // player counter
 let records = document.getElementById('records'),
     divTwoPlayers = document.getElementById('twoPlayers'),
