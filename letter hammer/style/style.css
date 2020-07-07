@@ -92,7 +92,7 @@ body{
 }
 /* score div */
 #score-div, #score-div2{
-    transition: all .5s ease;
+    transition: all .8s ease;
     padding: 3px 10px;
     border: 2px solid transparent;
 }

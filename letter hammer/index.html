@@ -91,7 +91,7 @@
             <p>Введите русское слово от 4 до 10 букв:</p>
             <input id="input-word" type="password" maxlength="10" autocomplete="off" autofocus>
             <div class="btns">
-                <button id="word-btn" type='button' onclick="gameActions.getWord()">Ввод</button>
+                <button id="word-btn" type='button' onclick="gameActions.getWord(this)">Ввод</button>
                 <button id="show-btn" type='button' onclick="hideText(this)" onfocus="showText()"><img src="./img/show.png" height="30" alt=""></button>
             </div>
             

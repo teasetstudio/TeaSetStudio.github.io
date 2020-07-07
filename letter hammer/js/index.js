@@ -270,10 +270,10 @@ let gameActions = {
         start.lettersArray(start.randomWord());
         start.createWordTable();
         if (players == 2){
-            this.inputWord();
             setTimeout (function (){
                 gameActions.showCurPlayer();
-            }, 300);
+            }, 0);
+            this.inputWord();
         };
     },
     showCurPlayer:function(){
@@ -298,7 +298,7 @@ let gameActions = {
         }, 100)
         wordInput.focus();
     },
-    getWord:function(){
+    getWord:function(btn){
         let currentWord = wordInput.value.toLowerCase(),
             curWorLength = currentWord.length;
         if(regexRu.test(currentWord) == true && curWorLength > 3){
@@ -309,6 +309,7 @@ let gameActions = {
             }, 400);
         } else {
             alert('Вы ввели слово неправильно!\nВведите слово на русском от 4 до 10 букв.')
+            btn.blur();
         };
     },
     twoPlaRestart:function (word){ //inin in btn
