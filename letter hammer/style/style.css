@@ -13,6 +13,7 @@ body{
     --border4: rgba(31, 31, 148, 0.589);
     --fontPink: rgb(216, 141, 200);
     --fontBlue: rgb(141, 142, 216);
+    --yellowish:rgb(83, 90, 19);
 }
 .container{
     width: 100%;
@@ -90,10 +91,24 @@ body{
     text-shadow: 2px 2px 20px rgb(102, 112, 12);
 }
 /* score div */
+#score-div, #score-div2{
+    transition: all .5s ease;
+    padding: 3px 10px;
+    border: 2px solid transparent;
+}
 #score-div p{
     font-size: 1.7rem;
 }
+#score-div2{
+    display: none;
+}
+#score-div2 p{
+    font-size: 1.7rem;
+}
 #score{
+    font-size: 3.2rem;
+}
+#score2{
     font-size: 3.2rem;
 }
 /* attempts */
@@ -105,7 +120,7 @@ body{
 }
 #pic-hammer{
     position: absolute;
-    left: 47%;
+    left: 45%;
     transform-origin: 110% 110%;
     transition: left .5s ease-in-out;
 }
@@ -253,4 +268,65 @@ label.input{
     margin: 0 15px;
     text-transform: uppercase;
     text-shadow: 3px 3px 60px rgb(166, 145, 243);
+}
+/* for two players (word - window) */
+#word-window{
+    display: none;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(16, 8, 39);
+    box-shadow: -80px 0 100px var(--border2), 0 50px 50px var(--border2), 80px 0 100px var(--border2), 0 -50px 50px var(--border2);
+    border: 2px solid rgb(108, 64, 230);
+    padding: 30px;
+    transition: top .3s ease;
+}
+#word-window p{
+    text-align: center;
+    color: rgb(104, 105, 177);
+    margin-bottom: 15px;
+}
+#input-word{
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(162, 185, 32);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 80px rgb(102, 112, 12);
+    background-color: rgb(92, 32, 89);
+    box-shadow: -5px 0 15px var(--border) inset, 0 5px 15px var(--border) inset, 5px 0 15px var(--border) inset, 0 -5px 15px var(--border) inset;
+    border: 2px solid rgb(211, 89, 211);
+    outline: none;
+}
+.btns{
+    text-align: center;
+    position: relative;
+}
+#word-btn{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    color: rgb(160, 105, 185);
+    background-color: rgb(62, 29, 122);
+    box-shadow: -5px 0 15px var(--border3) inset, 0 5px 15px var(--border3) inset, 5px 0 15px var(--border3) inset, 0 -5px 15px var(--border3) inset;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#show-btn{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#show-btn:hover, #word-btn:hover{
+    filter: brightness(140%);
+}
+#show-btn:focus, #word-btn:focus{
+    filter: brightness(60%);
 }

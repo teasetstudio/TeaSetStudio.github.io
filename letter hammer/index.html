@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta property="og:title" content="Letter Hammer | Игры для детей">
         <meta property="og:image" content="./img/hammer.png">
         <meta property="og:site_name" content="Letter Hammer">
-        <meta property="og:description" content="letter Hammer, игры для детей, маленьких">
+        <meta property="og:description" content="letter Hammer, висельница, игры для детей, маленьких">
         <title>Letter Hammer</title>
         <link rel="stylesheet" href="./style/style.css">
         <link rel="icon" href="./img/hammer.png">
@@ -17,16 +17,16 @@
                 <div class="menu-block">
                     <h3>Сложность:</h3>
                     <div class="level">
-                        <button class="level-item">Норма</button>
-                        <button class="level-item">Сложно</button>
+                        <button class="level-item" onclick="normLevel()">Норма</button>
+                        <button class="level-item" onclick="hardLevel()">Сложно</button>
                     </div>
                 </div>
-                
+
                 <div class="menu-block">
                     <h3>Режимы:</h3>
                     <div class="level">
-                        <button class="level-item">1 Игрок</button>
-                        <button class="level-item">2 Игрока</button>
+                        <button class="level-item" onclick="onePlayer()">1 Игрок</button>
+                        <button class="level-item" onclick="twoPlayers()">2 Игрока</button>
                     </div>
                 </div>
             </div>
@@ -39,6 +39,11 @@
                         <p>Очки</p>
                         <div id="score" class="number-item">0</div>
                     </div>
+                    <div id="score-div2" class="right-item">
+                        <p>Очки</p>
+                        <div id="score2" class="number-item">0</div>
+                    </div>
+
                     <p class="hammer">Hammer</p>
                 </div>
                 <div class="attempt-ham">
@@ -61,8 +66,8 @@
                     <div id="letter-box">
                         <label class="input" for="fname">Введите букву:</label>
                         <div class="input-shadow">
-                            <input id="letter-input" class="input" type="text" name="fname" value=""
-                                   autocomplete="off" autofocus maxlength="1">
+                            <input id="letter-input" class="input" type="text" value=""
+                                   autocomplete="off" maxlength="1">
                         </div>
                         <button id="letter-btn" type='button' class="input">Ввод</button>
                     </div>
@@ -81,6 +86,17 @@
                 </div>
             </div>
         </main>
+        <!-- for two players -->
+        <div id="word-window">
+            <p>Введите русское слово от 4 до 10 букв:</p>
+            <input id="input-word" type="password" maxlength="10" autocomplete="off" autofocus>
+            <div class="btns">
+                <button id="word-btn" type='button' onclick="gameActions.getWord()">Ввод</button>
+                <button id="show-btn" type='button' onclick="hideText(this)" onfocus="showText()"><img src="./img/show.png" height="30" alt=""></button>
+            </div>
+            
+        </div>
+
         <script src="./js/index.js"></script>
     </body>
 </html>
