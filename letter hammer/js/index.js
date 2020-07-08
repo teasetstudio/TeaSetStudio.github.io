@@ -39,7 +39,7 @@ const wordsArr = ['соль','сахар', 'кошка', 'собака', 'пор
       wordsDiv = document.getElementById('words-guessed');
 
 let attemptDivsList = [],
-    complexity = 13,
+    complexity = 3,
     currentLetter,
     curScore = 0,
     guessedLetters = 0,
@@ -227,6 +227,15 @@ let gameActions = {
     twoWinWord:function(){
         guessedWords++;
         wordsDiv.innerHTML = guessedWords;
+        this.changeCurPlayer();
+        alert ('Отгадал, поздравляю!!\n+' + curScore + ' очков(а)');
+        if (startPlayer == 0) {
+            this.endTwoPlayersGame();
+        } else  {
+            this.restart();
+        };
+    },
+    changeCurPlayer:function(){
         if (curPlayer == 1) {
             score = calcScore(score);
             scoreDiv.innerHTML = score;
@@ -236,12 +245,6 @@ let gameActions = {
             score2Div.innerHTML = score2;
             curPlayer = 1;
         };
-        alert ('Отгадал, поздравляю!!\n+' + curScore + ' очков(а)');
-        if (startPlayer == 0) {
-            this.endTwoPlayersGame();
-        } else  {
-            this.restart();
-        };
     },
     looseWord:function(){
         if (players == 1){
@@ -250,6 +253,7 @@ let gameActions = {
             this.restart();
         } else if (startPlayer === curPlayer){
             alert ('Слово: ' + lettersArr.join('') + '\nИгра закончится после следующего игрока');
+            this.changeCurPlayer();
             startPlayer = 0;
             this.restart();
         } else {
