@@ -39,7 +39,7 @@ const wordsArr = ['соль','сахар', 'кошка', 'собака', 'пор
       wordsDiv = document.getElementById('words-guessed');
 
 let attemptDivsList = [],
-    complexity = 3,
+    complexity = 13,
     currentLetter,
     curScore = 0,
     guessedLetters = 0,
@@ -204,11 +204,9 @@ let gameActions = {
         easing: 'ease-in',
         iterations: 1
         });
-
         attemptDivsList[wrongLetters.length-1].style.background = 'rgb(36, 28, 65)';
         attemptDivsList[wrongLetters.length-1].style.borderColor = 'rgb(25, 16, 58)';
         attemptDivsList[wrongLetters.length-1].style.boxShadow = '-1px 0 20px rgb(29, 0, 32), 0 1px 60px var(--border4)';    
-
         attemptDivsList[wrongLetters.length-1].addEventListener('transitionend', () => {
             letterInput.focus();
             if (wrongLetters.length >= complexity && event.propertyName == "box-shadow"){
