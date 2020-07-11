@@ -27,6 +27,8 @@ const wordsArr = ['соль','сахар', 'кошка', 'собака', 'пор
       hidedWord = document.getElementById('hided-word'),
       letterBtn = document.getElementById('letter-btn'),
       letterInput = document.getElementById('letter-input'),
+      recordsLvl1 = document.getElementById('level-1'),
+      recordsLvl2 = document.getElementById('level-2'),
       regexRu = /[а-яА-ЯЁё]/,
       scoreDiv = document.getElementById('score'),
       scoreBlock = document.getElementById('score-div'),
@@ -348,11 +350,15 @@ function normLevel(){
     complexity = 13;
     gameActions.clearScore();
     gameActions.restart();
+    recordsLvl1.style.display = 'block';
+    recordsLvl2.style.display = 'none';
 };
 function hardLevel(){
     complexity = 8;
     gameActions.clearScore();
     gameActions.restart();
+    recordsLvl1.style.display = 'none';
+    recordsLvl2.style.display = 'block';
 };
 /* players */
 function onePlayer(){

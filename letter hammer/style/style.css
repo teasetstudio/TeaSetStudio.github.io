@@ -42,6 +42,43 @@ body{
     border-radius: 0 0 10px 10px;
     transition: top .3s ease-in-out;
 }
+#records{
+    position: absolute;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    top: 25px;
+    right: 200px;
+    padding: 15px 20px 15px 40px;
+    background-color: rgb(116, 51, 116);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    height: 47px;
+    transition: all .5s ease-out;
+}
+#records:hover{
+    height: 290px;
+}
+#level-1{
+    display: block;
+}
+#level-2{
+    display: none;
+}
+#records p{
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 7px;
+}
+#records ol li{
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+#records ol li:first-of-type{
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: rgb(234, 0, 255);
+}
 .menu-block{
     text-align: center;
     flex: 0 0 300px;
