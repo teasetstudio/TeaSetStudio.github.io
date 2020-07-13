@@ -20,7 +20,9 @@ const wordsArr = ['соль','сахар', 'кошка', 'собака', 'пор
                   'скамейка', 'дрова', 'дверь', 'солнце', 'поведение', 'цвет', 'свет', 'книга', 'заповедь',
                   'образование', 'пони', 'лошадь', 'песня', 'разум', 'мудрость', 'банан', 'столица', 'осел'
                   , 'крокодил', 'аптека', 'мастерская', 'магистраль', 'сказка', 'лиса', 'волк', 'аптека', 'пасха'
-                  , 'жатва', 'лето', 'осень', 'жизнь', 'велосипед'],
+                  , 'жатва', 'лето', 'осень', 'жизнь', 'велосипед', 'узник', 'конец', 'кошка', 'шпион', 'галерея'
+                  , 'грохот', 'кровать', 'садовник', 'водитель', 'крыша', 'фестиваль', 'жалюзи', 'хроника', 'фильм'
+                  , 'клавиша', 'галстук', 'служба', 'одеяло'],
 
       attemptDiv = document.getElementById('attempts'),
       hammer = document.getElementById('pic-hammer'),
@@ -227,7 +229,7 @@ let gameActions = {
     twoWinWord:function(){
         guessedWords++;
         wordsDiv.innerHTML = guessedWords;
-        this.changeCurPlayer();
+        this.changeCurPlayer(false);
         alert ('Отгадал, поздравляю!!\n+' + curScore + ' очков(а)');
         if (startPlayer == 0) {
             this.endTwoPlayersGame();
@@ -235,14 +237,18 @@ let gameActions = {
             this.restart();
         };
     },
-    changeCurPlayer:function(){
+    changeCurPlayer:function(loose){
         if (curPlayer == 1) {
-            score = calcScore(score);
-            scoreDiv.innerHTML = score;
+            if (!loose){
+                score = calcScore(score);
+                scoreDiv.innerHTML = score;
+            }
             curPlayer = 2;
         } else {
-            score2 = calcScore(score2);
-            score2Div.innerHTML = score2;
+            if(!loose){
+                score2 = calcScore(score2);
+                score2Div.innerHTML = score2;
+            }
             curPlayer = 1;
         };
     },
@@ -253,7 +259,7 @@ let gameActions = {
             this.restart();
         } else if (startPlayer === curPlayer){
             alert ('Слово: ' + lettersArr.join('') + '\nИгра закончится после следующего игрока');
-            this.changeCurPlayer();
+            this.changeCurPlayer(true);
             startPlayer = 0;
             this.restart();
         } else {
