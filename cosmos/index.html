@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiVan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;400;600&family=VT323&display=swap" rel="stylesheet"></head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <h1>TiVan</h1>
+                <nav class="menu">
+                    <a href="#" class="menu__item">Greeting</a>
+                    <a href="#" class="menu__item">About Me</a>
+                    <a href="#" class="menu__item">Projects</a>
+                    <a href="#" class="menu__item">Movie</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="greeting">
+        <div class="container">
+            <div class="greeting__inner">
+                <h2 class="greeting__title"><span>Welcome</span><br> to my portfolio page</h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <main class="aboutme" onmouseover="showGrid(this)">
+        <div class="aboutme__light"></div>
+        <div class="aboutme__grid"></div>
+        <div class="aboutme__animBigDot"></div>
+
+        <div class="container">
+            <div class="aboutme__inner">
+                <div class="aboutme__anim1"></div>
+                <div class="aboutme__anim2"></div>
+
+                <div class="aboutme__left">
+                    <img class="aboutme__img" src="img/ivan3.png" height="350" alt="">
+                    <div class="aboutme__metext">
+                        <h4>Ivan Tsishkevich</h4>
+                        <h5>Frontend Developer</h5>
+                        <p class="aboutme__item-text">I like to <span>come up with designs</span> for websites and create them.</p>
+                        <p class="aboutme__item-text">a standard stack of knowledge: <span>HTML, CSS, JS, Sass, Github, Photoshop.</span></p>
+                        <p class="aboutme__item-text"><span>React</span> is coming soon!</p>
+                    </div>
+                </div>
+
+                <div class="aboutme__right">
+                    <div class="cube">
+                        <div class="cube__inner">
+                            <div class="cube__side cube__front cube__active">S</div>
+                            <div class="cube__side cube__fleft">n</div>
+                            <div class="cube__side cube__fright">a</div>
+                            <div class="cube__side cube__back">u</div>
+                            <div class="cube__side cube__bleft">r</div>
+                            <div class="cube__side cube__bright">t</div>
+                            <div class="cube__fire">
+                                <div id="fire_front" class="fire_inner fire_active">
+                                    <div>
+                                        <h3>&lt;Info/&gt;</h3>
+                                        <p><span>Education:</span> BNTU, engineer of shipbuilding.</p>
+                                        <p><span>Hobby:</span> 3D Grapgic, create animation, pictures like on greeting block (Use Blender 3D).<a href="https://teasetstudio.github.io/" target="_blank">3D Porfolio site</a></p>
+                                        <p><span>English:</span> Can read and write documentation, listen tutorials, 
+                                            talk a little about familiar topics.</p>
+                                    </div>
+                                </div>
+                                <div id="fire_fleft" class="fire_inner">
+                                    <div>
+                                        <br>
+                                        <h3>There is nothing to see.</h3>
+                                    </div>
+                                </div>
+                                <div id="fire_fright" class="fire_inner">
+                                    <div>
+                                        <h3>&lt;Contacts/&gt;</h3>
+                                    </div>
+                                </div>
+                                <div id="fire_back" class="fire_inner">
+                                    <div>
+                                        <h3>Goodbye</h3>
+                                    </div>
+                                </div>
+                                <div id="fire_bleft" class="fire_inner">
+                                    <div>
+                                        <br>
+                                        <h3>What is a <span>sense</span> of your life?</h3>
+                                    </div>
+                                </div>
+                                <div id="fire_bright" class="fire_inner">
+                                    <div>
+                                        <br>
+                                        <h3>There is nothing to see.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="projects__inner">
+                    <h2>Projects</h2>
+                    <div class="projects__pack">
+                        <div class="projects__item">
+                            <a class="projects__link" href="https://teasetstudio.github.io/memoryJS/" target="_blank">
+                                <div class="shadow">
+                                    <h3>Game "Memory"</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="projects__item"></div>
+                        <div class="projects__item"></div>
+                        <div class="projects__item"></div>
+                        <div class="projects__item"></div>
+                        <div class="projects__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/cube.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

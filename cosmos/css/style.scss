@@ -1,0 +1,405 @@
+$black:rgb(10, 8, 6);
+$black2:rgb(10, 25, 16);
+$gray: rgb(150, 141, 139);
+$white: rgb(236, 227, 223);
+$redorange: rgb(163, 68, 39);
+$brown: rgba(90, 38, 22, 0.336);
+$litebrown: rgba(114, 55, 37, 0.548);
+$emerald: rgba(0, 255, 179, 0.452);
+$darkemerald: rgba(22, 90, 75, 0.336);
+
+@mixin textFormat ($s,$w,$c) {
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $black;
+    font-family: 'Jura', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/*Header*/
+.header{
+    height: 50px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        align-items: center;
+        h1{
+            font-family: 'VT323', monospace;
+            @include textFormat(40px, 600, $redorange);
+            letter-spacing: 10px;
+        }
+    }
+}
+.menu{
+    &__item{
+        font-family: 'Roboto Mono', monospace;
+        @include textFormat(14px, 400, $gray);
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-left: 20px;
+    }
+}
+//font-family: 'Roboto Mono', monospace;
+//font-family: 'VT323', monospace;
+/*Greeting Block*/
+.greeting{
+    height: calc(100vh - 60px);
+    min-height: 797px;
+    background: url(../img/main_back.jpg) no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    padding: 20px;
+    &__inner{
+        padding: 1px;
+        text-align: center;
+        max-width: 800px;
+        margin: 60vh auto 0;
+    }
+    &__title{
+        @include textFormat(20px, 400, $white);
+        letter-spacing: 12px;
+        text-shadow: 3px 3px 10px #000;
+        span{
+            font-weight: 500;
+            font-size: 4.2em;
+        }
+    }
+}
+
+.aboutme{
+    position: relative;
+    height: 100%;
+    background: linear-gradient($black, $black2, $black2, $black);;
+    overflow: hidden;
+    &__light{
+        z-index: 1;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 1s ease;
+        background: radial-gradient($emerald, transparent, transparent);
+        transform: translateX(-50%) translateY(-50%);
+        animation: flikering 3s linear infinite;
+    }
+    &__grid{
+        z-index: 2;
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        background: url(../img/hexagon_tile.png);
+        background-size: 70px 70px;
+    }
+    &__animBigDot{
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        width: 100vw;
+        height: 130px;
+        border-radius: 10%;
+        background: radial-gradient($emerald, transparent, transparent);
+        animation: bigdot 15s linear infinite alternate;
+    }
+    &__inner{
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+// Animation Block
+
+// Шаблон для анимированных точек
+%dotdiv{
+    position: absolute;
+    border-radius: 1px;
+    width: 7px;
+    height: 7px;
+    background: $emerald;
+    opacity: 0;
+    z-index: 3;
+}
+    &__anim1{
+        @extend %dotdiv;
+        left: -10px;
+        top: 95px;
+        animation: anim1 8s linear infinite 2s alternate-reverse;
+    }
+    &__anim2{
+        @extend %dotdiv;
+        left: 100px;
+        top: 0px;
+        animation: anim2 8s linear infinite 2s alternate-reverse;
+    }
+
+// Left Block
+    &__left{
+        z-index: 3;
+        display: flex;
+    }
+    &__img{
+        filter: brightness(90%);
+    }
+    &__metext{
+        h4{
+            @include textFormat(30px, 500, $white);
+            letter-spacing: 5px;
+            text-align: center;
+            padding: 0 2px 6px;
+            border-bottom: 1px solid $redorange;
+        }
+        h5{
+            @include textFormat(15px, 300, $gray);
+            text-align: center;
+            letter-spacing: 10px;
+            padding-top: 5px;
+        }
+    }
+    &__item-text{
+        @include textFormat(16px, 400, $gray);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        max-width: 300px;
+        word-spacing: 10px;
+        line-height: 22px;
+        margin-top: 25px;
+    }
+    span{
+        filter: brightness(140%);
+    }
+// Right Block
+    &__right{
+        z-index: 3;
+        margin-right: 150px;
+        color: $gray;
+    }
+}
+
+.cube{
+    position: relative;
+    width: 600px;
+    height: 330px;
+    perspective: 800px;
+    &__inner{
+        width: 300px;
+        height: inherit;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        transform: rotateY(45deg);
+        animation: animhex 20s linear infinite;
+    }
+    &__side{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(139, 52, 25);
+        border-radius: 30%;
+        margin: 150px 100px 0;
+        transition: transform .3s ease;
+        text-align: center;
+        padding-top: 17px;
+        @include textFormat(40px, 300, $litebrown);
+        &:hover{
+            cursor: pointer;
+            animation: hovero .6s ease-in infinite;
+        }
+        box-shadow: -10px 0 55px $brown inset, 0 10px 55px $brown inset, 10px 0 55px $brown inset, 0 -10px 55px $brown inset;
+    }
+    &__front{
+        transform: translateZ(260px);
+        &:hover{
+            transform: translateZ(260px) scale(1.2);
+        }
+    }
+    &__back{
+        transform: translateZ(-260px) rotateY(180deg);
+        &:hover{
+            transform: translateZ(-260px) rotateY(180deg) scale(1.2);
+        }
+    }
+    &__fleft{
+        transform: translateZ(130px) translateX(-225px) rotateY(-60deg);
+        &:hover{
+            transform: translateZ(130px) translateX(-225px) rotateY(-60deg) scale(1.2);
+        }
+    }
+    &__bleft{
+        transform: translateZ(-130px) translateX(-225px) rotateY(240deg);
+        &:hover{
+            transform: translateZ(-130px) translateX(-225px) rotateY(240deg) scale(1.2);
+        }
+    }
+    &__fright{
+        transform: translateZ(130px) translateX(225px) rotateY(60deg);
+        &:hover{
+            transform: translateZ(130px) translateX(225px) rotateY(60deg) scale(1.2);
+        }
+    }
+    &__bright{
+        transform: translateZ(-130px) translateX(225px) rotateY(-240deg);
+        &:hover{
+            transform: translateZ(-130px) translateX(225px) rotateY(-240deg) scale(1.2);
+        }
+    }
+    &__active{
+        border-color: $emerald;
+        box-shadow: -10px 0 55px $darkemerald inset, 0 10px 55px $darkemerald inset, 10px 0 55px $darkemerald inset, 0 -10px 55px $darkemerald inset;
+        pointer-events: none;
+    }
+    &__fire{
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        animation: antianimhex 20s linear infinite;
+        border: none;
+        box-shadow: none;
+        .fire_inner{
+            border-radius: 30%;
+            width: inherit;
+            height: inherit;
+            display: none;
+            background: #000;
+            box-shadow: -10px 0 55px $darkemerald, 0 10px 55px $darkemerald, 10px 0 55px $darkemerald, 0 -10px 55px $darkemerald;
+            div{
+                width: inherit;
+                height: inherit;
+                border-radius: 30%;
+                padding: 15px;
+                border: 1px solid rgba(0, 255, 179, 0.452);
+                box-shadow: -10px 0 55px $darkemerald inset, 0 10px 55px $darkemerald inset, 10px 0 55px $darkemerald inset, 0 -10px 55px $darkemerald inset;
+            }
+            h3{
+                text-align: center;
+                margin-top: 5px;
+            }
+            p{
+                margin-top: 20px;
+                letter-spacing: 1px;
+            }
+            a{
+                margin-left: 15px;
+                color: $emerald;
+                transition: all .3s ease;
+            }
+            a:hover{
+                color: $redorange;
+            }
+        }
+        .fire_active{
+            display: block;
+            animation: showFire 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+    }
+}
+
+//Project Section
+.projects{
+    padding: 90px 0;
+    z-index: 3;
+    display: flex;
+    &__inner{
+        z-index: 3;
+        width: 100%;
+    }
+    h2{
+        @include textFormat(40px, 600, $white);
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    &__pack{
+        margin: 70px;
+        z-index: 3;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        position: relative;
+        margin: 30px;
+        width: 250px;
+        height: 250px;
+        background: black;
+        border: 1px solid $emerald;
+        border-radius: 10%;
+        overflow: hidden;       
+        transition: all .3s ease-in-out;
+        box-shadow: -7px 0 35px $darkemerald, 0 7px 35px $darkemerald, 7px 0 35px $darkemerald, 0 -7px 35px $darkemerald;
+        &:hover{
+            transform: scale(1.2);
+            box-shadow: -7px 0 75px $darkemerald, 0 7px 75px $darkemerald, 7px 0 75px $darkemerald, 0 -7px 75px $darkemerald;
+        }
+        
+    }
+    &__link{
+        position: relative;
+        display: block;
+        height: inherit;
+        width: inherit;
+        background-image: url(../img/memory.jpg);
+        background-size: cover;
+        filter: brightness(15%);
+        transition: filter .3s ease-in-out;
+        &:hover{
+            filter: brightness(30%);
+        }
+    }
+}
+.shadow{
+    height: inherit;
+    width: inherit;
+    transition: all .3s  ease-in-out;
+    box-shadow: -7px 0 35px $darkemerald inset, 0 7px 35px $darkemerald inset, 7px 0 35px $darkemerald inset, 0 -7px 35px $darkemerald inset;
+    &:hover{
+        box-shadow: -7px 0 15px $darkemerald inset, 0 7px 15px $darkemerald inset, 7px 0 15px $darkemerald inset, 0 -7px 15px $darkemerald inset;
+    }
+}
+
+//AboutMe Block animetions
+@keyframes flikering{
+    0%{filter: hue-rotate(0deg);};
+    100%{filter: hue-rotate(360deg);};
+}
+@keyframes bigdot{
+    0%{opacity: .2; transform: translateX(-50vw); filter: hue-rotate(0deg);}
+    15%{opacity: .2; transform: translateX(-50vw); filter: hue-rotate(0deg);}
+    50%{opacity: .6;}
+    85%{opacity: .2; transform: translateX(50vw); filter: hue-rotate(360deg);}
+    100%{opacity: .2; transform: translateX(50vw); filter: hue-rotate(360deg);}
+}
+@keyframes anim1 {
+    0%{left: -10px; top: 90px; opacity: 0;}
+    10%{left: 750px; top: 90px;opacity: .8;}
+    16%{left: 750px;  top: 520px; opacity: 0;}
+    100%{left: 750px;  top: 520px; opacity: 0;}
+}
+@keyframes anim2 {
+    0%{left: 100px; top: 0; opacity: 0;}
+    6%{left: 100px; top: 450px;opacity: .8;}
+    16%{left: 850px;  top: 450px; opacity: 0;}
+    100%{left: 850px;  top: 450px; opacity: 0;}
+}
+@keyframes hovero{
+    50%{box-shadow: -3px 0 18px $brown inset, 0 3px 18px $brown inset, 3px 0 18px $brown inset, 0 -3px 18px $brown inset;;}
+}
+@keyframes showFire{
+    0%{transform: translateY(-100px) rotateY(180deg);}
+}
+@keyframes animhex{
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(-360deg);}
+}
+@keyframes antianimhex{
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+}
