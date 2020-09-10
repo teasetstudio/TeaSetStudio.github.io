@@ -191,7 +191,13 @@ body{
     position: relative;
     width: 600px;
     height: 330px;
-    perspective: 800px;
+    perspective: 750px;
+    +p{
+        font-family: 'Roboto Mono', monospace;
+        @include textFormat(16px, 300, $gray);
+        margin-top: 15px;
+        text-align: center;
+    }
     &__inner{
         width: 300px;
         height: inherit;
@@ -305,7 +311,7 @@ body{
 
 //Project Section
 .projects{
-    padding: 90px 0;
+    padding: 73px 0;
     z-index: 3;
     display: flex;
     height: 900px;
@@ -318,8 +324,80 @@ body{
         letter-spacing: 6px;
         text-align: center;
     }
+    &__pack{
+        margin: 100px 15vw;
+    }
 }
 
+%packItem {
+    width: 150px;
+    height: 200px;
+    border: 1px solid rgb(110, 179, 156);
+    border-radius: 15px;
+}
+.pack{
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        @extend %packItem;
+        border: none;
+        position: relative;
+        transition: all .3s linear;
+        transform-style: preserve-3d;
+        margin: 40px;
+        &:hover{
+            transform: rotateY(90deg);
+        }
+    }
+    &__side{
+        @extend %packItem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(19, 19, 19);
+        overflow: hidden;
+        img{
+            width: 100%;
+            max-height: 70%;
+        }
+        h4{
+            @include textFormat(16px, 500, rgb(110, 179, 137));
+            margin-top: 5px;
+            text-align: center;
+            margin: 0 3px;
+        }
+    }
+    &__front{
+        transform: translateZ(75px);
+    }
+    &__back{
+        display: block;
+        transform: rotateY(-90deg) translateZ(75px);
+        padding: 15px 7px 0;
+        text-decoration: none;
+        position: relative;
+        p{
+            @include textFormat(16px, 500, $gray);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    }
+    &__btn{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+p.go_btn{
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    padding: 5px;
+    border-radius: 3px;
+    background: $darkemerald;
+    color: $white;
+}
 //AboutMe Block animetions
 @keyframes flikering{
     0%{filter: hue-rotate(0deg);};

@@ -218,8 +218,17 @@ body {
   position: relative;
   width: 600px;
   height: 330px;
-  -webkit-perspective: 800px;
-          perspective: 800px;
+  -webkit-perspective: 750px;
+          perspective: 750px;
+}
+
+.cube + p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 300;
+  color: #968d8b;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .cube__inner {
@@ -384,7 +393,7 @@ body {
 }
 
 .projects {
-  padding: 90px 0;
+  padding: 73px 0;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +412,102 @@ body {
   color: #ece3df;
   letter-spacing: 6px;
   text-align: center;
+}
+
+.projects__pack {
+  margin: 100px 15vw;
+}
+
+.pack__item, .pack__side {
+  width: 150px;
+  height: 200px;
+  border: 1px solid #6eb39c;
+  border-radius: 15px;
+}
+
+.pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pack__item {
+  border: none;
+  position: relative;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 40px;
+}
+
+.pack__item:hover {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.pack__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #131313;
+  overflow: hidden;
+}
+
+.pack__side img {
+  width: 100%;
+  max-height: 70%;
+}
+
+.pack__side h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6eb389;
+  margin-top: 5px;
+  text-align: center;
+  margin: 0 3px;
+}
+
+.pack__front {
+  -webkit-transform: translateZ(75px);
+          transform: translateZ(75px);
+}
+
+.pack__back {
+  display: block;
+  -webkit-transform: rotateY(-90deg) translateZ(75px);
+          transform: rotateY(-90deg) translateZ(75px);
+  padding: 15px 7px 0;
+  text-decoration: none;
+  position: relative;
+}
+
+.pack__back p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #968d8b;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.pack__btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+p.go_btn {
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  padding: 5px;
+  border-radius: 3px;
+  background: rgba(22, 90, 75, 0.336);
+  color: #ece3df;
 }
 
 @-webkit-keyframes flikering {
