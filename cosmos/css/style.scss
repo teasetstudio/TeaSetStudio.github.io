@@ -163,7 +163,7 @@ body{
         h5{
             @include textFormat(15px, 300, $gray);
             text-align: center;
-            letter-spacing: 10px;
+            letter-spacing: 9px;
             padding-top: 5px;
         }
     }
@@ -309,6 +309,7 @@ body{
     padding: 90px 0;
     z-index: 3;
     display: flex;
+    height: 900px;
     &__inner{
         z-index: 3;
         width: 100%;
@@ -317,51 +318,6 @@ body{
         @include textFormat(40px, 600, $white);
         letter-spacing: 6px;
         text-align: center;
-    }
-    &__pack{
-        margin: 70px;
-        z-index: 3;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    &__item{
-        position: relative;
-        margin: 30px;
-        width: 250px;
-        height: 250px;
-        background: black;
-        border: 1px solid $emerald;
-        border-radius: 10%;
-        overflow: hidden;       
-        transition: all .3s ease-in-out;
-        box-shadow: -7px 0 35px $darkemerald, 0 7px 35px $darkemerald, 7px 0 35px $darkemerald, 0 -7px 35px $darkemerald;
-        &:hover{
-            transform: scale(1.2);
-            box-shadow: -7px 0 75px $darkemerald, 0 7px 75px $darkemerald, 7px 0 75px $darkemerald, 0 -7px 75px $darkemerald;
-        }
-        
-    }
-    &__link{
-        position: relative;
-        display: block;
-        height: inherit;
-        width: inherit;
-        background-image: url(../img/memory.jpg);
-        background-size: cover;
-        filter: brightness(15%);
-        transition: filter .3s ease-in-out;
-        &:hover{
-            filter: brightness(30%);
-        }
-    }
-}
-.shadow{
-    height: inherit;
-    width: inherit;
-    transition: all .3s  ease-in-out;
-    box-shadow: -7px 0 35px $darkemerald inset, 0 7px 35px $darkemerald inset, 7px 0 35px $darkemerald inset, 0 -7px 35px $darkemerald inset;
-    &:hover{
-        box-shadow: -7px 0 15px $darkemerald inset, 0 7px 15px $darkemerald inset, 7px 0 15px $darkemerald inset, 0 -7px 15px $darkemerald inset;
     }
 }
 
