@@ -79,8 +79,7 @@ a#languages{
     right: -60px;
     color: rgba(79, 231, 79, 0.255);
     /* chrome, ,mozilla on my TABLET DO NOT READ hexadecimal colors with
-    alpha channel (work in Opera),
-    DONT USE HEXADEMICAL SYSTEM WITH OPACITY */
+    alpha channel (work in Opera)*/
     text-decoration: none;
     padding: 7px 9px 8px;
     border: 1px solid rgba(79, 231, 79, 0.255);
