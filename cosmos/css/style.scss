@@ -49,6 +49,19 @@ body{
         text-decoration: none;
         padding-left: 20px;
     }
+    .far{
+        display: none;
+        z-index: 100;
+        position: fixed;
+        right: 150px;
+        bottom: 100px;
+        color: rgb(48, 48, 48);
+        transition: all .15s ease;
+        animation: toTopBtn 1s ease;
+        &:hover{
+            color: $gray;
+        }
+    }
 }
 //font-family: 'Roboto Mono', monospace;
 //font-family: 'VT323', monospace;
@@ -436,6 +449,10 @@ p.go_btn{
 }
 
 //AboutMe Block animetions
+@keyframes toTopBtn{
+    0%{bottom: 800px;}
+    100%{bottom: 100px;}
+}
 @keyframes flikering{
     0%{filter: hue-rotate(0deg);};
     100%{filter: hue-rotate(360deg);};

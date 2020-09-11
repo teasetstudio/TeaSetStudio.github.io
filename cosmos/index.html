@@ -9,15 +9,15 @@
     <script src="https://kit.fontawesome.com/ed4fff6d09.js" crossorigin="anonymous"></script>
 
 <body>
-    <header class="header">
+    <header id="greeting" class="header">
         <div class="container">
             <div class="header__inner">
                 <h1>TiVan</h1>
-                <nav class="menu">
-                    <a href="#" class="menu__item">Greeting</a>
-                    <a href="#" class="menu__item">About Me</a>
-                    <a href="#" class="menu__item">Projects</a>
-                    <a href="#" class="menu__item">Contacts</a>
+                <nav class="menu"  onclick="scrollToDiv (800)">
+                    <a id="toTop" href="#greeting" title="Top" class="menu__item far fa-caret-square-up fa-3x"></a>
+                    <a href="#about" class="menu__item">About Me</a>
+                    <a href="#projects" class="menu__item">Projects</a>
+                    <a href="#contacts" class="menu__item">Contacts</a>
                 </nav>
             </div>
         </div>
@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <main class="aboutme" onmouseover="showGrid(this)">
+    <main id="about" class="aboutme" onmouseover="showGrid(this)">
         <div class="aboutme__light"></div>
         <div class="aboutme__grid"></div>
         <div class="aboutme__animBigDot"></div>
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <section class="projects">
+            <section id="projects" class="projects">
                 <div class="projects__inner">
                     <h2>Projects</h2>
                     <p class="add_info">target="_blank"</p>
@@ -215,11 +215,12 @@
                     </div>
                 </div>
             </section>
-            <footer class="footer">
+
+            <footer id="contacts" class="footer">
                 <div class="footer__inner">
                     <img src="img/TiVan.png" height="70" alt="">
                     <h3>Living, learning, & leveling up<br>one day at a time.</h3>
-
+        
                     <p title="TeasetX@gmail.com">TeasetX@gmail.com</p>
                     <p  title="+375 29 124-47-08">+375 29 124-47-08</p>
                     <div class="footer__messangers">
@@ -243,6 +244,10 @@
             </footer>
         </div>
     </main>
+>
+        
+
+    
     <script src="js/cube.js"></script>
     <script src="js/index.js"></script>
 </body>
