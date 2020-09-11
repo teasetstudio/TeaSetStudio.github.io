@@ -144,6 +144,7 @@ body {
 }
 
 .aboutme__inner {
+  position: relative;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,14 +166,10 @@ body {
 }
 
 .aboutme__anim1 {
-  left: -10px;
-  top: 95px;
   animation: anim1 8s linear infinite 2s alternate-reverse;
 }
 
 .aboutme__anim2 {
-  left: 100px;
-  top: 0px;
   animation: anim2 8s linear infinite 2s alternate-reverse;
 }
 
@@ -699,22 +696,22 @@ p.go_btn {
 
 @-webkit-keyframes anim1 {
   0% {
-    left: -10px;
+    left: -50px;
     top: 90px;
     opacity: 0;
   }
   10% {
-    left: 750px;
+    left: 710px;
     top: 90px;
     opacity: .8;
   }
   16% {
-    left: 750px;
+    left: 710px;
     top: 520px;
     opacity: 0;
   }
   100% {
-    left: 750px;
+    left: 710px;
     top: 520px;
     opacity: 0;
   }
@@ -722,22 +719,22 @@ p.go_btn {
 
 @keyframes anim1 {
   0% {
-    left: -10px;
+    left: -50px;
     top: 90px;
     opacity: 0;
   }
   10% {
-    left: 750px;
+    left: 710px;
     top: 90px;
     opacity: .8;
   }
   16% {
-    left: 750px;
+    left: 710px;
     top: 520px;
     opacity: 0;
   }
   100% {
-    left: 750px;
+    left: 710px;
     top: 520px;
     opacity: 0;
   }
@@ -745,22 +742,22 @@ p.go_btn {
 
 @-webkit-keyframes anim2 {
   0% {
-    left: 100px;
+    left: 50px;
     top: 0;
     opacity: 0;
   }
   6% {
-    left: 100px;
+    left: 50px;
     top: 450px;
     opacity: .8;
   }
   16% {
-    left: 850px;
+    left: 810px;
     top: 450px;
     opacity: 0;
   }
   100% {
-    left: 850px;
+    left: 810px;
     top: 450px;
     opacity: 0;
   }
@@ -768,22 +765,22 @@ p.go_btn {
 
 @keyframes anim2 {
   0% {
-    left: 100px;
+    left: 50px;
     top: 0;
     opacity: 0;
   }
   6% {
-    left: 100px;
+    left: 50px;
     top: 450px;
     opacity: .8;
   }
   16% {
-    left: 850px;
+    left: 810px;
     top: 450px;
     opacity: 0;
   }
   100% {
-    left: 850px;
+    left: 810px;
     top: 450px;
     opacity: 0;
   }

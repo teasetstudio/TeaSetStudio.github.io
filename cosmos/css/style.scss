@@ -124,6 +124,7 @@ body{
         animation: bigdot 15s linear infinite alternate;
     }
     &__inner{
+        position: relative;
         z-index: 3;
         display: flex;
         justify-content: space-between;
@@ -142,14 +143,10 @@ body{
 }
     &__anim1{
         @extend %dotdiv;
-        left: -10px;
-        top: 95px;
         animation: anim1 8s linear infinite 2s alternate-reverse;
     }
     &__anim2{
         @extend %dotdiv;
-        left: 100px;
-        top: 0px;
         animation: anim2 8s linear infinite 2s alternate-reverse;
     }
 // Left Block
@@ -464,16 +461,16 @@ p.go_btn{
     100%{opacity: .2; transform: translateX(50vw); filter: hue-rotate(360deg);}
 }
 @keyframes anim1 {
-    0%{left: -10px; top: 90px; opacity: 0;}
-    10%{left: 750px; top: 90px;opacity: .8;}
-    16%{left: 750px;  top: 520px; opacity: 0;}
-    100%{left: 750px;  top: 520px; opacity: 0;}
+    0%{left: -50px; top: 90px; opacity: 0;}
+    10%{left: 710px; top: 90px;opacity: .8;}
+    16%{left: 710px;  top: 520px; opacity: 0;}
+    100%{left: 710px;  top: 520px; opacity: 0;}
 }
 @keyframes anim2 {
-    0%{left: 100px; top: 0; opacity: 0;}
-    6%{left: 100px; top: 450px;opacity: .8;}
-    16%{left: 850px;  top: 450px; opacity: 0;}
-    100%{left: 850px;  top: 450px; opacity: 0;}
+    0%{left: 50px; top: 0; opacity: 0;}
+    6%{left: 50px; top: 450px;opacity: .8;}
+    16%{left: 810px;  top: 450px; opacity: 0;}
+    100%{left: 810px;  top: 450px; opacity: 0;}
 }
 @keyframes hovero{
     50%{box-shadow: -3px 0 18px $brown inset, 0 3px 18px $brown inset, 3px 0 18px $brown inset, 0 -3px 18px $brown inset;;}
