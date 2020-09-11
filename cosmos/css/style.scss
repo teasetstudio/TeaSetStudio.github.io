@@ -28,11 +28,10 @@ body{
 }
 /*Header*/
 .header{
-    height: 50px;
+    padding: 10px;
     &__inner{
         display: flex;
         justify-content: space-between;
-        margin: 10px;
         align-items: center;
         h1{
             font-family: 'VT323', monospace;

@@ -18,7 +18,7 @@ body {
 
 /*Header*/
 .header {
-  height: 50px;
+  padding: 10px;
 }
 
 .header__inner {
@@ -28,7 +28,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
