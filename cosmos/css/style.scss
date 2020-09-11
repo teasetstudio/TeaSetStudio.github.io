@@ -2,12 +2,11 @@ $black:rgb(10, 8, 6);
 $black2:rgb(10, 25, 16);
 $gray: rgb(150, 141, 139);
 $white: rgb(236, 227, 223);
-$redorange: rgb(163, 68, 39);
+$redorange: #a34427;
 $brown: rgba(90, 38, 22, 0.336);
 $litebrown: rgba(114, 55, 37, 0.548);
 $emerald: rgba(0, 255, 179, 0.452);
 $darkemerald: rgba(22, 90, 75, 0.336);
-
 @mixin textFormat ($s,$w,$c) {
     font-size: $s;
     font-weight: $w;
@@ -77,7 +76,6 @@ body{
         }
     }
 }
-
 .aboutme{
     position: relative;
     height: 100%;
@@ -117,10 +115,9 @@ body{
         z-index: 3;
         display: flex;
         justify-content: space-between;
-        padding: 100px 0;
+        padding: 100px;
     }
 // Animation Block
-
 // Шаблон для анимированных точек
 %dotdiv{
     position: absolute;
@@ -143,7 +140,6 @@ body{
         top: 0px;
         animation: anim2 8s linear infinite 2s alternate-reverse;
     }
-
 // Left Block
     &__left{
         z-index: 3;
@@ -182,22 +178,14 @@ body{
 // Right Block
     &__right{
         z-index: 3;
-        margin-right: 150px;
         color: $gray;
     }
 }
-
 .cube{
     position: relative;
     width: 600px;
     height: 330px;
     perspective: 750px;
-    +p{
-        font-family: 'Roboto Mono', monospace;
-        @include textFormat(16px, 300, $gray);
-        margin-top: 15px;
-        text-align: center;
-    }
     &__inner{
         width: 300px;
         height: inherit;
@@ -308,7 +296,12 @@ body{
         }
     }
 }
-
+.add_info{
+    font-family: 'Roboto Mono', monospace;
+    @include textFormat(16px, 300, $gray);
+    margin-top: 15px;
+    text-align: center;
+}
 //Project Section
 .projects{
     padding: 73px 0;
@@ -328,7 +321,6 @@ body{
         margin: 100px 15vw;
     }
 }
-
 %packItem {
     width: 150px;
     height: 200px;
@@ -338,6 +330,7 @@ body{
 .pack{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     &__item{
         @extend %packItem;
         border: none;
@@ -398,6 +391,50 @@ p.go_btn{
     background: $darkemerald;
     color: $white;
 }
+//footer section
+.footer{
+    z-index: 3;
+    display: flex;
+    padding: 50px 50px 150px;
+    &__inner{
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+    }
+    h3{
+        @include textFormat(18px, 600, $gray);
+        margin:20px 0 30px;
+    }
+    p{
+        @include textFormat(16px, 300, $gray);
+        margin-bottom: 7px;
+    }
+    &__messangers{
+        margin-top: 15px;
+    }
+    a{
+        color: $gray;
+        text-decoration: none;
+    }
+    i{
+        margin: 7px;
+        transition: all .2s ease;
+        &:hover{
+            transform: scale(1.5);
+            color: $redorange;
+        }
+    }
+    i.fa-whatsapp:hover{
+        color: #49c93d;
+    }
+    i.fa-viber:hover{
+        color: #784f99;
+    }
+    i.fa-telegram:hover{
+        color: #34a5e0;
+    }
+}
+
 //AboutMe Block animetions
 @keyframes flikering{
     0%{filter: hue-rotate(0deg);};
