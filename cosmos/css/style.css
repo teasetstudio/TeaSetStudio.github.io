@@ -399,6 +399,31 @@ body {
           animation: showFire 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
+.cube form {
+  color: #968d8b;
+  margin: 20px auto;
+}
+
+.cube form .fgeneran {
+  border: 1px solid rgba(0, 255, 179, 0.452);
+  padding: 3px;
+  width: 90%;
+  margin: 15px auto;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  background: black;
+}
+
+.cube form #fmessage {
+  height: 50px;
+}
+
+.cube form .fsubmit {
+  margin-top: 23px;
+  color: rgba(0, 255, 179, 0.452);
+  width: 40%;
+}
+
 .add_info {
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
