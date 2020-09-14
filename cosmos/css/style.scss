@@ -32,7 +32,7 @@ body{
     &__inner{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         h1{
             font-family: 'VT323', monospace;
@@ -525,6 +525,11 @@ p.go_btn{
     }
 }
 @media screen and (max-width: 476px){
+    .header{
+        &__inner{
+            justify-content: space-evenly;
+        }
+    }
     .greeting{
         height: calc(100vh - 60px);
         min-height: 400px;
