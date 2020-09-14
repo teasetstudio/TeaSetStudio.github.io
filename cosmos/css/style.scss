@@ -545,6 +545,9 @@ p.go_btn{
         }
     }
     .aboutme{
+        &__animBigDot{
+            top: 1430px;
+        }
         &__left{
             display: block;
             text-align: center;

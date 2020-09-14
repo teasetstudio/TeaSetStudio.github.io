@@ -915,6 +915,9 @@ p.go_btn {
     font-weight: 500;
     font-size: 4.2em;
   }
+  .aboutme__animBigDot {
+    top: 1430px;
+  }
   .aboutme__left {
     display: block;
     text-align: center;
