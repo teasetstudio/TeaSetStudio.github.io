@@ -31,7 +31,8 @@ body{
     padding: 10px 25px;
     &__inner{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
         h1{
             font-family: 'VT323', monospace;
