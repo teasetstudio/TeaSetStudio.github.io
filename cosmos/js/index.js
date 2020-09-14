@@ -29,7 +29,7 @@ function showGrid(headBlock){
         },10);
         light.style.opacity = 1;
     }
-    headBlock.ontouchend = function (){
+    headBlock.ontouchcancel = function (){
         light.style.opacity = 0;
     }
 };
