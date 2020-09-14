@@ -9,7 +9,7 @@ window.onload = function () {
         const fmessage = form.elements['fmessage'].value;
         submitButton.disabled = true;
 
-        fetch('https://manterus.herokuapp.com/test',{
+        fetch('https://vanger.herokuapp.com/test',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -24,7 +24,7 @@ window.onload = function () {
                 .then(function(response) {
                     response.json().then((result) => {
                         console.log(result);
-                        form.innerHTML = 'Ваш запрос успешно отправлен';
+                        form.innerHTML = 'Your message has been successfully sent!';
                     });
                 })
                 .catch(function(myJson) {

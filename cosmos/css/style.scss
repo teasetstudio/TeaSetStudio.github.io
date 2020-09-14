@@ -308,6 +308,7 @@ body{
         }
     }
     form{
+        text-align: center;
         color: $gray;
         margin: 20px auto;
         .fgeneran{
@@ -321,6 +322,7 @@ body{
         }
         #fmessage{
             height: 50px;
+            color: $emerald;
         }
         .fsubmit{
             margin-top: 23px;

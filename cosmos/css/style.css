@@ -400,6 +400,7 @@ body {
 }
 
 .cube form {
+  text-align: center;
   color: #968d8b;
   margin: 20px auto;
 }
@@ -416,6 +417,7 @@ body {
 
 .cube form #fmessage {
   height: 50px;
+  color: rgba(0, 255, 179, 0.452);
 }
 
 .cube form .fsubmit {
