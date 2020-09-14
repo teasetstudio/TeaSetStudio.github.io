@@ -26,9 +26,6 @@ function showGrid(headBlock){
     headBlock.onmouseleave = function (){
         light.style.opacity = 0;
     }
-    headBlock.onmouseup = function (){
-        light.style.opacity = 0;
-    }
     headBlock.ontouchcancel = function (){
         light.style.opacity = 0;
     }
