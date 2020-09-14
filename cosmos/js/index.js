@@ -36,7 +36,6 @@ function scrollToDiv (duration){
     function step(timestamp) {
         if (!start) start = timestamp;
         let progress = timestamp - start;
-        //window.scrollTo(0, difference*(progress/duration) + startPosition)
         window.scrollTo (0, easeInOutSine(progress, startPosition, difference, duration));
         if (progress < duration) window.requestAnimationFrame(step);}
 }

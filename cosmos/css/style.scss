@@ -28,7 +28,7 @@ body{
 }
 /*Header*/
 .header{
-    padding: 10px;
+    padding: 10px 25px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -48,7 +48,7 @@ body{
         text-decoration: none;
         padding-left: 20px;
     }
-    .far{
+    .fa-caret-square-up{
         display: none;
         z-index: 100;
         position: fixed;
@@ -67,7 +67,7 @@ body{
 /*Greeting Block*/
 .greeting{
     height: calc(100vh - 60px);
-    min-height: 797px;
+    min-height: 500px;
     background: url(../img/main_back.jpg) no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -87,6 +87,16 @@ body{
             font-size: 4.2em;
         }
     }
+}
+// Шаблон для анимированных точек
+%dotdiv{
+    position: absolute;
+    border-radius: 1px;
+    width: 7px;
+    height: 7px;
+    background: $emerald;
+    opacity: 0;
+    z-index: 3;
 }
 .aboutme{
     position: relative;
@@ -116,7 +126,7 @@ body{
     &__animBigDot{
         z-index: 1;
         position: absolute;
-        top: 600px;
+        top: 670px;
         width: 100vw;
         height: 130px;
         border-radius: 10%;
@@ -127,20 +137,11 @@ body{
         position: relative;
         z-index: 3;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         padding: 100px;
     }
 // Animation Block
-// Шаблон для анимированных точек
-%dotdiv{
-    position: absolute;
-    border-radius: 1px;
-    width: 7px;
-    height: 7px;
-    background: $emerald;
-    opacity: 0;
-    z-index: 3;
-}
     &__anim1{
         @extend %dotdiv;
         animation: anim1 8s linear infinite 2s alternate-reverse;
@@ -153,6 +154,7 @@ body{
     &__left{
         z-index: 3;
         display: flex;
+        margin-bottom: 87px;
     }
     &__img{
         filter: brightness(90%);
@@ -316,7 +318,6 @@ body{
     padding: 73px 0;
     z-index: 3;
     display: flex;
-    height: 900px;
     &__inner{
         z-index: 3;
         width: 100%;
@@ -444,7 +445,8 @@ p.go_btn{
     }
 }
 
-//AboutMe Block animetions
+/* Animations
+================== */
 @keyframes toTopBtn{
     0%{bottom: 800px;}
     100%{bottom: 100px;}
@@ -485,4 +487,72 @@ p.go_btn{
 @keyframes antianimhex{
     0% {transform: rotateY(0deg);}
     100% {transform: rotateY(360deg);}
+}
+/* MEDIA queries
+================== */
+@media screen and (max-width: 1333px){
+    .aboutme{
+        &__animBigDot{
+        top: 1160px;
+        }
+        &__left{
+            margin-bottom: 200px;
+        }
+        &__right{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    #toTop{
+        right: 70px;
+    }
+}
+@media screen and (max-width: 657px){
+    .aboutme{
+        &__animBigDot{
+        top: 1220px;
+        }
+    }
+    #toTop{
+        right: 30px;
+    }
+    .projects{
+        &__pack{
+            margin: 100px 2vw;
+        }
+    }
+}
+@media screen and (max-width: 476px){
+    .greeting{
+        height: calc(100vh - 60px);
+        min-height: 400px;
+        padding: 20px;
+        &__inner{
+            padding: 1px;
+            text-align: center;
+            max-width: 800px;
+            margin: 60vh auto 0;
+        }
+        &__title{
+            @include textFormat(10px, 400, $white);
+            letter-spacing: 12px;
+            text-shadow: 3px 3px 10px #000;
+            span{
+                font-weight: 500;
+                font-size: 4.2em;
+            }
+        }
+    }
+    .aboutme{
+        &__left{
+            display: block;
+            text-align: center;
+        }
+        &__img{
+            height: 150px;
+            filter: brightness(90%);
+            margin-bottom: 50px;
+        }
+    }
 }

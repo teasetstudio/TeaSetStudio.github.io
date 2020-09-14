@@ -18,7 +18,7 @@ body {
 
 /*Header*/
 .header {
-  padding: 10px;
+  padding: 10px 25px;
 }
 
 .header__inner {
@@ -51,7 +51,7 @@ body {
   padding-left: 20px;
 }
 
-.menu .far {
+.menu .fa-caret-square-up {
   display: none;
   z-index: 100;
   position: fixed;
@@ -64,14 +64,14 @@ body {
           animation: toTopBtn 1s ease;
 }
 
-.menu .far:hover {
+.menu .fa-caret-square-up:hover {
   color: #968d8b;
 }
 
 /*Greeting Block*/
 .greeting {
   height: calc(100vh - 60px);
-  min-height: 797px;
+  min-height: 500px;
   background: url(../img/main_back.jpg) no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -96,6 +96,16 @@ body {
 .greeting__title span {
   font-weight: 500;
   font-size: 4.2em;
+}
+
+.aboutme__anim1, .aboutme__anim2 {
+  position: absolute;
+  border-radius: 1px;
+  width: 7px;
+  height: 7px;
+  background: rgba(0, 255, 179, 0.452);
+  opacity: 0;
+  z-index: 3;
 }
 
 .aboutme {
@@ -134,7 +144,7 @@ body {
 .aboutme__animBigDot {
   z-index: 1;
   position: absolute;
-  top: 600px;
+  top: 670px;
   width: 100vw;
   height: 130px;
   border-radius: 10%;
@@ -149,20 +159,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 100px;
-}
-
-.aboutme .aboutme__anim1, .aboutme .aboutme__anim2 {
-  position: absolute;
-  border-radius: 1px;
-  width: 7px;
-  height: 7px;
-  background: rgba(0, 255, 179, 0.452);
-  opacity: 0;
-  z-index: 3;
 }
 
 .aboutme__anim1 {
@@ -178,6 +179,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 87px;
 }
 
 .aboutme__img {
@@ -410,7 +412,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 900px;
 }
 
 .projects__inner {
@@ -586,6 +587,8 @@ p.go_btn {
   color: #34a5e0;
 }
 
+/* Animations
+================== */
 @-webkit-keyframes toTopBtn {
   0% {
     bottom: 800px;
@@ -594,7 +597,6 @@ p.go_btn {
     bottom: 100px;
   }
 }
-
 @keyframes toTopBtn {
   0% {
     bottom: 800px;
@@ -855,5 +857,72 @@ p.go_btn {
   100% {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
+  }
+}
+
+/* MEDIA queries
+================== */
+@media screen and (max-width: 1333px) {
+  .aboutme__animBigDot {
+    top: 1160px;
+  }
+  .aboutme__left {
+    margin-bottom: 200px;
+  }
+  .aboutme__right {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #toTop {
+    right: 70px;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .aboutme__animBigDot {
+    top: 1220px;
+  }
+  #toTop {
+    right: 30px;
+  }
+  .projects__pack {
+    margin: 100px 2vw;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .greeting {
+    height: calc(100vh - 60px);
+    min-height: 400px;
+    padding: 20px;
+  }
+  .greeting__inner {
+    padding: 1px;
+    text-align: center;
+    max-width: 800px;
+    margin: 60vh auto 0;
+  }
+  .greeting__title {
+    font-size: 10px;
+    font-weight: 400;
+    color: #ece3df;
+    letter-spacing: 12px;
+    text-shadow: 3px 3px 10px #000;
+  }
+  .greeting__title span {
+    font-weight: 500;
+    font-size: 4.2em;
+  }
+  .aboutme__left {
+    display: block;
+    text-align: center;
+  }
+  .aboutme__img {
+    height: 150px;
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+    margin-bottom: 50px;
   }
 }
