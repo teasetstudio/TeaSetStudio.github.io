@@ -4,9 +4,7 @@ let light = document.querySelector('.aboutme__light'),
     y = 0;
 
 function showGrid(headBlock){
-    headBlock.onmousemove = ()=>{
-        x = event.pageX;
-        y = event.pageY - headBlock.offsetTop;
+    function showThatGrid(){
         light.style.left = x + 'px';
         light.style.top = y + 'px';
         light.style.animationPlayState = 'running';
@@ -15,19 +13,18 @@ function showGrid(headBlock){
         },10);
         light.style.opacity = 1;
     }
-    headBlock.onmouseleave = function (){
-        light.style.opacity = 0;
+    headBlock.onmousemove = ()=>{
+        x = event.pageX;
+        y = event.pageY - headBlock.offsetTop;
+        showThatGrid()
     }
     headBlock.ontouchmove = ()=>{
         x = event.touches[0].pageX;
         y = event.touches[0].pageY - headBlock.offsetTop;
-        light.style.left = x + 'px';
-        light.style.top = y + 'px';
-        light.style.animationPlayState = 'running';
-        setTimeout(function(){
-            light.style.animationPlayState = 'paused';
-        },10);
-        light.style.opacity = 1;
+        showThatGrid()
+    }
+    headBlock.onmouseleave = function (){
+        light.style.opacity = 0;
     }
     headBlock.ontouchcancel = function (){
         light.style.opacity = 0;
