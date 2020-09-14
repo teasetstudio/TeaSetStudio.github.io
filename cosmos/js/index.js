@@ -18,6 +18,20 @@ function showGrid(headBlock){
     headBlock.onmouseleave = function (){
         light.style.opacity = 0;
     }
+    headBlock.ontouchmove = ()=>{
+        x = event.touches[0].pageX;
+        y = event.touches[0].pageY - headBlock.offsetTop;
+        light.style.left = x + 'px';
+        light.style.top = y + 'px';
+        light.style.animationPlayState = 'running';
+        setTimeout(function(){
+            light.style.animationPlayState = 'paused';
+        },10);
+        light.style.opacity = 1;
+    }
+    headBlock.ontouchend = function (){
+        light.style.opacity = 0;
+    }
 };
 // smooth scroll ==============================================
 function scrollToDiv (duration){
