@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+$bluish: #609dc5;
+$lightPurple: #76b9ca;
+$yellowish: #918331;
+body{
+    font-family: 'Jura', sans-serif;
+    background-color: #121c24;
+}
+.posRelative{
+    position: relative;
+}
+//font-family: 'Roboto Mono', monospace;
+//font-family: 'Jura', sans-serif;
+header{
+    position: relative;
+}
+.logo{
+    
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    &__left{
+        display: flex;
+    }
+    &__img{
+        height: 30px;
+    }
+    &__name{
+        margin-left: 20px;
+        color:$bluish;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    &__item{
+        font-weight: 600;
+        background-color: $lightPurple;
+        border: none;
+        padding: 7px;
+        border-radius: 3px;
+        transition: all .2s ease;
+        outline: none;
+        &:hover{
+            transform: scale(1.1);
+            filter: brightness(125%);
+            cursor: pointer;
+        }
+    }
+}
+.forms{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    &__hide{
+        display: none;
+    }
+    &__show{
+        transform: translateX(-50%);
+        display: block;
+        padding: 15px;
+        background: $yellowish;
+        text-align: center;
+        .coordinates{
+            display: flex;
+            margin: 10px;
+            text-align: left;
+            div{
+                margin: 0 15px;
+            }
+            select, input, option{
+                font-family: 'Roboto Mono', monospace;
+                color: #000;
+                margin-top: 5px;
+                outline: none;
+                border: 1px solid rgb(70, 70, 219);
+                padding: 5px;
+            }
+            input{
+                width: 150px;
+            }
+        }
+        button{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            padding: 5px 10px;
+            margin: 0 10px;
+        }
+    }
+}
+.field{
+    margin: 15px auto;
+    width: 100%;
+    &__grid{
+        margin: 70px auto 15px;
+        height: 700px;
+        width: 1000px;
+        background-image: url(img/grid.png);
+        background-size: cover;
+        position: relative;
+    }
+    &__objects{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__wrapper{
+        position: relative;
+    }
+    &__item{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: all .3s ease;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &__arrow{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .yArrow{
+        transform: translateY(-100%) translateX(-100%);
+    }
+}
+.aminAround{
+    animation: anim 10s linear infinite;
+}
+@keyframes anim{
+    0%{transform: translateX(-50%) translateY(-50%) rotateZ(0deg);}
+    100%{transform: translateX(-50%) translateY(-50%) rotateZ(360deg);}
+}

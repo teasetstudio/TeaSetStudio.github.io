@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridus</title>
+    <link rel="icon" href="img/grid-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo__left">
+                <img class="logo__img" height="30" src="img/grid-logo.png">
+                <h1 class="logo__name">Gridus</h1>
+            </div>
+            <section class="buttons">
+                <button class="buttons__item" onclick="actions.showForm(document.querySelector('.forms__setPos'))">Set Position</button>
+                <button class="buttons__item" onclick="actions.showForm(document.querySelector('.forms__update'))">Move Object</button>
+                <button class="buttons__item" onclick="actions.showForm(document.querySelector('.forms__around'))">Move Around</button>
+            </section>
+        </div>
+
+        <section class="forms">
+            <div class="posRelative">
+                <form class="forms__setPos forms__hide"  onsubmit="actions.toSetPos(this)">
+                    <div class="coordinates">
+                        <div>
+                            <label for="obj">Object:</label><br>
+                            <select name="obj">
+                                <option value="castle">Castle</option>
+                                <option value="knight">Knight</option>
+                                <option value="princess">Princess</option>
+                                <option value="sun">Sun</option>
+                                <option value="well">Well</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Xcoor">X coordinate:</label><br>
+                            <input title="Одна клетка 100х100" type="number" name="Xcoor" min="0" max="1000" placeholder="От 0 до 1000.." required>
+                        </div>
+                        <div>
+                            <label for="Ycoor">Y coordinate:</label><br>
+                            <input title="Одна клетка 100х100" type="number" name="Ycoor" min="0" max="700" placeholder="От 0 до 700.." required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Ok</button>
+                    <button onclick="actions.hideForm(document.querySelector('.forms__setPos'))">Cancel</button>
+                </form>
+
+                <form class="forms__update forms__hide"  onsubmit="actions.toMove(this)">
+                    <div class="coordinates">
+                        <div>
+                            <label for="obj">Object:</label><br>
+                            <select name="obj">
+                                <option value="castle">Castle</option>
+                                <option value="knight">Knight</option>
+                                <option value="princess">Princess</option>
+                                <option value="sun">Sun</option>
+                                <option value="well">Well</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="distance">Distance:</label><br>
+                            <input title="Одна клетка 100х100" min="-1000" max="1000"  type="number" name="distance" placeholder="Distance.." required>
+                        </div>
+                        <div>
+                            <label for="angle">Angle, &deg; :</label><br>
+                            <input title="от -360 до 360" type="number" min="-360" max="360" name="angle" placeholder="Angle.." required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Ok</button>
+                    <button onclick="actions.hideForm(document.querySelector('.forms__update'))">Cancel</button>
+                </form>
+
+                <form class="forms__around forms__hide"  onsubmit="actions.toAround(this)">
+                    <div class="coordinates">
+                        <div>
+                            <label for="obj">Object:</label><br>
+                            <select name="obj">
+                                <option value="castle">Castle</option>
+                                <option value="knight">Knight</option>
+                                <option value="princess">Princess</option>
+                                <option value="sun">Sun</option>
+                                <option value="well">Well</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="radius">Radius:</label><br>
+                            <input title="Одна клетка 100х100" type="number" min="-350" max="350"  name="radius" placeholder="Лучше до 100.." required>
+                        </div>
+                        <div>
+                            <label for="coorX">Center X:</label><br>
+                            <input title="От 0 до 1000" type="number" min="0" max="1000"  name="coorX" placeholder="От 0 до 1000.." required>
+                        </div>
+                        <div>
+                            <label for="coorY">Center Y:</label><br>
+                            <input title="От 0 до 700" type="number" min="0" max="700" name="coorY" placeholder="От 0 до 700.." required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Ok</button>
+                    <button onclick="actions.hideForm(document.querySelector('.forms__around'))">Cancel</button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main class="field">
+        <div class="field__grid">
+            <div class="field__objects">
+                <img class="field__arrow yArrow" src="img/Yarrow.png" height="750">
+                <img class="field__arrow" src="img/Xarrow.png" width="1050">
+                <div class="field__wrapper">
+                    <img id="castle" class="field__item" src="img/castle.png" height="100">
+                    <img id="knight" class="field__item" src="img/knight.png" height="100">
+                    <img id="princess" class="field__item" src="img/princess.png" height="100">
+                    <img id="sun" class="field__item" src="img/sun.png" height="100">
+                    <img id="well" class="field__item" src="img/well.png" height="100">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="inputs"></section>
+
+
+    <script src="grid.js"></script>
+</body>
+</html>
