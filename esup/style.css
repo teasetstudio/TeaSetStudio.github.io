@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__inner, .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+}
+
+.blue {
+  color: #36aadf;
+}
+
+.redorange {
+  color: #df5d36;
+}
+
+.header {
+  border-bottom: 1px solid #b4b4c9;
+}
+
+.header__inner {
+  padding: 7px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  padding: 10px;
+}
+
+.header__name {
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__name .blue {
+  font-weight: 700;
+}
+
+.header__title {
+  border-left: 1px solid #b4b4c9;
+  padding-left: 15px;
+  margin-left: 15px;
+  color: #b4b4c9;
+}
+
+.header__title h1, .header__title p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.header__title p {
+  letter-spacing: 4px;
+}
+
+.header__messangers a {
+  color: #b4b4c9;
+  text-decoration: none;
+  height: 40px;
+}
+
+.header__messangers .phone {
+  position: relative;
+  font-size: 25px;
+  font-weight: 500;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.header__messangers .phone:hover {
+  color: black;
+}
+
+.header__messangers i {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: 5px;
+}
+
+.header__messangers i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.header__messangers i.fa-viber:hover {
+  color: #784f99;
+}
+
+.header__messangers i.fa-telegram:hover {
+  color: #34a5e0;
+}
+
+.greeting {
+  background: url(img/main.png) no-repeat center;
+  background-size: cover;
+  height: 90vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.greeting__inner {
+  padding-top: 270px;
+}
+
+.greeting__inner h3 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.greeting__inner h2 {
+  font-size: 57px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+  word-spacing: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.greeting__features {
+  font-family: 'Jura', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding: 20px 130px 0;
+  color: #50575a;
+}
+
+@media screen and (max-width: 630px) {
+  .greeting {
+    background: url(img/main_mob.png) no-repeat center;
+  }
+}
