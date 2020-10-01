@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;400;600&family=VT323&display=swap" rel="stylesheet"></head>
     <script src="https://kit.fontawesome.com/ed4fff6d09.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <header id="greeting" class="header">
         <div class="container">
@@ -119,12 +120,13 @@
                                         <br>
                                         <h3>I'll answer any question</h3>
                                         <form>
-                                            <input id="fname" class="fgeneran finput" type="text" name="name" placeholder="Your name..">
-                                            <input id="femail" class="fgeneran finput"  type="email" name="email" placeholder="Your e-mail..">    
-                                            <textarea id="fmessage" class="fgeneran"  name="fmessage" placeholder="Your message.."></textarea>
+                                            <input id="fname" class="fgeneran finput" type="text" name="name" placeholder="Your name.." required>
+                                            <input id="femail" class="fgeneran finput"  type="email" name="email" placeholder="Your e-mail.." required>    
+                                            <textarea id="fmessage" class="fgeneran"  name="fmessage" placeholder="Your message.." required></textarea>
                                             <button class="fgeneran fsubmit" type="submit">
-                                                &lt;Send/&gt;
+                                                <span>&lt;Send/&gt;</span>
                                             </button>
+                                            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                                         </form>
                                     </div>
                                 </div>
