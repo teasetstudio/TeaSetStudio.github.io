@@ -1,12 +1,12 @@
-$black:rgb(10, 8, 6);
-$black2:rgb(10, 25, 16);
-$gray: rgb(150, 141, 139);
-$white: rgb(236, 227, 223);
+$black:#0a0806;
+$black2:#0a1910;
+$gray: #968d8b;
+$white: #ece3df;
 $redorange: #a34427;
-$brown: rgba(90, 38, 22, 0.336);
-$litebrown: rgba(114, 55, 37, 0.548);
-$emerald: rgba(0, 255, 179, 0.452);
-$darkemerald: rgba(22, 90, 75, 0.336);
+$brown: #5a261656;
+$litebrown: #7237258c;
+$emerald: #00ffb373;
+$darkemerald: #165a4b56;
 @mixin textFormat ($s,$w,$c) {
     font-size: $s;
     font-weight: $w;
@@ -282,7 +282,7 @@ body{
                 height: inherit;
                 border-radius: 30%;
                 padding: 15px;
-                border: 1px solid rgba(0, 255, 179, 0.452);
+                border: 1px solid #00ffb373;
                 box-shadow: -10px 0 55px $darkemerald inset, 0 10px 55px $darkemerald inset, 10px 0 55px $darkemerald inset, 0 -10px 55px $darkemerald inset;
             }
             h3{
@@ -328,6 +328,47 @@ body{
             margin-top: 23px;
             color: $emerald;
             width: 40%;
+            &:hover{
+                cursor: pointer;
+                background-color: $darkemerald;
+            }
+        }
+        .lds-ellipsis {
+            display: none;
+            position: relative;
+            width: 80px;
+            height: 30px;
+            margin: 0 auto;
+            box-shadow: none;
+            border: none;
+        }
+        .lds-ellipsis div {
+            position: absolute;
+            border: 1px solid $emerald;
+            box-shadow: none;
+            padding: 0;
+            top: 10px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: $darkemerald;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        .lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
         }
     }
     
@@ -469,40 +510,6 @@ p.go_btn{
         color: #34a5e0;
     }
 }
-//Spinner
-.lds-ellipsis {
-    display: none;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-}
-.lds-ellipsis div {
-    position: absolute;
-    top: 33px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #fff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.lds-ellipsis div:nth-child(1) {
-    left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(2) {
-    left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(3) {
-    left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(4) {
-    left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
-}
-
 /* Animations
 ================== */
 @keyframes toTopBtn{
