@@ -23,6 +23,8 @@ const start = {
         }
     },
     getXY: function(name, addX, addY, obj, method, radius){
+        addX = parseInt(addX);
+        addY = parseInt(addY);
         properties.map(item =>{
             if (item.name == name){
                 if (method != 2){
