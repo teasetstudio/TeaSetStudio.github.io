@@ -16,8 +16,9 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
-.container2{
+header.container{
     max-width: 1000px;
+    position: relative;
 }
 #clicks{
     z-index: 7;
@@ -222,6 +223,62 @@ p#redPlayer{
 #playerSlider:hover{
     background: rgb(202, 244, 255);
 }
+/* Alert Modal window */
+.alertModalWin{
+    position: absolute;
+    background: rgb(220, 229, 233);
+    border: 2px solid black;
+    padding: 20px 70px;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    display: none;
+}
+.alertModalWin h3{
+    font-family: 'comic sans ms', sans-serif;
+    margin: 0 0 20px;
+}
+.alertModalWin p{
+    margin: 7px 0;
+}
+.alertModalWin input{
+    margin: 7px 0;
+    padding: 5px;
+    background: #f3edec;
+    border-radius: 5px;
+}
+.alertModalWin button{
+    margin: 15px 7px 0;
+    padding: 7px 15px;
+    min-width: 60px;
+    cursor: pointer;
+}
+.result-numbers{
+    padding: 7px;
+    background: #348db6;
+    color: #faf9f9;
+    border-radius: 5px;
+}
+#clicksResult{
+    font-size: 17px;
+    font-weight: bold;
+}
+#placeResult{
+    padding: 7px;
+    background: #348db6;
+    color: #faf9f9;
+    border-radius: 5px;
+}
+.show-modal{
+    animation: showModal .2s ease forwards;
+    display: block;
+}
+@keyframes showModal{
+    100%{top: 20px}
+}
+
 @media screen and (max-width: 1500px){
     body{
         --height: 130px;

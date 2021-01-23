@@ -11,32 +11,10 @@
         <meta property="og:image" content="img/81.png">
     </head>
     <body>
-        <header class="container container2">
+        <header class="container">
             <div id="records">
                 <h3>Рекорды:</h3>
-                <ol id="level-1">
-                    <li>Радость: 74 кликов</li>
-                    <li>RZ-25: 78 кликов</li>
-                    <li>Галочка: 80 кликов</li>
-                    <li>Агнешка: 86 кликов</li>
-                    <li>Tivan: 94 кликов</li>
-                    <li>Иванушка: 96 кликов</li>
-                    <li>ЭЮЯ: 130 кликов</li>
-                    <li>Сударыня Грусть: 156 кликов</li>
-                    <li>Госпожа Печаль: 172 кликов</li>
-                </ol>
-                <ol id="level-2">
-                    <li>Ваня: 136 кликов</li>
-                    <li>Ваня: 138 кликов</li>
-                    <li>Ваня: 142 клика</li>
-                    <li>Агнешка: 158 клика</li>
-                    <li>Ваня: 208 кликов</li>
-                    <li>Ваня: 404 кликов</li>
-                    <li>Ваня: 436 кликов</li>
-                    <li>Ваня: 502 кликов</li>
-                    <li>Ваня: 530 кликов</li>
-
-                </ol>
+                <ol id="records-list"></ol>
             </div>
             <button id="menu-btn" onclick="openMenu()">Menu</button>
             <div id="clicks">Кликов: <span>0</span></div>
@@ -45,7 +23,21 @@
                 <p id="bluePlayer">Синий: <span>0</span></p>
                 <div id="playerSlider"></div>
             </div>
+            <div class="alertModalWin">
+                <h3>Поздравляю! Ты выйграл!</h3>
+                <p>Ты справился за <span id="clicksResult">90</span> кликов.</p>
+                <p>Вы заняли <span id="placeResult">10</span> место.</p>
+                <div class="inputWinnerName">
+                    <p>Введите ваше имя, герой!</p>
+                    <input type="text" name="name" id="hero-name">
+                    <br>
+                    <button onclick="updateRecordslist()">Ok</button>
+                    <button onclick="closeWinModal()">Отмена</button> 
+                </div>
+                               
+            </div>
         </header>
+
         <div id="menu">
             <h4>Игроков:</h4>
             <div class="menu-block">
