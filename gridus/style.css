@@ -162,10 +162,10 @@ header {
   position: absolute;
   left: 0px;
   top: 0px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .field__arrow {
@@ -205,3 +205,4 @@ header {
             transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
   }
 }
+/*# sourceMappingURL=style.css.map */

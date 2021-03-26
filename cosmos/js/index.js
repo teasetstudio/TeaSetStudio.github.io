@@ -1,35 +1,37 @@
 //Under grid glow ===============================================
-let light = document.querySelector('.aboutme__light'),
-    x = 0,
-    y = 0;
+(function(){
+    const headBlock = document.getElementById('about'),
+        light = document.querySelector('.aboutme__light');
+    let x = 0,
+        y = 0;
 
-function showGrid(headBlock){
-    function showThatGrid(){
+    function showThatGrid() {
         light.style.left = x + 'px';
         light.style.top = y + 'px';
         light.style.animationPlayState = 'running';
-        setTimeout(function(){
+        setTimeout(function () {
             light.style.animationPlayState = 'paused';
-        },10);
+        }, 10);
+    }
+    function setXY(e){
+        x = e.pageX;
+        y = e.pageY - headBlock.offsetTop;
+        showThatGrid();
+        console.log('aaa');
+    }
+
+    headBlock.addEventListener('mouseover', () => {
+        console.log('over');
         light.style.opacity = 1;
-    }
-    headBlock.onmousemove = ()=>{
-        x = event.pageX;
-        y = event.pageY - headBlock.offsetTop;
-        showThatGrid()
-    }
-    headBlock.ontouchmove = ()=>{
-        x = event.touches[0].pageX;
-        y = event.touches[0].pageY - headBlock.offsetTop;
-        showThatGrid()
-    }
-    headBlock.onmouseleave = function (){
+        headBlock.addEventListener('mousemove', setXY);
+    });
+
+    headBlock.addEventListener('mouseleave', ()=>{
+        console.log('leave');
         light.style.opacity = 0;
-    }
-    headBlock.ontouchcancel = function (){
-        light.style.opacity = 0;
-    }
-};
+        headBlock.removeEventListener('mousemove', setXY);
+    });
+}());
 // smooth scroll ==============================================
 function scrollToDiv (duration){
     function getPosition (){

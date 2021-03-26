@@ -7,7 +7,7 @@ menuBtn.onmouseover = function(){
 };
 menu.onmouseleave = function(){
     this.style.top = '-100px';
-}
+};
 
 /* game logic
 ==================================================================================== */
@@ -18,11 +18,11 @@ const wordsArr = ['соль','сахар', 'кошка', 'собака', 'пор
                   'злодей', 'радость', 'море', 'камень', 'песок', 'зерно', 'монитор', 'клавиатура', 'спасение',
                   'вифлеем', 'город', 'компьютер', 'голгофа', 'евангелие', 'вода', 'огонь', 'молния', 'слово', 
                   'скамейка', 'дрова', 'дверь', 'солнце', 'поведение', 'цвет', 'свет', 'книга', 'заповедь',
-                  'образование', 'пони', 'лошадь', 'песня', 'разум', 'мудрость', 'банан', 'столица', 'осел'
-                  , 'крокодил', 'аптека', 'мастерская', 'магистраль', 'сказка', 'лиса', 'волк', 'аптека', 'пасха'
-                  , 'жатва', 'лето', 'осень', 'жизнь', 'велосипед', 'узник', 'конец', 'кошка', 'шпион', 'галерея'
-                  , 'грохот', 'кровать', 'садовник', 'водитель', 'крыша', 'фестиваль', 'жалюзи', 'хроника', 'фильм'
-                  , 'клавиша', 'галстук', 'служба', 'одеяло'],
+                  'образование', 'пони', 'лошадь', 'песня', 'разум', 'мудрость', 'банан', 'столица', 'осел',
+                  'крокодил', 'аптека', 'мастерская', 'магистраль', 'сказка', 'лиса', 'волк', 'аптека', 'пасха',
+                  'жатва', 'лето', 'осень', 'жизнь', 'велосипед', 'узник', 'конец', 'кошка', 'шпион', 'галерея',
+                  'грохот', 'кровать', 'садовник', 'водитель', 'крыша', 'фестиваль', 'жалюзи', 'хроника', 'фильм',
+                  'клавиша', 'галстук', 'служба', 'одеяло'],
 
       attemptDiv = document.getElementById('attempts'),
       hammer = document.getElementById('pic-hammer'),
@@ -126,7 +126,7 @@ let start = {
 
         for (let i = 0; i < wordLength; i++){
             this.addElement(lettersArr[i]);
-        };
+        }
         letterDivsList = document.querySelectorAll(".letter-wrapper");
         letterInput.disabled = false;
         letterInput.focus();
@@ -167,7 +167,7 @@ let gameActions = {
         }else alert('Введите одну Русскую БУКВУ.\nПроверьте язык раскладки клавиатуры.');
     },
     inputLetterRepeat: function (){
-        let x = false
+        let x = false;
         usedLetters.forEach ((element) =>{
             if (element == currentLetter) {
                 x = true;
@@ -184,9 +184,9 @@ let gameActions = {
                     this.winWord();
                 }else{
                     this.twoWinWord();
-                };
-            })
-        };
+                }
+            });
+        }
     },
     addUsedLetter:function(usedLetter){
         let newLetter = document.createElement('p');
@@ -210,7 +210,7 @@ let gameActions = {
         });
         attemptDivsList[wrongLetters.length-1].style.background = 'rgb(36, 28, 65)';
         attemptDivsList[wrongLetters.length-1].style.borderColor = 'rgb(25, 16, 58)';
-        attemptDivsList[wrongLetters.length-1].style.boxShadow = '-1px 0 20px rgb(29, 0, 32), 0 1px 60px var(--border4)';    
+        attemptDivsList[wrongLetters.length-1].style.boxShadow = '-1px 0 20px rgb(29, 0, 32), 0 1px 60px var(--border4)';
         attemptDivsList[wrongLetters.length-1].addEventListener('transitionend', () => {
             letterInput.focus();
             if (wrongLetters.length >= complexity && event.propertyName == "box-shadow"){
@@ -318,7 +318,7 @@ let gameActions = {
                 gameActions.twoPlaRestart(currentWord);    
             }, 400);
         } else {
-            alert('Вы ввели слово неправильно!\nВведите слово на русском от 4 до 10 букв.')
+            alert('Вы ввели слово неправильно!\nВведите слово на русском от 4 до 10 букв.');
             btn.blur();
         };
     },
@@ -371,7 +371,7 @@ function onePlayer(){
     players = 1;
     gameActions.clearScore();
     gameActions.restart();
-    score2Block.style.display = 'none'
+    score2Block.style.display = 'none';
 };
 function twoPlayers(){
     players = 2;

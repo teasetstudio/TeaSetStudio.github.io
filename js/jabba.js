@@ -24,14 +24,13 @@ function scrollToDiv (duration){
 
     window.requestAnimationFrame(step);
     function step(timestamp) {
-      if (!start) start = timestamp;
-      let progress = timestamp - start;
-      //window.scrollTo(0, difference*(progress/duration) + startPosition)
-      window.scrollTo (0, easeInOutSine(progress, startPosition, difference, duration));
-      if (progress < duration) window.requestAnimationFrame(step);}
+        if (!start) start = timestamp;
+        let progress = timestamp - start;
+        //window.scrollTo(0, difference*(progress/duration) + startPosition)
+        window.scrollTo (0, easeInOutSine(progress, startPosition, difference, duration));
+        if (progress < duration) window.requestAnimationFrame(step);}
 }
 //easing function
 function easeInOutSine(t, b, c, d) {
 	return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
 }
-// carusel =====-===============================================

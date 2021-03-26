@@ -97,3 +97,36 @@ const actions = {
 start.renderObj(properties);
 objDom[3].style.transformOrigin = '50% ' + 70 + 'px';;
 objDom[3].classList.add('aminAround');
+
+//Knight mechanic
+let knight = start.getObj('knight'),
+    animEnd = true;
+
+knight.addEventListener('transitionend', ()=>{
+    animEnd = true;
+})
+window.addEventListener("keydown", function (event){
+    if (animEnd) {
+        if (event.keyCode === 87) {
+            animEnd = false;
+            properties[1].y += 100;
+            knight.style.top = -properties[1].y +'px';
+        }
+        if (event.keyCode === 83) {
+            animEnd = false;
+            properties[1].y -= 100;
+            knight.style.top = -properties[1].y +'px';
+        }
+        if (event.keyCode === 65) {
+            animEnd = false;
+            properties[1].x -= 100;
+            knight.style.left = properties[1].x +'px';
+        }
+        if (event.keyCode === 68) {
+            animEnd = false;
+            properties[1].x += 100;
+            knight.style.left = properties[1].x +'px';
+        }
+    }
+
+});
